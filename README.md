@@ -1,4 +1,4 @@
-# Užij si (uzij.si)
+# Užij.si
 
 Jednoduchý statický web s přehledem **veřejně dostupných akcí** v Česku podle krajů – sport, kino, divadlo, výstavy a galerie, koncerty a ostatní.
 
