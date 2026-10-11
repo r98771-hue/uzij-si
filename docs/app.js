@@ -28,7 +28,7 @@ function render(){
    <a class="t" href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.name)}</a>
    <div class="meta"><span class="cat">${esc(e.category)}</span>${when(e)}${e.time?" · "+esc(e.time):""}</div>
    <div class="meta">${esc([e.place,e.city].filter(Boolean).join(", "))}</div>
-   <div class="meta">Zdroj: <a href="${esc(s.url||e.url)}" target="_blank" rel="noopener">${esc(s.name||e.source)}</a></div></li>`}).join(""):`<li class="empty">Pro tento výběr nic nemáme. Zkus jiný den nebo kategorii.</li>`;
+   <div class="meta">Zdroj: <a href="${esc(s.url||e.url)}" target="_blank" rel="noopener">${esc(s.short_name||s.name||e.source)}</a></div></li>`}).join(""):`<li class="empty">Pro tento výběr nic nemáme. Zkus jiný den nebo kategorii.</li>`;
   $("#more").hidden=list.length<=st.shown}
 async function init(){
   const sel=$("#region");sel.innerHTML=REGIONS.map(([v,l])=>`<option value="${v}">${l}</option>`).join("");

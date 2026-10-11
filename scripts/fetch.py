@@ -63,7 +63,8 @@ def fetch_brno(today):
     return out
 
 SOURCES = {
-    "brno": {"name": "Statutární město Brno – Akce / Events (data.brno.cz, GO TO BRNO)",
+    "brno": {"short_name": "Statutární město Brno",
+             "name": "Statutární město Brno – Akce / Events (data.brno.cz, GO TO BRNO)",
              "url": "https://data.brno.cz/datasets/e06ae10d2f8a49d5861852cf6a0f45e1",
              "license": "CC BY 4.0", "license_url": "https://creativecommons.org/licenses/by/4.0/deed.cs",
              "fn": fetch_brno},
