@@ -1,0 +1,40 @@
+name: Aktualizace akcí a nasazení
+on:
+  schedule:
+    - cron: "17 3 * * *"   # 05:17 Europe/Prague (letní čas); v zimě 04:17
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["docs/**", "scripts/**", ".github/workflows/**"]
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Stažení akcí
+        run: python scripts/fetch.py || echo "fetch selhal, ponechávám stará data"
+      - name: Commit dat
+        run: |
+          git config user.name "uzij-si-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/events.json
+          git diff --cached --quiet || (git commit -m "Aktualizace akcí $(date -u +%F)" && git push)
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: docs }
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: { name: github-pages, url: "${{ steps.d.outputs.page_url }}" }
+    steps:
+      - id: d
+        uses: actions/deploy-pages@v4

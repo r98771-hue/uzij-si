@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Užij si – veřejné akce podle krajů</title>
+<meta name="description" content="Přehled veřejně dostupných akcí v Česku podle krajů: sport, kino, divadlo, výstavy, koncerty.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Užij si<span>.si</span></h1>
+  <p class="tag">Kam vyrazit – veřejné akce podle krajů</p>
+</header>
+<main>
+  <section class="filters">
+    <label>Kraj
+      <select id="region"></select>
+    </label>
+    <div class="chips" id="cats" aria-label="Kategorie"></div>
+    <div class="chips" id="dates" aria-label="Kdy"></div>
+    <input id="q" type="search" placeholder="Hledat akci nebo místo…">
+  </section>
+  <p id="info" class="info"></p>
+  <ul id="list" class="list"></ul>
+  <button id="more" hidden>Zobrazit další</button>
+</main>
+<footer>
+  <h2>Zdroje a licence</h2>
+  <ul id="sources"></ul>
+  <p>Používáme jen veřejně a zdarma dostupné otevřené zdroje dat. Za správnost údajů odpovídá původní zdroj – před návštěvou si prosím akci ověřte na odkazu u ní.</p>
+  <p id="gen"></p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
