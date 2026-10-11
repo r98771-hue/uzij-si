@@ -14,7 +14,8 @@ select,input{font:inherit;padding:8px 10px;border:1px solid var(--line);border-r
 .info{color:var(--muted);margin:16px 4px 8px}
 .list{list-style:none;padding:0;margin:0;display:grid;gap:10px}
 .ev{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
-.ev a.t{font-weight:650;color:var(--ink);text-decoration:none}.ev a.t:hover{color:var(--acc)}
+.ev a.t,.ev a.t:visited{font-weight:650;color:#111;text-decoration:underline;text-decoration-color:#111;text-decoration-thickness:1px;text-underline-offset:3px}.ev a.t:hover{text-decoration-thickness:2px;text-decoration-color:var(--acc)}
+.ev .meta a,.ev .meta a:visited{color:#111;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}.ev .meta a:hover{text-decoration-color:var(--acc);text-decoration-thickness:2px}
 .meta{color:var(--muted);font-size:.9rem;margin-top:2px}
 .cat{display:inline-block;font-size:.75rem;background:#fff1e6;color:#a63e00;border-radius:6px;padding:1px 7px;margin-right:6px}
 .empty{background:var(--card);border:1px dashed var(--line);border-radius:12px;padding:24px;text-align:center;color:var(--muted)}
