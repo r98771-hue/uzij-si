@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-11T15:44:01+02:00",
+ "generated_at": "2026-10-12T07:59:50+02:00",
  "sources": {
   "brno": {
    "short_name": "Statutární město Brno",
@@ -8,8 +8,8 @@
    "license": "CC BY 4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/deed.cs",
    "status": "ok",
-   "fetched_at": "2026-10-11T15:44:01+02:00",
-   "count": 465
+   "fetched_at": "2026-10-12T07:59:50+02:00",
+   "count": 453
   }
  },
  "events": [
@@ -277,20 +277,6 @@
    "category": "Ostatní",
    "source_categories": "Pro rodiny",
    "url": "https://www.gotobrno.cz/akce/patron-seminek/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-308083",
-   "name": "Brno Art Open",
-   "date_from": "2026-06-12",
-   "date_to": "2026-10-11",
-   "time": null,
-   "place": "",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Výstavy a galerie",
-   "source_categories": "Festivaly, TOP akce, Výstava",
-   "url": "https://www.gotobrno.cz/akce/brno-art-open/",
    "source": "brno"
   },
   {
@@ -644,20 +630,6 @@
    "source": "brno"
   },
   {
-   "id": "brno-320760",
-   "name": "Festival brněnských nezávislých divadel",
-   "date_from": "2026-10-04",
-   "date_to": "2026-10-11",
-   "time": null,
-   "place": "Brno, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo, Festivaly, Hudba, Literatura, Pro rodiny, Tanec, TOP akce",
-   "url": "https://www.gotobrno.cz/akce/festival-brnenskych-nezavislych-divadel/",
-   "source": "brno"
-  },
-  {
    "id": "brno-322242",
    "name": "Hoptóni a hoptónčata",
    "date_from": "2026-10-06",
@@ -697,146 +669,6 @@
    "category": "Výstavy a galerie",
    "source_categories": "Výstava",
    "url": "https://www.gotobrno.cz/akce/vystava-obrazu-chimera-ii/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-321481",
-   "name": "Argentinské tango pro začátečníky – víkendové workshopy",
-   "date_from": "2026-10-10",
-   "date_to": "2026-10-11",
-   "time": null,
-   "place": "Olomoucká 1186/14, 618 00 Brno-Černovice, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Tanec",
-   "url": "https://www.gotobrno.cz/akce/argentinske-tango-pro-zacatecniky-vikendove-workshopy-2/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-315556",
-   "name": "AutenTICké prohlídky: Smuteční síň hřbitova v Židenicích",
-   "date_from": "2026-10-11",
-   "date_to": "2026-10-11",
-   "time": null,
-   "place": "",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Komentované prohlídky, Pro rodiny, Veletrhy / vzdělávací",
-   "url": "https://www.gotobrno.cz/akce/autenticke-prohlidky-smutecni-sin-hrbitova-v-zidenicich/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-323517",
-   "name": "BRNOCAR SOBĚŠICKÁ MULDA 2026",
-   "date_from": "2026-10-11",
-   "date_to": "2026-10-11",
-   "time": null,
-   "place": "Okružní 834/29A, 638 00 Brno-sever-Lesná, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Sport",
-   "source_categories": "Sport",
-   "url": "https://www.gotobrno.cz/akce/brnocar-sobesicka-mulda-2026/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-6981",
-   "name": "Brněnské pověsti",
-   "date_from": "2026-10-11",
-   "date_to": "2026-10-11",
-   "time": null,
-   "place": "Zelný trh 313/4, Brno-město, Brno, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo, Pro rodiny",
-   "url": "https://www.gotobrno.cz/akce/brnenske-povesti/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-314219",
-   "name": "Gala Wien",
-   "date_from": "2026-10-11",
-   "date_to": "2026-10-11",
-   "time": null,
-   "place": "Makovského nám. 3166/3, 616 00 Brno-Žabovřesky, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba",
-   "url": "https://www.gotobrno.cz/akce/gala-wien/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-320468",
-   "name": "Klasický klavírní recitál – Giulio Lo Monaco",
-   "date_from": "2026-10-11",
-   "date_to": "2026-10-11",
-   "time": null,
-   "place": "Radnická 8, 602 00 Brno-střed, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba",
-   "url": "https://www.gotobrno.cz/akce/klasicky-klavirni-recital-giulio-lo-monaco/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-324050",
-   "name": "Multicultural BBQ in Lužánky",
-   "date_from": "2026-10-11",
-   "date_to": "2026-10-11",
-   "time": null,
-   "place": "Lužánky, 602 00 Brno-střed, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Gastronomické, Pro rodiny",
-   "url": "https://www.gotobrno.cz/akce/multicultural-bbq-in-luzanky/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-319427",
-   "name": "Princezna na hrášku",
-   "date_from": "2026-10-11",
-   "date_to": "2026-10-11",
-   "time": null,
-   "place": "Jánská 12, 602 00 Brno-střed, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo, Pro rodiny",
-   "url": "https://www.gotobrno.cz/akce/princezna-na-hrasku-2/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-319462",
-   "name": "Trio Aperto: Hudební inventura",
-   "date_from": "2026-10-11",
-   "date_to": "2026-10-11",
-   "time": null,
-   "place": "Jánská 12, 602 00 Brno-střed, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba",
-   "url": "https://www.gotobrno.cz/akce/trio-aperto-hudebni-inventura/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-323528",
-   "name": "cyklospeciality Muldička 2026",
-   "date_from": "2026-10-11",
-   "date_to": "2026-10-11",
-   "time": null,
-   "place": "Okružní 834/29A, 638 00 Brno-sever-Lesná, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Sport",
-   "source_categories": "Pro rodiny, Sport",
-   "url": "https://www.gotobrno.cz/akce/cyklospeciality-muldicka-2026/",
    "source": "brno"
   },
   {
