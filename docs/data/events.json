@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13T12:33:39+02:00",
+ "generated_at": "2026-10-14T10:41:24+02:00",
  "sources": {
   "brno": {
    "short_name": "Statutární město Brno",
@@ -8,8 +8,8 @@
    "license": "CC BY 4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/deed.cs",
    "status": "ok",
-   "fetched_at": "2026-10-13T12:33:39+02:00",
-   "count": 473
+   "fetched_at": "2026-10-14T10:41:24+02:00",
+   "count": 480
   }
  },
  "events": [
@@ -350,20 +350,6 @@
    "source": "brno"
   },
   {
-   "id": "brno-317947",
-   "name": "Václav Holoubek Výstava Obrazů: Duše v obrazech 1972 – 2026",
-   "date_from": "2026-09-03",
-   "date_to": "2026-10-13",
-   "time": null,
-   "place": "Veveří 3163/111, 616 00 Brno-Brno-Žabovřesky, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Výstavy a galerie",
-   "source_categories": "Výstava",
-   "url": "https://www.gotobrno.cz/akce/vaclav-holoubek-vystava-obrazu-duse-v-obrazech-1972-2026/",
-   "source": "brno"
-  },
-  {
    "id": "brno-319672",
    "name": "Mandala dětem",
    "date_from": "2026-09-07",
@@ -686,20 +672,6 @@
    "source": "brno"
   },
   {
-   "id": "brno-322647",
-   "name": "Beseda v Martinusu: Nicole Karráová o knize Poustevník",
-   "date_from": "2026-10-13",
-   "date_to": "2026-10-13",
-   "time": null,
-   "place": "Mečová 695/2, 602 00 Brno-střed-Brno-město, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Literatura",
-   "url": "https://www.gotobrno.cz/akce/beseda-v-martinusu-nicole-karraova-o-knize-poustevnik/",
-   "source": "brno"
-  },
-  {
    "id": "brno-324305",
    "name": "Hudební večery",
    "date_from": "2026-10-13",
@@ -711,20 +683,6 @@
    "category": "Koncerty",
    "source_categories": "Hudba, Noční život",
    "url": "https://www.gotobrno.cz/akce/hudebni-vecery/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-305973",
-   "name": "Jak na Kunderu: Čtenářský klub KMK #provzdělavatelstvo",
-   "date_from": "2026-10-13",
-   "date_to": "2026-10-13",
-   "time": null,
-   "place": "Kounicova 65a, Veveří, Brno, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Literatura, Veletrhy / vzdělávací",
-   "url": "https://www.gotobrno.cz/akce/jak-na-kunderu-ctenarsky-klub-kmk-provzdelavatelstvo-8/",
    "source": "brno"
   },
   {
@@ -742,20 +700,6 @@
    "source": "brno"
   },
   {
-   "id": "brno-188047",
-   "name": "Krásná Anne-Marie",
-   "date_from": "2026-10-13",
-   "date_to": "2026-10-13",
-   "time": null,
-   "place": "Malinovského náměstí 1, Brno-město, Brno, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo",
-   "url": "https://www.gotobrno.cz/akce/krasna-anne-marie/",
-   "source": "brno"
-  },
-  {
    "id": "brno-322515",
    "name": "RestaurantWeek Brno",
    "date_from": "2026-10-13",
@@ -770,17 +714,17 @@
    "source": "brno"
   },
   {
-   "id": "brno-320848",
-   "name": "The Valentines (křest LP) + Kosmetik Institut",
+   "id": "brno-324540",
+   "name": "Zažijte Janáčka s TIC BRNO",
    "date_from": "2026-10-13",
-   "date_to": "2026-10-13",
+   "date_to": "2026-11-17",
    "time": null,
-   "place": "Sukova 4, Brno-město, Brno, Česko",
+   "place": "",
    "city": "Brno",
    "region": "jihomoravsky",
    "category": "Koncerty",
-   "source_categories": "Hudba",
-   "url": "https://www.gotobrno.cz/akce/the-valentines-krest-lp-kosmetik-institut/",
+   "source_categories": "Festivaly, Hudba",
+   "url": "https://www.gotobrno.cz/akce/zazijte-janacka-s-tic-brno/",
    "source": "brno"
   },
   {
@@ -1215,6 +1159,20 @@
    "category": "Koncerty",
    "source_categories": "Hudba",
    "url": "https://www.gotobrno.cz/akce/hvob-live-at/",
+   "source": "brno"
+  },
+  {
+   "id": "brno-324512",
+   "name": "Havlova architektura",
+   "date_from": "2026-10-16",
+   "date_to": "2026-12-31",
+   "time": null,
+   "place": "Hroznová 82/14, 603 00 Brno-střed, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Výstavy a galerie",
+   "source_categories": "Výstava",
+   "url": "https://www.gotobrno.cz/akce/havlova-architektura-2/",
    "source": "brno"
   },
   {
@@ -1694,6 +1652,20 @@
    "source": "brno"
   },
   {
+   "id": "brno-324469",
+   "name": "Dialog hudební a taneční tvorby pohledem studentů HAMU a HF JAMU",
+   "date_from": "2026-10-20",
+   "date_to": "2026-10-20",
+   "time": null,
+   "place": "Orlí 19, 602 00 Brno-střed, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Divadlo",
+   "source_categories": "Hudba, Tanec",
+   "url": "https://www.gotobrno.cz/akce/dialog-hudebni-a-tanecni-tvorby-pohledem-studentu-hamu-a-hf-jamu/",
+   "source": "brno"
+  },
+  {
    "id": "brno-319549",
    "name": "Historie a odkaz rodiny Stern",
    "date_from": "2026-10-20",
@@ -1873,6 +1845,20 @@
    "category": "Divadlo",
    "source_categories": "Divadlo, Pro rodiny",
    "url": "https://www.gotobrno.cz/akce/lampionovy-pruvod-leto-a-dym-v-kohoutovicich-5/",
+   "source": "brno"
+  },
+  {
+   "id": "brno-324498",
+   "name": "PŘIJETÍ ZODPOVĚDNOSTI – otevřená lekce Školy zotavení",
+   "date_from": "2026-10-21",
+   "date_to": "2026-10-21",
+   "time": null,
+   "place": "Joštova 218/10, 602 00 Brno-střed-Brno-město, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Ostatní",
+   "source_categories": "Veletrhy / vzdělávací",
+   "url": "https://www.gotobrno.cz/akce/prijeti-zodpovednosti-otevrena-lekce-skoly-zotaveni/",
    "source": "brno"
   },
   {
@@ -2254,6 +2240,20 @@
    "source": "brno"
   },
   {
+   "id": "brno-324468",
+   "name": "Kosí bratři",
+   "date_from": "2026-10-23",
+   "date_to": "2026-10-23",
+   "time": null,
+   "place": "Kounicova 22/77, 602 00 Brno-Žabovřesky, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Divadlo",
+   "source_categories": "Divadlo, Pro rodiny",
+   "url": "https://www.gotobrno.cz/akce/kosi-bratri/",
+   "source": "brno"
+  },
+  {
    "id": "brno-319581",
    "name": "Návraty do Brna – beseda s potomky rodin Stern, Wittal a Stiassni",
    "date_from": "2026-10-23",
@@ -2324,6 +2324,20 @@
    "source": "brno"
   },
   {
+   "id": "brno-174660",
+   "name": "Arttrh Alfapassage Brno",
+   "date_from": "2026-10-24",
+   "date_to": "2026-10-24",
+   "time": null,
+   "place": "",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Ostatní",
+   "source_categories": "Pro rodiny, Veletrhy / vzdělávací",
+   "url": "https://www.gotobrno.cz/akce/arttrh-alfapassage-brno/",
+   "source": "brno"
+  },
+  {
    "id": "brno-201545",
    "name": "AutenTICké prohlídky: Ústřední hřbitov",
    "date_from": "2026-10-24",
@@ -2377,6 +2391,20 @@
    "category": "Ostatní",
    "source_categories": "Veletrhy / vzdělávací",
    "url": "https://www.gotobrno.cz/akce/komentovana-prochazka-po-vilach-rodiny-stern-wittal-a-stiassni/",
+   "source": "brno"
+  },
+  {
+   "id": "brno-324490",
+   "name": "Kosí bratři",
+   "date_from": "2026-10-24",
+   "date_to": "2026-10-24",
+   "time": null,
+   "place": "Kounicova 22/77, 602 00 Brno-Žabovřesky, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Divadlo",
+   "source_categories": "Divadlo, Pro rodiny",
+   "url": "https://www.gotobrno.cz/akce/kosi-bratri-2/",
    "source": "brno"
   },
   {
@@ -2461,6 +2489,20 @@
    "category": "Ostatní",
    "source_categories": "Komentované prohlídky, Veletrhy / vzdělávací",
    "url": "https://www.gotobrno.cz/akce/brno-pred-100-lety-2/",
+   "source": "brno"
+  },
+  {
+   "id": "brno-174345",
+   "name": "Bleší trhy Brno ALFA pasáž/ Flea market",
+   "date_from": "2026-10-25",
+   "date_to": "2026-10-25",
+   "time": null,
+   "place": "",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Ostatní",
+   "source_categories": "Pro rodiny, Veletrhy / vzdělávací",
+   "url": "https://www.gotobrno.cz/akce/blesi-trhy-brno-alfa-pasaz-flea-market/",
    "source": "brno"
   },
   {
@@ -2800,6 +2842,20 @@
    "source": "brno"
   },
   {
+   "id": "brno-324530",
+   "name": "Dušičky – večerní komentované prohlídky Kapucínské hrobky",
+   "date_from": "2026-10-30",
+   "date_to": "2026-10-30",
+   "time": null,
+   "place": "Kapucínské nám. 300/5, 602 00 Brno-Brno-střed, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Ostatní",
+   "source_categories": "Komentované prohlídky",
+   "url": "https://www.gotobrno.cz/akce/dusicky-vecerni-komentovane-prohlidky-kapucinske-hrobky-4/",
+   "source": "brno"
+  },
+  {
    "id": "brno-304531",
    "name": "DŸSE (DE)",
    "date_from": "2026-10-30",
@@ -2993,6 +3049,20 @@
    "category": "Koncerty",
    "source_categories": "Hudba",
    "url": "https://www.gotobrno.cz/akce/u2-stay-revival-4/",
+   "source": "brno"
+  },
+  {
+   "id": "brno-324536",
+   "name": "brněnský Halloween v No Feet",
+   "date_from": "2026-10-31",
+   "date_to": "2026-10-31",
+   "time": null,
+   "place": "Vaňkovo náměstí, 602 00 Brno-Brno-střed, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Divadlo",
+   "source_categories": "Pro rodiny, Tanec",
+   "url": "https://www.gotobrno.cz/akce/brnensky-halloween-v-no-feet/",
    "source": "brno"
   },
   {
@@ -3875,6 +3945,20 @@
    "category": "Výstavy a galerie",
    "source_categories": "Noční život, Vánoce, Výstava",
    "url": "https://www.gotobrno.cz/akce/svetelny-park-na-spilberku-2026/",
+   "source": "brno"
+  },
+  {
+   "id": "brno-324528",
+   "name": "Výstava exotického ptactva, morčat a dalších domácích zvířat",
+   "date_from": "2026-11-13",
+   "date_to": "2026-11-22",
+   "time": null,
+   "place": "Kotlářská 2, 611 37 Brno-střed, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Výstavy a galerie",
+   "source_categories": "Pro rodiny, Výstava",
+   "url": "https://www.gotobrno.cz/akce/vystava-exotickeho-ptactva-morcat-a-dalsich-domacich-zvirat/",
    "source": "brno"
   },
   {
@@ -5667,6 +5751,20 @@
    "category": "Koncerty",
    "source_categories": "Hudba",
    "url": "https://www.gotobrno.cz/akce/lednove-jednicky/",
+   "source": "brno"
+  },
+  {
+   "id": "brno-324583",
+   "name": "75. Slovácký ples",
+   "date_from": "2027-01-23",
+   "date_to": "2027-01-24",
+   "time": null,
+   "place": "Palackého tř. 832, Brno-Brno-Královo Pole, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Divadlo",
+   "source_categories": "Folklor, Hudba, Noční život, Tanec",
+   "url": "https://www.gotobrno.cz/akce/75-slovacky-ples/",
    "source": "brno"
   },
   {
