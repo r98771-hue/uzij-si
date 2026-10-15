@@ -87,7 +87,18 @@ function render(){
   $("#info").textContent=`${st.city||rn}: ${list.length} ${list.length===1?"akce":list.length<5&&list.length>0?"akce":"akcí"}${st.q?` pro „${st.q}“`:""}`;
   if(!list.length){$("#list").innerHTML=`<li class="empty">Pro tento výběr nic nemáme. Zkus jiný den, sekci nebo hledání.</li>`;$("#more").hidden=true;return}
   const c=calendar(list);$("#list").innerHTML=c.out;$("#more").hidden=!c.more}
-async function init(){
+const MES=["ledna","února","března","dubna","května","června","července","srpna","září","října","listopadu","prosince"];
+function strip(){const t=today(),[y,m,d]=t.split("-").map(Number),x=new Date(t+"T12:00:00Z");
+  const z=addDays(t,1).split("-").map(Number),sv=statniSvatek(y,m,d),jm=jmeno(m,d),jz=jmeno(z[1],z[2]);
+  $("#today").innerHTML=`<b>${DOW[x.getUTCDay()]} ${d}. ${MES[m-1]} ${y}</b>`+
+   (jm?`<span>Svátek má <b>${esc(jm)}</b></span>`:"")+(sv?`<span class="hol">🇨🇿 ${esc(sv)}</span>`:"")+
+   (jz?`<small>zítra ${esc(jz)}</small>`:"")}
+function stripHl(){const t=today(),lim=addDays(t,60);
+  const pick=g=>{const c=DATA.events.filter(e=>GROUP_OF(e.category)===g&&e.date_from>=t&&e.date_from<=lim&&days(e.date_from,e.date_to)<=7);
+    return c.find(e=>e.featured||/TOP akce/.test(e.source_categories||""))||c[0]};
+  $("#hl").innerHTML=[["kultura","🎭 Kultura"],["sport","⚽ Sport"]].map(([g,l])=>{const e=pick(g);
+    return e?`<a class="h-${g}" href="${esc(e.url)}" target="_blank" rel="noopener"><span>${l} · ${dayLabel(e.date_from)}</span>${esc(e.name)}</a>`:`<span class="h-${g} none"><span>${l}</span>zatím nic nového</span>`}).join("")}
+async function init(){strip();
   const sel=$("#region");sel.innerHTML=REGIONS.map(([v,l])=>`<option value="${v}">${l}</option>`).join("");
   sel.value=st.region;sel.onchange=()=>{st.region=sel.value;st.city="";st.shown=48;render()};
   $("#city").onchange=e=>{st.city=e.target.value;st.shown=48;render()};
@@ -97,5 +108,5 @@ async function init(){
   DATA.events.sort((x,y)=>x.date_from.localeCompare(y.date_from)||(x.time||"").localeCompare(y.time||""));
   $("#sources").innerHTML=Object.values(DATA.sources).map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a> – licence <a href="${esc(s.license_url)}" target="_blank" rel="noopener">${esc(s.license)}</a>${s.fetched_at?`, staženo ${new Date(s.fetched_at).toLocaleString("cs-CZ",{timeZone:"Europe/Prague"})}`:""}${s.status==="stale"?" (poslední aktualizace selhala, zobrazujeme starší data)":""}</li>`).join("");
   $("#gen").textContent=DATA.generated_at?`Data vygenerována ${new Date(DATA.generated_at).toLocaleString("cs-CZ",{timeZone:"Europe/Prague"})}.`:"";
-  render()}
+  stripHl();render()}
 init();
