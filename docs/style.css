@@ -81,3 +81,6 @@ body{background:var(--bg)}
 .tip{position:absolute;pointer-events:none;background:#fff;border:1px solid #111;border-radius:8px;padding:4px 9px;font-size:.85rem;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.1);z-index:3}
 .tip span{display:block;color:var(--muted);font-size:.78rem}
 @media (max-width:600px){.map{padding:6px;margin-top:12px}.city text{font-size:30px;stroke-width:5px}.city circle{r:7}}
+/* těsnější mezera záložky → mapa */
+header{padding-bottom:12px}.map{margin-top:10px;padding:6px 14px 12px}
+@media (max-width:600px){header{padding-bottom:10px}.map{margin-top:8px;padding:4px 6px 6px}}
