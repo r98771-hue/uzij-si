@@ -22,6 +22,7 @@
   <nav class="tabs" id="groups" aria-label="Hlavní sekce"></nav>
 </header>
 <main>
+  <section class="map" aria-label="Mapa krajů"><div id="map"></div><div id="tip" class="tip" hidden></div></section>
   <section class="filters">
     <label>Kraj
       <select id="region"></select>
@@ -45,8 +46,10 @@
   <h2>Zdroje a licence</h2>
   <ul id="sources"></ul>
   <p>Používáme jen veřejně a zdarma dostupné otevřené zdroje dat. Za správnost údajů odpovídá původní zdroj – před návštěvou si prosím akci ověřte na odkazu u ní.</p>
+  <p>Hranice krajů: <a href="https://services.cuzk.gov.cz/gml/inspire/au/epsg-4258/" target="_blank" rel="noopener">ČÚZK – INSPIRE Územní správní jednotky</a>, CC BY 4.0.</p>
   <p id="gen"></p>
 </footer>
+<script src="mapdata.js"></script>
 <script src="svatky.js"></script>
 <script src="app.js"></script>
 </body>

@@ -69,3 +69,15 @@ body{background:var(--bg)}
 @media (max-width:760px){.strip{flex-direction:column;align-items:stretch;gap:8px;padding:8px 10px}.hl>*{flex:1;max-width:none}}
 @media (max-width:600px){.quick{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none;padding:0 2px 4px;margin:0 -10px 14px;padding-left:10px}.quick::-webkit-scrollbar{display:none}.quick button{flex:0 0 auto;white-space:nowrap}}
 .today{flex:0 0 auto}@media (max-width:760px){.today{flex:none}}
+
+/* mapa krajů */
+.map{position:relative;background:#fff;border:1px solid var(--line);border-radius:16px;margin-top:18px;padding:14px}
+.map svg{display:block;width:100%;height:auto;max-height:520px}
+.kraj{fill:transparent;stroke:#111;stroke-width:1;vector-effect:non-scaling-stroke;cursor:pointer;transition:stroke-width .12s}
+.kraj.zero{stroke:#bbb}.kraj:hover{stroke-width:3;stroke:#111}.kraj.on{stroke-width:2.5;stroke:#111}
+.kraj.zero:hover{stroke:#888}
+.outline{fill:none;stroke:#111;stroke-width:2.2;vector-effect:non-scaling-stroke;pointer-events:none}
+.city{pointer-events:none}.city circle{fill:#111}.city text{font-size:15px;fill:#333;paint-order:stroke;stroke:#fff;stroke-width:3px}
+.tip{position:absolute;pointer-events:none;background:#fff;border:1px solid #111;border-radius:8px;padding:4px 9px;font-size:.85rem;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.1);z-index:3}
+.tip span{display:block;color:var(--muted);font-size:.78rem}
+@media (max-width:600px){.map{padding:6px;margin-top:12px}.city text{font-size:30px;stroke-width:5px}.city circle{r:7}}

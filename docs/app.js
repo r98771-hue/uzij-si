@@ -60,7 +60,7 @@ function featured(list){// příznak featured / zdroj "TOP akce", jinak nejbliž
   for(const e of f.concat(c)){if(pick.length>=4)break;if(pick.includes(e))continue;
     if(!f.includes(e)&&seen.has(e.category))continue;pick.push(e);seen.add(e.category)}
   return pick}
-function render(){
+function render(){if(typeof MAP!=="undefined"&&$("#map svg"))syncMap();
   const g=GROUPS.find(x=>x[0]===st.group);document.body.dataset.group=st.group;
   const[a,b]=range();const q=norm(st.q.trim());
   const inReg=DATA.events.filter(e=>e.region===st.region);
@@ -97,6 +97,24 @@ function stripHl(){const t=today(),lim=addDays(t,60);
     return c.find(e=>e.featured||/TOP akce/.test(e.source_categories||""))||c[0]};
   $("#hl").innerHTML=[["kultura","🎭 Kultura"],["sport","⚽ Sport"]].map(([g,l])=>{const e=pick(g);
     return e?`<a class="h-${g}" href="${esc(e.url)}" target="_blank" rel="noopener"><span>${l} · ${dayLabel(e.date_from)}${e.time?" · "+esc(e.time):""}</span><b>${esc(e.name)}</b><small>📍 ${esc(e.place?e.place.split(",")[0]:e.city)}</small></a>`:`<span class="h-${g} none"><span>${l}</span>zatím nic nového</span>`}).join("")}
+const MAP_SHOW_COUNT=true; // false = tooltip bez počtu akcí
+const MAP_DEFAULT="jihomoravsky";
+function drawMap(){const el=$("#map");
+  el.innerHTML=`<svg viewBox="0 0 ${MAP.w} ${MAP.h}" role="img" aria-label="Mapa krajů ČR">`+
+   REGIONS.map(([k,l])=>`<path class="kraj" data-k="${k}" d="${MAP.kraje[k]}"><title>${l}</title></path>`).join("")+
+   `<path class="outline" d="${MAP.outline}"/>`+
+   MAP.cities.map(([n,x,y,l])=>`<g class="city"><circle cx="${x}" cy="${y}" r="4"/><text x="${l?x-8:x+8}" y="${y+5}"${l?' text-anchor="end"':""}>${n}</text></g>`).join("")+`</svg>`;
+  const tip=$("#tip");
+  el.onmouseover=e=>{const p=e.target.closest(".kraj");if(p&&p.nextElementSibling&&!p.nextElementSibling.classList.contains("outline"))p.parentNode.insertBefore(p,p.parentNode.querySelector(".outline"))};
+  el.onmousemove=e=>{const p=e.target.closest(".kraj");if(!p){tip.hidden=true;return}
+    const k=p.dataset.k,n=DATA.events.filter(x=>x.region===k&&x.date_to>=today()).length,r=el.getBoundingClientRect();
+    tip.innerHTML=`<b>${REGIONS.find(x=>x[0]===k)[1]}</b>${MAP_SHOW_COUNT?`<span>${n?n+" "+(n===1?"akce":n<5?"akce":"akcí"):"zatím bez akcí"}</span>`:""}`;
+    tip.hidden=false;tip.style.left=(e.clientX-r.left+14)+"px";tip.style.top=(e.clientY-r.top+14)+"px"};
+  el.onmouseleave=()=>tip.hidden=true;
+  el.onclick=e=>{const p=e.target.closest(".kraj");if(!p)return;const k=p.dataset.k;
+    st.region=(k===st.region&&k!==MAP_DEFAULT)?MAP_DEFAULT:k;$("#region").value=st.region;st.city="";st.shown=48;render()}}
+function syncMap(){document.querySelectorAll("#map .kraj").forEach(p=>{const k=p.dataset.k;
+  p.classList.toggle("on",k===st.region);if(k===st.region)p.parentNode.insertBefore(p,p.parentNode.querySelector(".outline"));p.classList.toggle("zero",!DATA.events.some(e=>e.region===k&&e.date_to>=today()))})}
 async function init(){strip();
   const sel=$("#region");sel.innerHTML=REGIONS.map(([v,l])=>`<option value="${v}">${l}</option>`).join("");
   sel.value=st.region;sel.onchange=()=>{st.region=sel.value;st.city="";st.shown=48;render()};
@@ -107,5 +125,5 @@ async function init(){strip();
   DATA.events.sort((x,y)=>x.date_from.localeCompare(y.date_from)||(x.time||"").localeCompare(y.time||""));
   $("#sources").innerHTML=Object.values(DATA.sources).map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a> – licence <a href="${esc(s.license_url)}" target="_blank" rel="noopener">${esc(s.license)}</a>${s.fetched_at?`, staženo ${new Date(s.fetched_at).toLocaleString("cs-CZ",{timeZone:"Europe/Prague"})}`:""}${s.status==="stale"?" (poslední aktualizace selhala, zobrazujeme starší data)":""}</li>`).join("");
   $("#gen").textContent=DATA.generated_at?`Data vygenerována ${new Date(DATA.generated_at).toLocaleString("cs-CZ",{timeZone:"Europe/Prague"})}.`:"";
-  stripHl();render()}
+  stripHl();drawMap();render()}
 init();
