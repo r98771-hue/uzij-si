@@ -84,3 +84,9 @@ body{background:var(--bg)}
 /* těsnější mezera záložky → mapa */
 header{padding-bottom:12px}.map{margin-top:10px;padding:6px 14px 12px}
 @media (max-width:600px){header{padding-bottom:10px}.map{margin-top:8px;padding:4px 6px 6px}}
+/* kompaktní hlavička */
+header{padding-top:8px}h1{line-height:1.05}.tag{margin:0 0 10px;font-size:.95rem}
+.search{margin-bottom:8px}.search input{padding:11px 16px}.quick{margin-bottom:10px}
+.tab{padding:9px 20px}
+@media (max-width:600px){header{padding-top:6px}.tag{margin-bottom:8px}}
+@media (min-width:601px){.map svg{max-height:max(330px,min(520px,calc(100vh - 330px)))}}
