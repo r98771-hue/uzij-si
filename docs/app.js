@@ -96,7 +96,7 @@ function stripHl(){const t=today(),lim=addDays(t,60);
   const pick=g=>{const c=DATA.events.filter(e=>GROUP_OF(e.category)===g&&e.date_from>=t&&e.date_from<=lim&&days(e.date_from,e.date_to)<=7);
     return c.find(e=>e.featured||/TOP akce/.test(e.source_categories||""))||c[0]};
   $("#hl").innerHTML=[["kultura","🎭 Kultura"],["sport","⚽ Sport"]].map(([g,l])=>{const e=pick(g);
-    return e?`<a class="h-${g}" href="${esc(e.url)}" target="_blank" rel="noopener"><span>${l} · ${dayLabel(e.date_from)}${e.time?" · "+esc(e.time):""}</span><b>${esc(e.name)}</b><small>📍 ${esc(e.place?e.place.split(",")[0]:e.city)}</small></a>`:`<span class="h-${g} none"><span>${l}</span>zatím nic nového</span>`}).join("")}
+    return e?`<a class="h-${g}" href="${esc(e.url)}" target="_blank" rel="noopener"><span>${l} · ${dayLabel(e.date_from)}${e.time?" · "+esc(e.time):""}</span><b>${esc(e.name)}</b></a>`:`<span class="h-${g} none"><span>${l}</span>zatím nic nového</span>`}).join("")}
 const MAP_SHOW_COUNT=true; // false = tooltip bez počtu akcí
 const MAP_DEFAULT="jihomoravsky";
 function drawMap(){const el=$("#map");
