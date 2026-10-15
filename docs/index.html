@@ -15,6 +15,8 @@
 <header>
   <h1>Užij<span>.si</span></h1>
   <p class="tag">Kam vyrazit – veřejné akce podle krajů</p>
+  <div class="search"><input id="q" type="search" placeholder="Hledat akci, místo nebo žánr…" aria-label="Hledat"></div>
+  <div class="chips quick" id="quick" aria-label="Rychlé filtry"></div>
   <nav class="tabs" id="groups" aria-label="Hlavní sekce"></nav>
 </header>
 <main>
@@ -22,10 +24,17 @@
     <label>Kraj
       <select id="region"></select>
     </label>
+    <label id="cityw" hidden>Město
+      <select id="city"></select>
+    </label>
     <div class="chips sub" id="cats" aria-label="Podkategorie"></div>
     <div class="chips" id="dates" aria-label="Kdy"></div>
-    <input id="q" type="search" placeholder="Hledat akci nebo místo…">
   </section>
+  <section id="tops" class="tops" hidden>
+    <h2>Nejvýraznější akce</h2>
+    <ul id="toplist" class="list"></ul>
+  </section>
+  <h2 class="cal-h">Kalendář akcí</h2>
   <p id="info" class="info"></p>
   <ul id="list" class="list"></ul>
   <button id="more" hidden>Zobrazit další</button>
