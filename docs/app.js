@@ -91,13 +91,12 @@ const MES=["ledna","února","března","dubna","května","června","července","s
 function strip(){const t=today(),[y,m,d]=t.split("-").map(Number),x=new Date(t+"T12:00:00Z");
   const z=addDays(t,1).split("-").map(Number),sv=statniSvatek(y,m,d),jm=jmeno(m,d),jz=jmeno(z[1],z[2]);
   $("#today").innerHTML=`<b>${DOW[x.getUTCDay()]} ${d}. ${MES[m-1]} ${y}</b>`+
-   (jm?`<span>Svátek má <b>${esc(jm)}</b></span>`:"")+(sv?`<span class="hol">🇨🇿 ${esc(sv)}</span>`:"")+
-   (jz?`<small>zítra ${esc(jz)}</small>`:"")}
+   (jm?`<span>Svátek má <b>${esc(jm)}</b></span>`:"")+(sv?`<span class="hol">🇨🇿 ${esc(sv)}</span>`:"")}
 function stripHl(){const t=today(),lim=addDays(t,60);
   const pick=g=>{const c=DATA.events.filter(e=>GROUP_OF(e.category)===g&&e.date_from>=t&&e.date_from<=lim&&days(e.date_from,e.date_to)<=7);
     return c.find(e=>e.featured||/TOP akce/.test(e.source_categories||""))||c[0]};
   $("#hl").innerHTML=[["kultura","🎭 Kultura"],["sport","⚽ Sport"]].map(([g,l])=>{const e=pick(g);
-    return e?`<a class="h-${g}" href="${esc(e.url)}" target="_blank" rel="noopener"><span>${l} · ${dayLabel(e.date_from)}</span>${esc(e.name)}</a>`:`<span class="h-${g} none"><span>${l}</span>zatím nic nového</span>`}).join("")}
+    return e?`<a class="h-${g}" href="${esc(e.url)}" target="_blank" rel="noopener"><span>${l} · ${dayLabel(e.date_from)}${e.time?" · "+esc(e.time):""}</span><b>${esc(e.name)}</b><small>📍 ${esc(e.place?e.place.split(",")[0]:e.city)}</small></a>`:`<span class="h-${g} none"><span>${l}</span>zatím nic nového</span>`}).join("")}
 async function init(){strip();
   const sel=$("#region");sel.innerHTML=REGIONS.map(([v,l])=>`<option value="${v}">${l}</option>`).join("");
   sel.value=st.region;sel.onchange=()=>{st.region=sel.value;st.city="";st.shown=48;render()};
