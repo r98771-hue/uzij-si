@@ -3,7 +3,7 @@ const GROUPS=[["vse","Vše","✨",null],["sport","Sport","⚽",["Sport"]],["kult
 const ICON={"Sport":"⚽","Kino":"🎬","Divadlo":"🎭","Výstavy a galerie":"🖼️","Koncerty":"🎵","Ostatní":"📌"};
 const GROUP_OF=c=>c==="Sport"?"sport":["Kino","Divadlo","Výstavy a galerie","Koncerty"].includes(c)?"kultura":"ostatni";
 // Rychlé filtry: buď kategorie (napojená na záložky), nebo klíčové slovo v rámci Sportu
-const QUICK=[["Koncerty","🎵 Koncerty","kultura","Koncerty"],["Divadlo","🎭 Divadlo","kultura","Divadlo"],["Výstavy a galerie","🖼️ Výstavy","kultura","Výstavy a galerie"],["Kino","🎬 Kino","kultura","Kino"],["hokej","🏒 Hokej","sport",null,/hokej/i],["fotbal","⚽ Fotbal","sport",null,/fotbal|futsal/i],["rodiny","👨‍👩‍👧 Pro rodiny",null,null,/pro rodiny/i]];
+const QUICK=[["Koncerty","🎵 Koncerty","kultura","Koncerty"],["Divadlo","🎭 Divadlo","kultura","Divadlo"],["Výstavy a galerie","🖼️ Výstavy","kultura","Výstavy a galerie"],["hokej","🏒 Hokej","sport",null,/hokej/i],["fotbal","⚽ Fotbal","sport",null,/fotbal|futsal/i],["rodiny","👨‍👩‍👧 Pro rodiny",null,null,/pro rodiny/i]];
 const DATES=[["dnes","Dnes"],["vikend","Tento víkend"],["tyden","Tento týden"],["mesic","30 dní"],["vse","Kdykoli"]];
 const MON=["led","úno","bře","dub","kvě","čvn","čvc","srp","zář","říj","lis","pro"];
 const DOW=["neděle","pondělí","úterý","středa","čtvrtek","pátek","sobota"];
