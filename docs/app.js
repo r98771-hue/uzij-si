@@ -7,7 +7,7 @@ const QUICK=[["Koncerty","🎵 Koncerty","kultura","Koncerty"],["Divadlo","🎭 
 const DATES=[["dnes","Dnes"],["vikend","Tento víkend"],["tyden","Tento týden"],["mesic","30 dní"],["vse","Kdykoli"]];
 const MON=["led","úno","bře","dub","kvě","čvn","čvc","srp","zář","říj","lis","pro"];
 const DOW=["neděle","pondělí","úterý","středa","čtvrtek","pátek","sobota"];
-const st={region:"jihomoravsky",city:"",group:"vse",cat:"Vše",quick:"",date:"vse",q:"",shown:48};
+const st={region:"praha",city:"",group:"vse",cat:"Vše",quick:"",date:"vse",q:"",shown:48};
 let DATA={events:[],sources:{}};
 const $=s=>document.querySelector(s);
 const iso=d=>d.toLocaleDateString("sv-SE",{timeZone:"Europe/Prague"});
@@ -98,7 +98,7 @@ function stripHl(){const t=today(),lim=addDays(t,60);
   $("#hl").innerHTML=[["kultura","🎭 Kultura"],["sport","⚽ Sport"]].map(([g,l])=>{const e=pick(g);
     return e?`<a class="h-${g}" href="${esc(e.url)}" target="_blank" rel="noopener"><span>${l} · ${dayLabel(e.date_from)}${e.time?" · "+esc(e.time):""}</span><b>${esc(e.name)}</b></a>`:`<span class="h-${g} none"><span>${l}</span>zatím nic nového</span>`}).join("")}
 const MAP_SHOW_COUNT=true; // false = tooltip bez počtu akcí
-const MAP_DEFAULT="jihomoravsky";
+const MAP_DEFAULT="praha";
 function drawMap(){const el=$("#map");
   el.innerHTML=`<svg viewBox="0 0 ${MAP.w} ${MAP.h}" role="img" aria-label="Mapa krajů ČR">`+
    REGIONS.map(([k,l])=>`<path class="kraj" data-k="${k}" d="${MAP.kraje[k]}"><title>${l}</title></path>`).join("")+
