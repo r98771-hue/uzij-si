@@ -41,7 +41,7 @@ function card(e,big){const s=DATA.sources[e.source]||{};const gk=GROUP_OF(e.cate
    <a class="t" href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.name)}</a>
    <div class="meta">🗓 ${when(e)}${e.time?" · "+esc(e.time):""}</div>
    ${[e.place,e.city].filter(Boolean).length?`<div class="meta">📍 ${esc([e.place,e.city].filter(Boolean).join(", "))}</div>`:""}
-   <div class="meta src">Zdroj: <a href="${esc(s.url||e.url)}" target="_blank" rel="noopener">${esc(s.short_name||s.name||e.source)}</a> · <a href="${esc(e.url)}" target="_blank" rel="noopener">u pořadatele</a></div></div></div></li>`}
+   <div class="meta src">Zdroj: <a href="${esc(e.organizer_url||s.url||e.url)}" target="_blank" rel="noopener">${esc(e.organizer||s.short_name||s.name||e.source)}</a> · <a href="${esc(e.url)}" target="_blank" rel="noopener">u pořadatele</a></div></div></div></li>`}
 function dayLabel(d){const t=today();if(d===t)return"Dnes";if(d===addDays(t,1))return"Zítra";
   const x=new Date(d+"T12:00:00Z");return`${DOW[x.getUTCDay()]} ${x.getUTCDate()}. ${x.getUTCMonth()+1}.`}
 function calendar(list){// jednorázové akce podle dne, dlouhodobé (probíhající) zvlášť na konci
