@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-16T03:33:56+02:00",
+ "generated_at": "2026-10-16T10:09:23+02:00",
  "sources": {
   "brno": {
    "short_name": "Statutární město Brno",
@@ -8,7 +8,7 @@
    "license": "CC BY 4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/deed.cs",
    "status": "ok",
-   "fetched_at": "2026-10-16T03:33:48+02:00",
+   "fetched_at": "2026-10-16T10:09:17+02:00",
    "count": 503
   },
   "hokej": {
@@ -18,7 +18,7 @@
    "license": "veřejný rozpis, odkaz na zdroj",
    "license_url": "https://www.hokej.cz/",
    "status": "ok",
-   "fetched_at": "2026-10-16T03:33:54+02:00",
+   "fetched_at": "2026-10-16T10:09:22+02:00",
    "count": 247
   },
   "fotbal": {
@@ -28,7 +28,7 @@
    "license": "veřejný rozpis, odkaz na zdroj",
    "license_url": "https://www.chanceliga.cz/",
    "status": "ok",
-   "fetched_at": "2026-10-16T03:33:56+02:00",
+   "fetched_at": "2026-10-16T10:09:23+02:00",
    "count": 64
   },
   "poradatele": {
@@ -38,7 +38,7 @@
    "license": "fakta o akci, odkaz na pořadatele",
    "license_url": "https://github.com/r98771-hue/uzij-si/tree/main/scripts/curated",
    "status": "ok",
-   "fetched_at": "2026-10-16T03:33:56+02:00",
+   "fetched_at": "2026-10-16T10:09:23+02:00",
    "count": 74
   }
  },
