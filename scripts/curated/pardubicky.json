@@ -1,0 +1,18 @@
+[
+ {
+  "id": "por-pardubicky-postriziny-premiera-2026-10-17",
+  "name": "Postřižiny (premiéra)",
+  "date_from": "2026-10-17",
+  "date_to": "2026-10-18",
+  "time": "19:00",
+  "place": "Městské divadlo",
+  "city": "Pardubice",
+  "region": "pardubicky",
+  "category": "Divadlo",
+  "source_categories": "Oficiální program pořadatele",
+  "url": "https://www.vcd.cz/program/",
+  "organizer": "Východočeské divadlo Pardubice",
+  "organizer_url": "https://www.vcd.cz/",
+  "source": "poradatele"
+ }
+]

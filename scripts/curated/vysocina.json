@@ -1,0 +1,34 @@
+[
+ {
+  "id": "por-vysocina-bila-velryba-premiera-2026-10-17",
+  "name": "Bílá velryba (premiéra)",
+  "date_from": "2026-10-17",
+  "date_to": "2026-10-17",
+  "time": "19:00",
+  "place": "Horácké divadlo – Velká scéna",
+  "city": "Jihlava",
+  "region": "vysocina",
+  "category": "Divadlo",
+  "source_categories": "Oficiální program pořadatele",
+  "url": "https://www.hdj.cz/inscenace/633-bila-velryba",
+  "organizer": "Horácké divadlo Jihlava",
+  "organizer_url": "https://www.hdj.cz/",
+  "source": "poradatele"
+ },
+ {
+  "id": "por-vysocina-bila-velryba-2026-10-21",
+  "name": "Bílá velryba",
+  "date_from": "2026-10-21",
+  "date_to": "2026-10-21",
+  "time": "19:00",
+  "place": "Horácké divadlo – Velká scéna",
+  "city": "Jihlava",
+  "region": "vysocina",
+  "category": "Divadlo",
+  "source_categories": "Oficiální program pořadatele",
+  "url": "https://www.hdj.cz/inscenace/633-bila-velryba",
+  "organizer": "Horácké divadlo Jihlava",
+  "organizer_url": "https://www.hdj.cz/",
+  "source": "poradatele"
+ }
+]
