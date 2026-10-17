@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-16T20:18:10+02:00",
+ "generated_at": "2026-10-17T09:46:19+02:00",
  "sources": {
   "brno": {
    "short_name": "Statutární město Brno",
@@ -8,8 +8,8 @@
    "license": "CC BY 4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/deed.cs",
    "status": "ok",
-   "fetched_at": "2026-10-16T20:18:07+02:00",
-   "count": 519
+   "fetched_at": "2026-10-17T09:46:16+02:00",
+   "count": 509
   },
   "hokej": {
    "short_name": "hokej.cz",
@@ -20,7 +20,7 @@
    "status": "stale",
    "fetched_at": "2026-10-16T10:09:22+02:00",
    "error": "HTTP Error 403: Forbidden",
-   "count": 247
+   "count": 242
   },
   "fotbal": {
    "short_name": "chanceliga.cz",
@@ -29,7 +29,7 @@
    "license": "veřejný rozpis, odkaz na zdroj",
    "license_url": "https://www.chanceliga.cz/",
    "status": "ok",
-   "fetched_at": "2026-10-16T20:18:10+02:00",
+   "fetched_at": "2026-10-17T09:46:19+02:00",
    "count": 63
   },
   "poradatele": {
@@ -39,8 +39,8 @@
    "license": "fakta o akci, odkaz na pořadatele",
    "license_url": "https://github.com/r98771-hue/uzij-si/tree/main/scripts/curated",
    "status": "ok",
-   "fetched_at": "2026-10-16T20:18:10+02:00",
-   "count": 74
+   "fetched_at": "2026-10-17T09:46:19+02:00",
+   "count": 72
   }
  },
  "events": [
@@ -689,20 +689,6 @@
    "source": "brno"
   },
   {
-   "id": "brno-323787",
-   "name": "výstava obrazů CHiMÉRA II",
-   "date_from": "2026-10-08",
-   "date_to": "2026-10-16",
-   "time": null,
-   "place": "Dominikánské nám. 196/1, 601 67 Brno-střed, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Výstavy a galerie",
-   "source_categories": "Výstava",
-   "url": "https://www.gotobrno.cz/akce/vystava-obrazu-chimera-ii/",
-   "source": "brno"
-  },
-  {
    "id": "brno-324305",
    "name": "Hudební večery",
    "date_from": "2026-10-13",
@@ -815,132 +801,6 @@
    "source": "brno"
   },
   {
-   "id": "brno-322365",
-   "name": "Burlesque des Péchés: Fetish Cabaret",
-   "date_from": "2026-10-16",
-   "date_to": "2026-10-16",
-   "time": null,
-   "place": "Dominikánské nám. 656/2, 602 00 Brno-střed, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo, Hudba, Noční život, Tanec",
-   "url": "https://www.gotobrno.cz/akce/burlesque-des-peches-fetish-cabaret-4/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-323536",
-   "name": "DEMOS Ensemble: Raný romantismus | Komorní koncert a moravské víno",
-   "date_from": "2026-10-16",
-   "date_to": "2026-10-16",
-   "time": null,
-   "place": "Dominikánská 264/2, 602 00 Brno-střed, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Gastronomické, Hudba",
-   "url": "https://www.gotobrno.cz/akce/demos-ensemble-rany-romantismus-komorni-koncert-a-moravske-vino/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-314343",
-   "name": "GROOVE BRNO: Prago Union",
-   "date_from": "2026-10-16",
-   "date_to": "2026-10-16",
-   "time": null,
-   "place": "Poštovská 450/6, Brno-město, 602 00 Brno-Brno-střed, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba",
-   "url": "https://www.gotobrno.cz/akce/groove-brno-prago-union/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-311180",
-   "name": "Groove Brno: Prago Union & live band (CZ)",
-   "date_from": "2026-10-16",
-   "date_to": "2026-10-16",
-   "time": null,
-   "place": "Poštovská 450/6, Brno-město, 602 00 Brno-Brno-střed, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba, Noční život",
-   "url": "https://www.gotobrno.cz/akce/groove-brno-prago-union-live-band-cz/",
-   "source": "brno"
-  },
-  {
-   "id": "hokej-2928330",
-   "name": "HC Oceláři Třinec – BK Mladá Boleslav (hokej, Tipsport extraliga)",
-   "date_from": "2026-10-16",
-   "date_to": "2026-10-16",
-   "time": "17:00",
-   "place": "",
-   "city": "Třinec",
-   "region": "moravskoslezsky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Tipsport extraliga",
-   "url": "https://www.hokej.cz/zapas/2928330",
-   "source": "hokej"
-  },
-  {
-   "id": "hokej-2928325",
-   "name": "HC Olomouc – BYD Energie Karlovy Vary (hokej, Tipsport extraliga)",
-   "date_from": "2026-10-16",
-   "date_to": "2026-10-16",
-   "time": "18:00",
-   "place": "",
-   "city": "Olomouc",
-   "region": "olomoucky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Tipsport extraliga",
-   "url": "https://www.hokej.cz/zapas/2928325",
-   "source": "hokej"
-  },
-  {
-   "id": "hokej-2928327",
-   "name": "HC VÍTKOVICE RIDERA – Banes Motor Č. Budějovice (hokej, Tipsport extraliga)",
-   "date_from": "2026-10-16",
-   "date_to": "2026-10-16",
-   "time": "17:30",
-   "place": "",
-   "city": "Ostrava",
-   "region": "moravskoslezsky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Tipsport extraliga",
-   "url": "https://www.hokej.cz/zapas/2928327",
-   "source": "hokej"
-  },
-  {
-   "id": "hokej-2928326",
-   "name": "HC Škoda Plzeň – HC Sparta Praha (hokej, Tipsport extraliga)",
-   "date_from": "2026-10-16",
-   "date_to": "2026-10-16",
-   "time": "17:30",
-   "place": "",
-   "city": "Plzeň",
-   "region": "plzensky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Tipsport extraliga",
-   "url": "https://www.hokej.cz/zapas/2928326",
-   "source": "hokej"
-  },
-  {
-   "id": "brno-310713",
-   "name": "HVOB live (AT)",
-   "date_from": "2026-10-16",
-   "date_to": "2026-10-16",
-   "time": null,
-   "place": "Štefánikova 95/24, Veveří, Brno, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba",
-   "url": "https://www.gotobrno.cz/akce/hvob-live-at/",
-   "source": "brno"
-  },
-  {
    "id": "brno-324512",
    "name": "Havlova architektura",
    "date_from": "2026-10-16",
@@ -952,108 +812,6 @@
    "category": "Výstavy a galerie",
    "source_categories": "Výstava",
    "url": "https://www.gotobrno.cz/akce/havlova-architektura-2/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-318880",
-   "name": "LAKESIDE X + THE BRUTE (CH)",
-   "date_from": "2026-10-16",
-   "date_to": "2026-10-16",
-   "time": null,
-   "place": "Sukova 4, Brno-město, Brno, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba",
-   "url": "https://www.gotobrno.cz/akce/lakeside-x-the-brute-ch/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-315271",
-   "name": "Lovci bobrů",
-   "date_from": "2026-10-16",
-   "date_to": "2026-10-16",
-   "time": null,
-   "place": "Žerotínovo náměstí 6",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo",
-   "url": "https://www.gotobrno.cz/akce/lovci-bobru/",
-   "source": "brno"
-  },
-  {
-   "id": "por-zlinsky-pretty-woman-muzikal-2026-10-16",
-   "name": "Pretty Woman – muzikál",
-   "date_from": "2026-10-16",
-   "date_to": "2026-10-16",
-   "time": "19:00",
-   "place": "Městské divadlo Zlín – Velký sál",
-   "city": "Zlín",
-   "region": "zlinsky",
-   "category": "Divadlo",
-   "source_categories": "Oficiální program pořadatele",
-   "url": "https://divadlozlin.cz/program/",
-   "organizer": "Městské divadlo Zlín",
-   "organizer_url": "https://divadlozlin.cz/",
-   "source": "poradatele"
-  },
-  {
-   "id": "por-liberecky-rozbite-zrcadlo-2026-10-16",
-   "name": "Rozbité zrcadlo",
-   "date_from": "2026-10-16",
-   "date_to": "2026-10-16",
-   "time": "19:00",
-   "place": "Divadlo F. X. Šaldy",
-   "city": "Liberec",
-   "region": "liberecky",
-   "category": "Divadlo",
-   "source_categories": "Oficiální program pořadatele",
-   "url": "https://www.saldovo-divadlo.cz/program/detail-predstaveni/r/5435/rozbite-zrcadlo",
-   "organizer": "Divadlo F. X. Šaldy Liberec",
-   "organizer_url": "https://www.saldovo-divadlo.cz/",
-   "source": "poradatele"
-  },
-  {
-   "id": "hokej-2928331",
-   "name": "Rytíři Kladno – HC Kometa Brno (hokej, Tipsport extraliga)",
-   "date_from": "2026-10-16",
-   "date_to": "2026-10-16",
-   "time": "18:00",
-   "place": "",
-   "city": "Kladno",
-   "region": "stredocesky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Tipsport extraliga",
-   "url": "https://www.hokej.cz/zapas/2928331",
-   "source": "hokej"
-  },
-  {
-   "id": "brno-317603",
-   "name": "Vítr z plachet",
-   "date_from": "2026-10-16",
-   "date_to": "2026-10-16",
-   "time": null,
-   "place": "Václavská 10, 603 00 Brno-střed, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo, Pro rodiny",
-   "url": "https://www.gotobrno.cz/akce/vitr-z-plachet-5/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-323543",
-   "name": "Wine & Book v Martinusu",
-   "date_from": "2026-10-16",
-   "date_to": "2026-10-16",
-   "time": null,
-   "place": "Mečová 695/2, 602 00 Brno-střed-Brno-město, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Gastronomické, Literatura",
-   "url": "https://www.gotobrno.cz/akce/wine-book-v-martinusu/",
    "source": "brno"
   },
   {
