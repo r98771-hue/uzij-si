@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T11:53:31+02:00",
+ "generated_at": "2026-10-18T12:26:26+02:00",
  "sources": {
   "brno": {
    "short_name": "Statutární město Brno",
@@ -8,7 +8,7 @@
    "license": "CC BY 4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/deed.cs",
    "status": "ok",
-   "fetched_at": "2026-10-18T11:53:28+02:00",
+   "fetched_at": "2026-10-18T12:26:21+02:00",
    "count": 497
   },
   "hokej": {
@@ -17,10 +17,9 @@
    "url": "https://www.hokej.cz/tipsport-extraliga/zapasy",
    "license": "veřejný rozpis, odkaz na zdroj",
    "license_url": "https://www.hokej.cz/",
-   "status": "stale",
-   "fetched_at": "2026-10-16T10:09:22+02:00",
-   "error": "HTTP Error 403: Forbidden",
-   "count": 235
+   "status": "ok",
+   "fetched_at": "2026-10-18T12:26:25+02:00",
+   "count": 243
   },
   "fotbal": {
    "short_name": "chanceliga.cz",
@@ -29,7 +28,7 @@
    "license": "veřejný rozpis, odkaz na zdroj",
    "license_url": "https://www.chanceliga.cz/",
    "status": "ok",
-   "fetched_at": "2026-10-18T11:53:31+02:00",
+   "fetched_at": "2026-10-18T12:26:26+02:00",
    "count": 59
   },
   "poradatele": {
@@ -39,7 +38,7 @@
    "license": "fakta o akci, odkaz na pořadatele",
    "license_url": "https://github.com/r98771-hue/uzij-si/tree/main/scripts/curated",
    "status": "ok",
-   "fetched_at": "2026-10-18T11:53:31+02:00",
+   "fetched_at": "2026-10-18T12:26:26+02:00",
    "count": 63
   }
  },
@@ -9189,6 +9188,20 @@
    "source": "brno"
   },
   {
+   "id": "hokej-2930980",
+   "name": "HC Frýdek-Místek – SC Retia Kolín (hokej, Maxa liga)",
+   "date_from": "2026-11-30",
+   "date_to": "2026-11-30",
+   "time": "17:00",
+   "place": "",
+   "city": "Frýdek-Místek",
+   "region": "moravskoslezsky",
+   "category": "Sport",
+   "source_categories": "Sport, Hokej, Maxa liga",
+   "url": "https://www.hokej.cz/zapas/2930980",
+   "source": "hokej"
+  },
+  {
    "id": "brno-325129",
    "name": "Náš priateľ René",
    "date_from": "2026-11-30",
@@ -9270,20 +9283,6 @@
    "category": "Sport",
    "source_categories": "Sport, Hokej, Maxa liga",
    "url": "https://www.hokej.cz/zapas/2930976",
-   "source": "hokej"
-  },
-  {
-   "id": "hokej-2930980",
-   "name": "HC Frýdek-Místek – SC Retia Kolín (hokej, Maxa liga)",
-   "date_from": "2026-12-02",
-   "date_to": "2026-12-02",
-   "time": "17:00",
-   "place": "",
-   "city": "Frýdek-Místek",
-   "region": "moravskoslezsky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Maxa liga",
-   "url": "https://www.hokej.cz/zapas/2930980",
    "source": "hokej"
   },
   {
@@ -10739,6 +10738,48 @@
    "source": "hokej"
   },
   {
+   "id": "hokej-2928442",
+   "name": "BYD Energie Karlovy Vary – HC Oceláři Třinec (hokej, Tipsport extraliga)",
+   "date_from": "2026-12-17",
+   "date_to": "2026-12-17",
+   "time": "18:00",
+   "place": "",
+   "city": "Karlovy Vary",
+   "region": "karlovarsky",
+   "category": "Sport",
+   "source_categories": "Sport, Hokej, Tipsport extraliga",
+   "url": "https://www.hokej.cz/zapas/2928442",
+   "source": "hokej"
+  },
+  {
+   "id": "hokej-2931008",
+   "name": "HC Frýdek-Místek – HC Stadion Litoměřice (hokej, Maxa liga)",
+   "date_from": "2026-12-17",
+   "date_to": "2026-12-17",
+   "time": "10:00",
+   "place": "",
+   "city": "Frýdek-Místek",
+   "region": "moravskoslezsky",
+   "category": "Sport",
+   "source_categories": "Sport, Hokej, Maxa liga",
+   "url": "https://www.hokej.cz/zapas/2931008",
+   "source": "hokej"
+  },
+  {
+   "id": "hokej-2928441",
+   "name": "HC VÍTKOVICE RIDERA – Rytíři Kladno (hokej, Tipsport extraliga)",
+   "date_from": "2026-12-17",
+   "date_to": "2026-12-17",
+   "time": "17:30",
+   "place": "",
+   "city": "Ostrava",
+   "region": "moravskoslezsky",
+   "category": "Sport",
+   "source_categories": "Sport, Hokej, Tipsport extraliga",
+   "url": "https://www.hokej.cz/zapas/2928441",
+   "source": "hokej"
+  },
+  {
    "id": "brno-316753",
    "name": "PRASVĚTLO",
    "date_from": "2026-12-17",
@@ -10767,6 +10808,76 @@
    "organizer": "Moravská filharmonie Olomouc",
    "organizer_url": "https://www.mfo.cz/",
    "source": "poradatele"
+  },
+  {
+   "id": "hokej-2928438",
+   "name": "Banes Motor Č. Budějovice – BK Mladá Boleslav (hokej, Tipsport extraliga)",
+   "date_from": "2026-12-18",
+   "date_to": "2026-12-18",
+   "time": "17:30",
+   "place": "",
+   "city": "České Budějovice",
+   "region": "jihocesky",
+   "category": "Sport",
+   "source_categories": "Sport, Hokej, Tipsport extraliga",
+   "url": "https://www.hokej.cz/zapas/2928438",
+   "source": "hokej"
+  },
+  {
+   "id": "hokej-2928437",
+   "name": "HC Dynamo Pardubice – Mountfield HK (hokej, Tipsport extraliga)",
+   "date_from": "2026-12-18",
+   "date_to": "2026-12-18",
+   "time": "18:00",
+   "place": "",
+   "city": "Pardubice",
+   "region": "pardubicky",
+   "category": "Sport",
+   "source_categories": "Sport, Hokej, Tipsport extraliga",
+   "url": "https://www.hokej.cz/zapas/2928437",
+   "source": "hokej"
+  },
+  {
+   "id": "hokej-2928440",
+   "name": "HC Kometa Brno – HC VERVA Litvínov (hokej, Tipsport extraliga)",
+   "date_from": "2026-12-18",
+   "date_to": "2026-12-18",
+   "time": "18:00",
+   "place": "",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Sport",
+   "source_categories": "Sport, Hokej, Tipsport extraliga",
+   "url": "https://www.hokej.cz/zapas/2928440",
+   "source": "hokej"
+  },
+  {
+   "id": "hokej-2928439",
+   "name": "HC Olomouc – HC Sparta Praha (hokej, Tipsport extraliga)",
+   "date_from": "2026-12-18",
+   "date_to": "2026-12-18",
+   "time": "18:00",
+   "place": "",
+   "city": "Olomouc",
+   "region": "olomoucky",
+   "category": "Sport",
+   "source_categories": "Sport, Hokej, Tipsport extraliga",
+   "url": "https://www.hokej.cz/zapas/2928439",
+   "source": "hokej"
+  },
+  {
+   "id": "hokej-2928443",
+   "name": "HC Škoda Plzeň – Bílí Tygři Liberec (hokej, Tipsport extraliga)",
+   "date_from": "2026-12-18",
+   "date_to": "2026-12-18",
+   "time": "17:30",
+   "place": "",
+   "city": "Plzeň",
+   "region": "plzensky",
+   "category": "Sport",
+   "source_categories": "Sport, Hokej, Tipsport extraliga",
+   "url": "https://www.hokej.cz/zapas/2928443",
+   "source": "hokej"
   },
   {
    "id": "brno-317151",
