@@ -7,7 +7,7 @@ const QUICK=[["Koncerty","🎵 Koncerty","kultura","Koncerty"],["Divadlo","🎭 
 const DATES=[["dnes","Dnes"],["vikend","Tento víkend"],["tyden","Tento týden"],["mesic","30 dní"],["vse","Kdykoli"]];
 const MON=["led","úno","bře","dub","kvě","čvn","čvc","srp","zář","říj","lis","pro"];
 const DOW=["neděle","pondělí","úterý","středa","čtvrtek","pátek","sobota"];
-const st={region:"praha",city:"",group:"vse",cat:"Vše",quick:"",date:"vse",q:"",shown:48};
+const st={region:"praha",city:"",group:"vse",cat:"Vše",quick:"",date:"vse",q:"",shown:48,full:false};
 let DATA={events:[],sources:{}};
 const $=s=>document.querySelector(s);
 const iso=d=>d.toLocaleDateString("sv-SE",{timeZone:"Europe/Prague"});
@@ -70,7 +70,7 @@ function render(){if(typeof MAP!=="undefined"&&$("#map svg"))syncMap();
   const base=inReg.filter(e=>(!st.city||e.city===st.city)&&e.date_from<=b&&e.date_to>=a&&(!q||q.split(/\s+/).every(w=>hay(e).includes(w))));
   const cnt=k=>k==="vse"?base.length:base.filter(e=>GROUP_OF(e.category)===k).length;
   $("#groups").innerHTML=GROUPS.map(([k,l,i])=>`<button data-v="${k}" class="tab t-${k} ${st.group===k?"on":""}"><span class="ic">${i}</span>${l}<small>${cnt(k)}</small></button>`).join("");
-  $("#groups").onclick=e=>{const t=e.target.closest("button");if(!t)return;st.group=t.dataset.v;st.cat="Vše";st.quick="";st.shown=48;render()};
+  $("#groups").onclick=e=>{const t=e.target.closest("button");if(!t)return;st.group=t.dataset.v;st.cat="Vše";st.quick="";st.full=false;st.shown=48;render()};
   // rychlé filtry nastavují stejný stav jako záložky (group + cat)
   $("#quick").innerHTML=QUICK.map(x=>{const n=base.filter(e=>{const o=st.quick;st.quick=x[0];const r=quickMatch(e);st.quick=o;return r}).length;
     return`<button data-v="${x[0]}" class="${st.quick===x[0]?"on":""}" ${n?"":"disabled"}>${x[1]} <small>${n}</small></button>`}).join("");
@@ -81,11 +81,14 @@ function render(){if(typeof MAP!=="undefined"&&$("#map svg"))syncMap();
   chips($("#dates"),DATES,"date");
   const list=base.filter(e=>(!g[3]||g[3].includes(e.category))&&(st.cat==="Vše"||e.category===st.cat)&&quickMatch(e));
   const rn=REGIONS.find(r=>r[0]===st.region)[1];
-  if(!inReg.length){$("#tops").hidden=true;$("#info").textContent=rn;$("#list").innerHTML=`<li class="empty">${rn}: zatím bez zdrojů, přidáme brzy.</li>`;$("#more").hidden=true;return}
+  if(!inReg.length){$("#tiles").hidden=true;$("#full").hidden=true;$("#calh").textContent="Kalendář akcí";$("#tops").hidden=true;$("#info").textContent=rn;$("#list").innerHTML=`<li class="empty">${rn}: zatím bez zdrojů, přidáme brzy.</li>`;$("#more").hidden=true;return}
   const tops=(!q&&!st.quick&&st.group==="vse")?featured(list):[];
   $("#tops").hidden=!tops.length;$("#toplist").innerHTML=tops.map(e=>card(e,true)).join("");
   $("#info").textContent=`${st.city||rn}: ${list.length} ${list.length===1?"akce":list.length<5&&list.length>0?"akce":"akcí"}${st.q?` pro „${st.q}“`:""}`;
-  if(!list.length){$("#list").innerHTML=`<li class="empty">Pro tento výběr nic nemáme. Zkus jiný den, sekci nebo hledání.</li>`;$("#more").hidden=true;return}
+  if(!list.length){$("#tiles").hidden=true;$("#full").hidden=true;$("#list").innerHTML=`<li class="empty">Pro tento výběr nic nemáme. Zkus jiný den, sekci nebo hledání.</li>`;$("#more").hidden=true;return}
+  const tm=st.group==="vse"&&!q&&!st.quick&&!st.full;
+  $("#calh").textContent=tm?"Nabídka akcí":"Kalendář akcí";$("#tiles").hidden=!tm;$("#full").hidden=!tm;
+  if(tm){$("#tiles").innerHTML=tiles(list);$("#full").textContent=`Zobrazit celý kalendář (${list.length}) →`;$("#list").innerHTML="";$("#more").hidden=true;return}
   const c=calendar(list);$("#list").innerHTML=c.out;$("#more").hidden=!c.more}
 const MES=["ledna","února","března","dubna","května","června","července","srpna","září","října","listopadu","prosince"];
 function strip(){const t=today(),[y,m,d]=t.split("-").map(Number),x=new Date(t+"T12:00:00Z");
@@ -121,6 +124,10 @@ async function init(){strip();
   $("#city").onchange=e=>{st.city=e.target.value;st.shown=48;render()};
   $("#q").oninput=e=>{st.q=e.target.value;st.shown=48;render()};
   $("#more").onclick=()=>{st.shown+=48;render()};
+  const goList=()=>{render();$("#calh").scrollIntoView({behavior:"smooth",block:"start"})};
+  $("#tiles").onclick=e=>{const b=e.target.closest(".tmore");if(!b)return;const c=b.dataset.c;
+    st.group=GROUP_OF(c);st.cat=st.group==="kultura"?c:"Vše";st.quick="";st.shown=48;goList()};
+  $("#full").onclick=()=>{st.full=true;st.shown=48;goList()};
   try{DATA=await (await fetch("data/events.json",{cache:"no-cache"})).json()}catch(e){$("#info").textContent="Data se nepodařilo načíst."}
   DATA.events.sort((x,y)=>x.date_from.localeCompare(y.date_from)||(x.time||"").localeCompare(y.time||""));
   $("#sources").innerHTML=Object.values(DATA.sources).map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a> – licence <a href="${esc(s.license_url)}" target="_blank" rel="noopener">${esc(s.license)}</a>${s.fetched_at?`, staženo ${new Date(s.fetched_at).toLocaleString("cs-CZ",{timeZone:"Europe/Prague"})}`:""}${s.status==="stale"?" (poslední aktualizace selhala, zobrazujeme starší data)":""}</li>`).join("");
