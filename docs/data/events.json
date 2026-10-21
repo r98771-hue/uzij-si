@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T10:30:34+02:00",
+ "generated_at": "2026-10-21T10:33:08+02:00",
  "sources": {
   "brno": {
    "short_name": "Statutární město Brno",
@@ -8,8 +8,8 @@
    "license": "CC BY 4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/deed.cs",
    "status": "ok",
-   "fetched_at": "2026-10-20T10:30:32+02:00",
-   "count": 512
+   "fetched_at": "2026-10-21T10:33:06+02:00",
+   "count": 524
   },
   "hokej": {
    "short_name": "hokej.cz",
@@ -20,7 +20,7 @@
    "status": "stale",
    "fetched_at": "2026-10-18T12:26:25+02:00",
    "error": "HTTP Error 403: Forbidden",
-   "count": 236
+   "count": 234
   },
   "fotbal": {
    "short_name": "chanceliga.cz",
@@ -29,7 +29,7 @@
    "license": "veřejný rozpis, odkaz na zdroj",
    "license_url": "https://www.chanceliga.cz/",
    "status": "ok",
-   "fetched_at": "2026-10-20T10:30:34+02:00",
+   "fetched_at": "2026-10-21T10:33:08+02:00",
    "count": 56
   },
   "poradatele": {
@@ -39,8 +39,8 @@
    "license": "fakta o akci, odkaz na pořadatele",
    "license_url": "https://github.com/r98771-hue/uzij-si/tree/main/scripts/curated",
    "status": "ok",
-   "fetched_at": "2026-10-20T10:30:34+02:00",
-   "count": 59
+   "fetched_at": "2026-10-21T10:33:08+02:00",
+   "count": 56
   }
  },
  "events": [
@@ -330,7 +330,7 @@
    "date_from": "2026-08-15",
    "date_to": "2026-10-25",
    "time": null,
-   "place": "U Dálnice 777, 664 42 Modřice",
+   "place": "U Dálnice 777, 664 42 Brno, Česko",
    "city": "Brno",
    "region": "jihomoravsky",
    "category": "Sport",
@@ -801,219 +801,17 @@
    "source": "brno"
   },
   {
-   "id": "brno-314807",
-   "name": "AutenTICké prohlídky: Vesna a dobročinní Janáčkovi",
-   "date_from": "2026-10-20",
-   "date_to": "2026-10-20",
+   "id": "brno-326319",
+   "name": "Výstava Obrazů: OBRAZY a obrázky (Jaromír Kocourek)",
+   "date_from": "2026-10-19",
+   "date_to": "2026-11-25",
    "time": null,
-   "place": "",
+   "place": "Veveří 3163/111, 616 00 Brno-Brno-Žabovřesky, Česko",
    "city": "Brno",
    "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Komentované prohlídky, Pro rodiny, Veletrhy / vzdělávací",
-   "url": "https://www.gotobrno.cz/akce/autenticke-prohlidky-vesna-a-dobrocinni-janackovi/",
-   "source": "brno"
-  },
-  {
-   "id": "hokej-2928295",
-   "name": "BYD Energie Karlovy Vary – HC Kometa Brno (hokej, Tipsport extraliga)",
-   "date_from": "2026-10-20",
-   "date_to": "2026-10-20",
-   "time": "18:00",
-   "place": "",
-   "city": "Karlovy Vary",
-   "region": "karlovarsky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Tipsport extraliga",
-   "url": "https://www.hokej.cz/zapas/2928295",
-   "source": "hokej"
-  },
-  {
-   "id": "brno-322655",
-   "name": "Beseda v Martinusu: Petra Dvořáková o knihách Rány a Ordinace",
-   "date_from": "2026-10-20",
-   "date_to": "2026-10-20",
-   "time": null,
-   "place": "Mečová 695/2, 602 00 Brno-střed-Brno-město, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Literatura",
-   "url": "https://www.gotobrno.cz/akce/beseda-v-martinusu-petra-dvorakova-o-knihach-rany-a-ordinace/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-324469",
-   "name": "Dialog hudební a taneční tvorby pohledem studentů HAMU a HF JAMU",
-   "date_from": "2026-10-20",
-   "date_to": "2026-10-20",
-   "time": null,
-   "place": "Orlí 19, 602 00 Brno-střed, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Hudba, Tanec",
-   "url": "https://www.gotobrno.cz/akce/dialog-hudebni-a-tanecni-tvorby-pohledem-studentu-hamu-a-hf-jamu/",
-   "source": "brno"
-  },
-  {
-   "id": "hokej-2928354",
-   "name": "HC VÍTKOVICE RIDERA – Bílí Tygři Liberec (hokej, Tipsport extraliga)",
-   "date_from": "2026-10-20",
-   "date_to": "2026-10-20",
-   "time": "17:30",
-   "place": "",
-   "city": "Ostrava",
-   "region": "moravskoslezsky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Tipsport extraliga",
-   "url": "https://www.hokej.cz/zapas/2928354",
-   "source": "hokej"
-  },
-  {
-   "id": "brno-319549",
-   "name": "Historie a odkaz rodiny Stern",
-   "date_from": "2026-10-20",
-   "date_to": "2026-10-20",
-   "time": null,
-   "place": "Hlinky 117/46, 603 00 Brno-střed-Staré Brno, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Veletrhy / vzdělávací",
-   "url": "https://www.gotobrno.cz/akce/historie-a-odkaz-rodiny-stern/",
-   "source": "brno"
-  },
-  {
-   "id": "por-kralovehradecky-hudebni-forum-hk-penderecki-gorecki-kilar-2026-10-20",
-   "name": "Hudební fórum HK: Penderecki • Górecki • Kilar",
-   "date_from": "2026-10-20",
-   "date_to": "2026-10-20",
-   "time": "20:00",
-   "place": "Filharmonie Hradec Králové – Sál Soni Červené",
-   "city": "Hradec Králové",
-   "region": "kralovehradecky",
-   "category": "Koncerty",
-   "source_categories": "Oficiální program pořadatele",
-   "url": "https://www.fhk.cz/123/Kalendar_koncertu/",
-   "organizer": "Filharmonie Hradec Králové",
-   "organizer_url": "https://www.fhk.cz/",
-   "source": "poradatele"
-  },
-  {
-   "id": "brno-323231",
-   "name": "Koncert Starý fóry – křest CD Pouštím uzdu",
-   "date_from": "2026-10-20",
-   "date_to": "2026-10-20",
-   "time": null,
-   "place": "Odbojářská 1127/2, 635 00 Brno-Bystrc, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba",
-   "url": "https://www.gotobrno.cz/akce/koncert-stary-fory-krest-cd-poustim-uzdu/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-323266",
-   "name": "Křest knihy Tam, kde býval Mušov v Knihkupectví Luxor – Barvič",
-   "date_from": "2026-10-20",
-   "date_to": "2026-10-20",
-   "time": null,
-   "place": "Česká 167/13, 602 00 Brno-střed, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Literatura",
-   "url": "https://www.gotobrno.cz/akce/krest-knihy-tam-kde-byval-musov-v-knihkupectvi-luxor-barvic/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-322062",
-   "name": "Literární salón No. 42: Marie Iljašenko – Zvířata přicházejí do města",
-   "date_from": "2026-10-20",
-   "date_to": "2026-10-20",
-   "time": null,
-   "place": "Kobližná 4, Brno, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Literatura",
-   "url": "https://www.gotobrno.cz/akce/literarni-salon-no-42-marie-iljasenko-zvirata-prichazeji-do-mesta/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-317608",
-   "name": "Mariborská hypnóza: Rozžij knihu! pro dospělé",
-   "date_from": "2026-10-20",
-   "date_to": "2026-10-20",
-   "time": null,
-   "place": "Údolní 17, Brno",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo, Literatura",
-   "url": "https://www.gotobrno.cz/akce/mariborska-hypnoza-rozzij-knihu-pro-dospele/",
-   "source": "brno"
-  },
-  {
-   "id": "por-liberecky-maugli-balet-2026-10-20",
-   "name": "Mauglí (balet)",
-   "date_from": "2026-10-20",
-   "date_to": "2026-10-20",
-   "time": "19:00",
-   "place": "Divadlo F. X. Šaldy",
-   "city": "Liberec",
-   "region": "liberecky",
-   "category": "Divadlo",
-   "source_categories": "Oficiální program pořadatele",
-   "url": "https://www.saldovo-divadlo.cz/program/detail-predstaveni/r/4593/-maugli",
-   "organizer": "Divadlo F. X. Šaldy Liberec",
-   "organizer_url": "https://www.saldovo-divadlo.cz/",
-   "source": "poradatele"
-  },
-  {
-   "id": "por-plzensky-psohlavci-2026-10-20",
-   "name": "Psohlavci",
-   "date_from": "2026-10-20",
-   "date_to": "2026-10-20",
-   "time": "19:00",
-   "place": "Velké divadlo",
-   "city": "Plzeň",
-   "region": "plzensky",
-   "category": "Divadlo",
-   "source_categories": "Oficiální program pořadatele",
-   "url": "https://www.djkt.eu/repertoar/psohlavci-2026",
-   "organizer": "Divadlo J. K. Tyla v Plzni",
-   "organizer_url": "https://www.djkt.eu/",
-   "source": "poradatele"
-  },
-  {
-   "id": "brno-315281",
-   "name": "Soukromé životy",
-   "date_from": "2026-10-20",
-   "date_to": "2026-10-20",
-   "time": null,
-   "place": "Žerotínovo náměstí 6",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo",
-   "url": "https://www.gotobrno.cz/akce/soukrome-zivoty/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-320863",
-   "name": "Zrní (křest) – první koncert",
-   "date_from": "2026-10-20",
-   "date_to": "2026-10-20",
-   "time": null,
-   "place": "Sukova 4, Brno-město, Brno, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba",
-   "url": "https://www.gotobrno.cz/akce/zrni-krest-prvni-koncert/",
+   "category": "Výstavy a galerie",
+   "source_categories": "Výstava",
+   "url": "https://www.gotobrno.cz/akce/vystava-obrazu-obrazy-a-obrazky-jaromir-kocourek/",
    "source": "brno"
   },
   {
@@ -1699,6 +1497,20 @@
    "source": "brno"
   },
   {
+   "id": "brno-326407",
+   "name": "FLERET A ZUZANA ŠULÁKOVÁ",
+   "date_from": "2026-10-23",
+   "date_to": "2026-10-23",
+   "time": null,
+   "place": "Odbojářská 1127/2, 635 00 Brno-Bystrc, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Koncerty",
+   "source_categories": "Hudba",
+   "url": "https://www.gotobrno.cz/akce/fleret-a-zuzana-sulakova-3/",
+   "source": "brno"
+  },
+  {
    "id": "brno-315291",
    "name": "Filmové melodie při svíčkách",
    "date_from": "2026-10-23",
@@ -1794,6 +1606,20 @@
    "category": "Divadlo",
    "source_categories": "Divadlo, Pro rodiny",
    "url": "https://www.gotobrno.cz/akce/kosi-bratri/",
+   "source": "brno"
+  },
+  {
+   "id": "brno-326477",
+   "name": "Květiny v Kostnici",
+   "date_from": "2026-10-23",
+   "date_to": "2026-11-05",
+   "time": null,
+   "place": "Jakubské nám. 1-2, 602 00 Brno-střed, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Výstavy a galerie",
+   "source_categories": "Výstava",
+   "url": "https://www.gotobrno.cz/akce/kvetiny-v-kostnici/",
    "source": "brno"
   },
   {
@@ -2213,6 +2039,20 @@
    "source": "brno"
   },
   {
+   "id": "brno-326448",
+   "name": "Kryt Denis postapokalyptický",
+   "date_from": "2026-10-24",
+   "date_to": "2026-10-24",
+   "time": null,
+   "place": "kryt denis",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Ostatní",
+   "source_categories": "Noční život, Veletrhy / vzdělávací",
+   "url": "https://www.gotobrno.cz/akce/kryt-denis-postapokalypticky/",
+   "source": "brno"
+  },
+  {
    "id": "brno-316987",
    "name": "LOUDZ1",
    "date_from": "2026-10-24",
@@ -2224,6 +2064,20 @@
    "category": "Koncerty",
    "source_categories": "Hudba",
    "url": "https://www.gotobrno.cz/akce/loudz1/",
+   "source": "brno"
+  },
+  {
+   "id": "brno-326547",
+   "name": "Petrovské varhany – koncert",
+   "date_from": "2026-10-24",
+   "date_to": "2026-10-24",
+   "time": null,
+   "place": "Petrov, 602 00 Brno-střed, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Koncerty",
+   "source_categories": "Hudba",
+   "url": "https://www.gotobrno.cz/akce/petrovske-varhany-koncert/",
    "source": "brno"
   },
   {
@@ -3353,6 +3207,20 @@
    "source": "poradatele"
   },
   {
+   "id": "brno-326455",
+   "name": "Dušičkové prohlídky Kostnice u sv. Jakuba",
+   "date_from": "2026-10-30",
+   "date_to": "2026-10-30",
+   "time": null,
+   "place": "Jakubské nám. 1-2, 602 00 Brno-střed, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Ostatní",
+   "source_categories": "Pro rodiny, Veletrhy / vzdělávací",
+   "url": "https://www.gotobrno.cz/akce/dusickove-prohlidky-kostnice-u-sv-jakuba-2/",
+   "source": "brno"
+  },
+  {
    "id": "brno-324530",
    "name": "Dušičky – večerní komentované prohlídky Kapucínské hrobky",
    "date_from": "2026-10-30",
@@ -3546,6 +3414,20 @@
    "category": "Divadlo",
    "source_categories": "Divadlo",
    "url": "https://www.gotobrno.cz/akce/zpoved-bachare-7/",
+   "source": "brno"
+  },
+  {
+   "id": "brno-326306",
+   "name": "Zvuková a chuťová cesta Mexikem",
+   "date_from": "2026-10-30",
+   "date_to": "2026-10-30",
+   "time": null,
+   "place": "Kounicova 944/7, 602 00 Brno-střed-Veveří, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Koncerty",
+   "source_categories": "Gastronomické, Hudba",
+   "url": "https://www.gotobrno.cz/akce/zvukova-a-chutova-cesta-mexikem/",
    "source": "brno"
   },
   {
@@ -3775,6 +3657,20 @@
    "source": "poradatele"
   },
   {
+   "id": "brno-326394",
+   "name": "Jan Stavinoha",
+   "date_from": "2026-10-31",
+   "date_to": "2026-10-31",
+   "time": null,
+   "place": "17, nám. Svobody 86, 602 00 Brno-střed-Brno-město, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Koncerty",
+   "source_categories": "Hudba, Noční život",
+   "url": "https://www.gotobrno.cz/akce/jan-stavinoha/",
+   "source": "brno"
+  },
+  {
    "id": "brno-324658",
    "name": "O Pejskovi a Kočičce",
    "date_from": "2026-10-31",
@@ -3786,6 +3682,20 @@
    "category": "Divadlo",
    "source_categories": "Divadlo, Pro rodiny",
    "url": "https://www.gotobrno.cz/akce/o-pejskovi-a-kocicce-3/",
+   "source": "brno"
+  },
+  {
+   "id": "brno-326464",
+   "name": "Příběhy brněnských nebožtíků v Labyrintu",
+   "date_from": "2026-10-31",
+   "date_to": "2026-10-31",
+   "time": null,
+   "place": "Zelný trh 320/21, Brno-město, 602 00 Brno-Brno-střed, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Ostatní",
+   "source_categories": "Veletrhy / vzdělávací",
+   "url": "https://www.gotobrno.cz/akce/pribehy-brnenskych-neboztiku-v-labyrintu/",
    "source": "brno"
   },
   {
@@ -4199,6 +4109,20 @@
    "source": "poradatele"
   },
   {
+   "id": "brno-326470",
+   "name": "Slovanské mýty a báje ve Sklepě",
+   "date_from": "2026-11-01",
+   "date_to": "2026-11-01",
+   "time": null,
+   "place": "Dominikánské nám. 1, Brno-město, Brno, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Ostatní",
+   "source_categories": "Pro rodiny, Veletrhy / vzdělávací",
+   "url": "https://www.gotobrno.cz/akce/slovanske-myty-a-baje-ve-sklepe/",
+   "source": "brno"
+  },
+  {
    "id": "brno-324664",
    "name": "Slávy dcery",
    "date_from": "2026-11-01",
@@ -4296,6 +4220,20 @@
    "category": "Ostatní",
    "source_categories": "Festivaly, Veletrhy / vzdělávací",
    "url": "https://www.gotobrno.cz/akce/dny-ai-2026-brno/",
+   "source": "brno"
+  },
+  {
+   "id": "brno-326354",
+   "name": "Kirtan circle – pojď s námi zpívat mantry",
+   "date_from": "2026-11-02",
+   "date_to": "2026-11-02",
+   "time": null,
+   "place": "Josefská 612/15, 602 00 Brno-střed-Brno-město, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Koncerty",
+   "source_categories": "Hudba",
+   "url": "https://www.gotobrno.cz/akce/kirtan-circle-pojd-s-nami-zpivat-mantry-6/",
    "source": "brno"
   },
   {
@@ -5093,6 +5031,20 @@
    "source": "brno"
   },
   {
+   "id": "brno-326349",
+   "name": "Divizna divy zná: Bylinná kosmetika od šamponu po kondicionér",
+   "date_from": "2026-11-08",
+   "date_to": "2026-11-08",
+   "time": null,
+   "place": "Rozmarýnová 813/6, 637 00 Brno-Jundrov, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Ostatní",
+   "source_categories": "Veletrhy / vzdělávací",
+   "url": "https://www.gotobrno.cz/akce/divizna-divy-zna-bylinna-kosmetika-od-samponu-po-kondicioner/",
+   "source": "brno"
+  },
+  {
    "id": "fotbal-8431-plz-acs",
    "name": "FC Viktoria Plzeň – AC Sparta Praha (fotbal, Chance Liga)",
    "date_from": "2026-11-08",
@@ -5386,6 +5338,20 @@
    "category": "Divadlo",
    "source_categories": "Divadlo",
    "url": "https://www.gotobrno.cz/akce/vsecky-krasy-sveta/",
+   "source": "brno"
+  },
+  {
+   "id": "brno-326412",
+   "name": "ČARODĚJKY V KUCHYNI",
+   "date_from": "2026-11-09",
+   "date_to": "2026-11-09",
+   "time": null,
+   "place": "Odbojářská 1127/2, 635 00 Brno-Bystrc, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Divadlo",
+   "source_categories": "Divadlo",
+   "url": "https://www.gotobrno.cz/akce/carodejky-v-kuchyni/",
    "source": "brno"
   },
   {
@@ -5717,6 +5683,20 @@
    "source": "brno"
   },
   {
+   "id": "brno-326507",
+   "name": "Czechitas Talks: Ženy v době AI",
+   "date_from": "2026-11-12",
+   "date_to": "2026-11-12",
+   "time": null,
+   "place": "Údolní 495/19, 602 00 Brno-Brno-střed, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Ostatní",
+   "source_categories": "Veletrhy / vzdělávací",
+   "url": "https://www.gotobrno.cz/akce/czechitas-talks-zeny-v-dobe-ai/",
+   "source": "brno"
+  },
+  {
    "id": "brno-324409",
    "name": "Křehká svoboda",
    "date_from": "2026-11-12",
@@ -5927,6 +5907,20 @@
    "source": "hokej"
   },
   {
+   "id": "brno-326420",
+   "name": "RETRO PARTY",
+   "date_from": "2026-11-13",
+   "date_to": "2026-11-13",
+   "time": null,
+   "place": "Odbojářská 1127/2, 635 00 Brno-Bystrc, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Ostatní",
+   "source_categories": "Noční život",
+   "url": "https://www.gotobrno.cz/akce/retro-party/",
+   "source": "brno"
+  },
+  {
    "id": "por-praha-sima-v-o2-arene-2026-11-13",
    "name": "Sima v O2 areně",
    "date_from": "2026-11-13",
@@ -6101,6 +6095,20 @@
    "source_categories": "Sport, Hokej, Maxa liga",
    "url": "https://www.hokej.cz/zapas/2930925",
    "source": "hokej"
+  },
+  {
+   "id": "brno-326425",
+   "name": "JAK SE ČERTI ŽENILI",
+   "date_from": "2026-11-14",
+   "date_to": "2026-11-14",
+   "time": null,
+   "place": "Odbojářská 1127/2, 635 00 Brno-Bystrc, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Divadlo",
+   "source_categories": "Divadlo, Pro rodiny",
+   "url": "https://www.gotobrno.cz/akce/jak-se-certi-zenili/",
+   "source": "brno"
   },
   {
    "id": "brno-268606",
@@ -6585,6 +6593,20 @@
    "source": "brno"
   },
   {
+   "id": "brno-326356",
+   "name": "Kirtan circle – pojď s námi zpívat mantry",
+   "date_from": "2026-11-16",
+   "date_to": "2026-11-16",
+   "time": null,
+   "place": "Josefská 612/15, 602 00 Brno-střed-Brno-město, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Ostatní",
+   "source_categories": "Veletrhy / vzdělávací",
+   "url": "https://www.gotobrno.cz/akce/kirtan-circle-pojd-s-nami-zpivat-mantry-5/",
+   "source": "brno"
+  },
+  {
    "id": "por-praha-korn-euro-tour-2026-2026-11-16",
    "name": "KoRn – Euro Tour 2026",
    "date_from": "2026-11-16",
@@ -7007,6 +7029,20 @@
    "source": "brno"
   },
   {
+   "id": "brno-326540",
+   "name": "Večer Wolfganga Amadea Mozarta",
+   "date_from": "2026-11-19",
+   "date_to": "2026-11-19",
+   "time": null,
+   "place": "Petrov, 602 00 Brno-střed, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Koncerty",
+   "source_categories": "Hudba",
+   "url": "https://www.gotobrno.cz/akce/vecer-wolfganga-amadea-mozarta/",
+   "source": "brno"
+  },
+  {
    "id": "por-olomoucky-cert-a-kaca-2026-11-19",
    "name": "Čert a Káča",
    "date_from": "2026-11-19",
@@ -7265,6 +7301,34 @@
    "source": "hokej"
   },
   {
+   "id": "brno-326389",
+   "name": "Symposium Brno – Konference o Podnikání",
+   "date_from": "2026-11-20",
+   "date_to": "2026-11-20",
+   "time": null,
+   "place": "Vlněna 5, 602 00 Brno-střed, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Ostatní",
+   "source_categories": "Veletrhy / vzdělávací",
+   "url": "https://www.gotobrno.cz/akce/symposium-brno-konference-o-podnikani/",
+   "source": "brno"
+  },
+  {
+   "id": "brno-326345",
+   "name": "Symposium Brno – Konference o Podnikání",
+   "date_from": "2026-11-20",
+   "date_to": "2026-11-20",
+   "time": null,
+   "place": "Vlněna 5, 602 00 Brno-střed, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Ostatní",
+   "source_categories": "Veletrhy / vzdělávací",
+   "url": "https://www.gotobrno.cz/akce/symposium-brno-konference-o-podnikani-2/",
+   "source": "brno"
+  },
+  {
    "id": "brno-204638",
    "name": "Tancem pro život – Mezinárodní baletní galavečer",
    "date_from": "2026-11-20",
@@ -7290,6 +7354,20 @@
    "category": "Výstavy a galerie",
    "source_categories": "Pro rodiny, Výstava",
    "url": "https://www.gotobrno.cz/akce/vernisaz-lesni-knihovny/",
+   "source": "brno"
+  },
+  {
+   "id": "brno-326279",
+   "name": "vánoční SIESTA BISTRO",
+   "date_from": "2026-11-20",
+   "date_to": "2026-12-23",
+   "time": null,
+   "place": "Husova 200/16, 602 00 Brno-Brno-střed, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Ostatní",
+   "source_categories": "Gastronomické, Vánoce",
+   "url": "https://www.gotobrno.cz/akce/vanocni-siesta-bistro/",
    "source": "brno"
   },
   {
@@ -8392,6 +8470,20 @@
    "category": "Divadlo",
    "source_categories": "Divadlo",
    "url": "https://www.gotobrno.cz/akce/s-laskou-mary-5/",
+   "source": "brno"
+  },
+  {
+   "id": "brno-326399",
+   "name": "SETKÁNÍ S PETREM NÁROŽNÝM",
+   "date_from": "2026-11-26",
+   "date_to": "2026-11-26",
+   "time": null,
+   "place": "Odbojářská 1127/2, 635 00 Brno-Bystrc, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Divadlo",
+   "source_categories": "Divadlo",
+   "url": "https://www.gotobrno.cz/akce/setkani-s-petrem-naroznym/",
    "source": "brno"
   },
   {
