@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T10:33:08+02:00",
+ "generated_at": "2026-10-22T10:35:20+02:00",
  "sources": {
   "brno": {
    "short_name": "Statutární město Brno",
@@ -8,8 +8,8 @@
    "license": "CC BY 4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/deed.cs",
    "status": "ok",
-   "fetched_at": "2026-10-21T10:33:06+02:00",
-   "count": 524
+   "fetched_at": "2026-10-22T10:35:18+02:00",
+   "count": 521
   },
   "hokej": {
    "short_name": "hokej.cz",
@@ -20,7 +20,7 @@
    "status": "stale",
    "fetched_at": "2026-10-18T12:26:25+02:00",
    "error": "HTTP Error 403: Forbidden",
-   "count": 234
+   "count": 227
   },
   "fotbal": {
    "short_name": "chanceliga.cz",
@@ -29,7 +29,7 @@
    "license": "veřejný rozpis, odkaz na zdroj",
    "license_url": "https://www.chanceliga.cz/",
    "status": "ok",
-   "fetched_at": "2026-10-21T10:33:08+02:00",
+   "fetched_at": "2026-10-22T10:35:20+02:00",
    "count": 56
   },
   "poradatele": {
@@ -39,8 +39,8 @@
    "license": "fakta o akci, odkaz na pořadatele",
    "license_url": "https://github.com/r98771-hue/uzij-si/tree/main/scripts/curated",
    "status": "ok",
-   "fetched_at": "2026-10-21T10:33:08+02:00",
-   "count": 56
+   "fetched_at": "2026-10-22T10:35:20+02:00",
+   "count": 53
   }
  },
  "events": [
@@ -689,6 +689,20 @@
    "source": "brno"
   },
   {
+   "id": "brno-326575",
+   "name": "Výstava Umění, které pomáhá",
+   "date_from": "2026-10-08",
+   "date_to": "2026-12-31",
+   "time": null,
+   "place": "Drobného 22, 602 00 Brno-sever-Černá Pole, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Výstavy a galerie",
+   "source_categories": "Výstava",
+   "url": "https://www.gotobrno.cz/akce/vystava-umeni-ktere-pomaha/",
+   "source": "brno"
+  },
+  {
    "id": "brno-324305",
    "name": "Hudební večery",
    "date_from": "2026-10-13",
@@ -829,292 +843,6 @@
    "source": "brno"
   },
   {
-   "id": "hokej-2930885",
-   "name": "AZ Havířov – HC Baník Sokolov (hokej, Maxa liga)",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": "17:30",
-   "place": "",
-   "city": "Havířov",
-   "region": "moravskoslezsky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Maxa liga",
-   "url": "https://www.hokej.cz/zapas/2930885",
-   "source": "hokej"
-  },
-  {
-   "id": "brno-201526",
-   "name": "AutenTICké prohlídky: Smrt a rozklad v Brně",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": null,
-   "place": "",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Komentované prohlídky, Pro rodiny, Veletrhy / vzdělávací",
-   "url": "https://www.gotobrno.cz/akce/autenticke-prohlidky-smrt-a-rozklad-v-brne/",
-   "source": "brno"
-  },
-  {
-   "id": "por-vysocina-bila-velryba-2026-10-21",
-   "name": "Bílá velryba",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": "19:00",
-   "place": "Horácké divadlo – Velká scéna",
-   "city": "Jihlava",
-   "region": "vysocina",
-   "category": "Divadlo",
-   "source_categories": "Oficiální program pořadatele",
-   "url": "https://www.hdj.cz/inscenace/633-bila-velryba",
-   "organizer": "Horácké divadlo Jihlava",
-   "organizer_url": "https://www.hdj.cz/",
-   "source": "poradatele"
-  },
-  {
-   "id": "brno-323848",
-   "name": "Den otevřených dveří na Fakultě výtvarných umění VUT",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": null,
-   "place": "Úvoz 33, 602 00 Brno-střed, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Veletrhy / vzdělávací",
-   "url": "https://www.gotobrno.cz/akce/den-otevrenych-dveri-na-fakulte-vytvarnych-umeni-vut/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-320774",
-   "name": "Den se seniory",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": null,
-   "place": "Čichnova 982/23, 624 00 Brno-Komín, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Veletrhy / vzdělávací",
-   "url": "https://www.gotobrno.cz/akce/den-se-seniory/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-322085",
-   "name": "Dny Severu: Severský roadtrip – Na polární kruh a zpět",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": null,
-   "place": "Kobližná 4, Brno, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Veletrhy / vzdělávací",
-   "url": "https://www.gotobrno.cz/akce/dny-severu-seversky-roadtrip-na-polarni-kruh-a-zpet/",
-   "source": "brno"
-  },
-  {
-   "id": "por-liberecky-fichtl-divadlo-bolka-polivky-host-2026-10-21",
-   "name": "Fichtl – Divadlo Bolka Polívky (host)",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": "19:00",
-   "place": "Divadlo F. X. Šaldy",
-   "city": "Liberec",
-   "region": "liberecky",
-   "category": "Divadlo",
-   "source_categories": "Oficiální program pořadatele",
-   "url": "https://www.saldovo-divadlo.cz/program/detail-predstaveni/r/5516/fichtl-host-divadlo-bolka-polivky-a-anime-art",
-   "organizer": "Divadlo F. X. Šaldy Liberec",
-   "organizer_url": "https://www.saldovo-divadlo.cz/",
-   "source": "poradatele"
-  },
-  {
-   "id": "hokej-2930887",
-   "name": "HC Dynamo Pardubice B – HC Tábor (hokej, Maxa liga)",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": "18:00",
-   "place": "",
-   "city": "",
-   "region": "pardubicky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Maxa liga",
-   "url": "https://www.hokej.cz/zapas/2930887",
-   "source": "hokej"
-  },
-  {
-   "id": "hokej-2930886",
-   "name": "HC Stadion Litoměřice – VHK ROBE Vsetín (hokej, Maxa liga)",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": "18:00",
-   "place": "",
-   "city": "Litoměřice",
-   "region": "ustecky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Maxa liga",
-   "url": "https://www.hokej.cz/zapas/2930886",
-   "source": "hokej"
-  },
-  {
-   "id": "hokej-2930888",
-   "name": "Horácká Slavia Třebíč – HC ZUBR Přerov (hokej, Maxa liga)",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": "17:30",
-   "place": "",
-   "city": "Třebíč",
-   "region": "vysocina",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Maxa liga",
-   "url": "https://www.hokej.cz/zapas/2930888",
-   "source": "hokej"
-  },
-  {
-   "id": "brno-320315",
-   "name": "Lampionový průvod Léto a dým v Kohoutovicích",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": null,
-   "place": "Stamicova 572/7, 623 00 Brno-Kohoutovice, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo, Pro rodiny",
-   "url": "https://www.gotobrno.cz/akce/lampionovy-pruvod-leto-a-dym-v-kohoutovicich-5/",
-   "source": "brno"
-  },
-  {
-   "id": "por-ustecky-peer-gynt-2026-10-21",
-   "name": "Peer Gynt",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": "19:00",
-   "place": "Činoherní studio",
-   "city": "Ústí nad Labem",
-   "region": "ustecky",
-   "category": "Divadlo",
-   "source_categories": "Oficiální program pořadatele",
-   "url": "https://cinoherak.cz/program/",
-   "organizer": "Činoherní studio Ústí nad Labem",
-   "organizer_url": "https://cinoherak.cz/",
-   "source": "poradatele"
-  },
-  {
-   "id": "hokej-2930890",
-   "name": "Piráti Chomutov – HC Dukla Jihlava (hokej, Maxa liga)",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": "17:30",
-   "place": "",
-   "city": "Chomutov",
-   "region": "ustecky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Maxa liga",
-   "url": "https://www.hokej.cz/zapas/2930890",
-   "source": "hokej"
-  },
-  {
-   "id": "brno-324498",
-   "name": "PŘIJETÍ ZODPOVĚDNOSTI – otevřená lekce Školy zotavení",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": null,
-   "place": "Joštova 218/10, 602 00 Brno-střed-Brno-město, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Veletrhy / vzdělávací",
-   "url": "https://www.gotobrno.cz/akce/prijeti-zodpovednosti-otevrena-lekce-skoly-zotaveni/",
-   "source": "brno"
-  },
-  {
-   "id": "hokej-2930884",
-   "name": "RI OKNA Berani Zlín – HC Slavia Praha (hokej, Maxa liga)",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": "17:30",
-   "place": "",
-   "city": "Zlín",
-   "region": "zlinsky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Maxa liga",
-   "url": "https://www.hokej.cz/zapas/2930884",
-   "source": "hokej"
-  },
-  {
-   "id": "brno-319442",
-   "name": "Radio Ivo: Život nedoceníš",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": null,
-   "place": "Jánská 12, 602 00 Brno-střed, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo",
-   "url": "https://www.gotobrno.cz/akce/radio-ivo-zivot-nedocenis/",
-   "source": "brno"
-  },
-  {
-   "id": "hokej-2930889",
-   "name": "SC Retia Kolín – HC Frýdek-Místek (hokej, Maxa liga)",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": "18:00",
-   "place": "",
-   "city": "Kolín",
-   "region": "stredocesky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Maxa liga",
-   "url": "https://www.hokej.cz/zapas/2930889",
-   "source": "hokej"
-  },
-  {
-   "id": "brno-320411",
-   "name": "Severský roadtrip: Na polární kruh a zpět",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": null,
-   "place": "Kobližná 4, Brno, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Festivaly, Veletrhy / vzdělávací",
-   "url": "https://www.gotobrno.cz/akce/seversky-roadtrip-na-polarni-kruh-a-zpet/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-308419",
-   "name": "Zapomnění: boj o paměť",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": null,
-   "place": "Kounicova 65a, Veveří, Brno, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Literatura",
-   "url": "https://www.gotobrno.cz/akce/zapomneni-boj-o-pamet/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-320871",
-   "name": "Zrní (křest) – druhý koncert",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": null,
-   "place": "Sukova 4, Brno-město, Brno, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba",
-   "url": "https://www.gotobrno.cz/akce/zrni-krest-druhy-koncert/",
-   "source": "brno"
-  },
-  {
    "id": "brno-320930",
    "name": "bazmek skills: Pozornost v pohybu",
    "date_from": "2026-10-21",
@@ -1143,20 +871,6 @@
    "organizer": "Česká filharmonie",
    "organizer_url": "https://www.ceskafilharmonie.cz/",
    "source": "poradatele"
-  },
-  {
-   "id": "brno-321750",
-   "name": "Čtenářský klub KMK – Pomalost",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-21",
-   "time": null,
-   "place": "Kounicova 65a, Veveří, Brno, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Literatura",
-   "url": "https://www.gotobrno.cz/akce/ctenarsky-klub-kmk-pomalost-2/",
-   "source": "brno"
   },
   {
    "id": "brno-224079",
@@ -2067,6 +1781,20 @@
    "source": "brno"
   },
   {
+   "id": "brno-326559",
+   "name": "P/\\ST – KŘEST ALBA FOTR + HOPSEN CLARK & VIVACE SOUNDSYSTEM",
+   "date_from": "2026-10-24",
+   "date_to": "2026-10-24",
+   "time": null,
+   "place": "Štefánikova 836/1, 602 00 Brno-střed, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Koncerty",
+   "source_categories": "Hudba, Noční život",
+   "url": "https://www.gotobrno.cz/akce/p-st-krest-alba-fotr-hopsen-clark-vivace-soundsystem/",
+   "source": "brno"
+  },
+  {
    "id": "brno-326547",
    "name": "Petrovské varhany – koncert",
    "date_from": "2026-10-24",
@@ -2450,6 +2178,20 @@
    "category": "Divadlo",
    "source_categories": "Divadlo",
    "url": "https://www.gotobrno.cz/akce/hamlet-3/",
+   "source": "brno"
+  },
+  {
+   "id": "brno-326527",
+   "name": "Moravské derby extraligy žen v ledním hokeji",
+   "date_from": "2026-10-25",
+   "date_to": "2026-10-25",
+   "time": null,
+   "place": "Střední 26, 602 00 Brno-Královo Pole, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Sport",
+   "source_categories": "Sport",
+   "url": "https://www.gotobrno.cz/akce/moravske-derby-extraligy-zen-v-lednim-hokeji/",
    "source": "brno"
   },
   {
@@ -3358,6 +3100,20 @@
    "category": "Divadlo",
    "source_categories": "Divadlo, Hudba, Tanec",
    "url": "https://www.gotobrno.cz/akce/ndb-2-ticho-plne-lidi-na-konci-kazdeho-svetla-je-tunel/",
+   "source": "brno"
+  },
+  {
+   "id": "brno-326573",
+   "name": "RAVEWEEN W/ CHAOS THEORY",
+   "date_from": "2026-10-30",
+   "date_to": "2026-10-30",
+   "time": null,
+   "place": "Štefánikova 836/1, 602 00 Brno-střed, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Koncerty",
+   "source_categories": "Hudba, Noční život",
+   "url": "https://www.gotobrno.cz/akce/raveween-w-chaos-theory/",
    "source": "brno"
   },
   {
@@ -4477,6 +4233,20 @@
    "source": "brno"
   },
   {
+   "id": "brno-326587",
+   "name": "KOREK Wines vs. Vino Markuzzi: souboj vín",
+   "date_from": "2026-11-04",
+   "date_to": "2026-11-04",
+   "time": null,
+   "place": "Lidická 1861/12, 602 00 Brno-střed, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Ostatní",
+   "source_categories": "Gastronomické",
+   "url": "https://www.gotobrno.cz/akce/korek-wines-vs-vino-markuzzi-souboj-vin/",
+   "source": "brno"
+  },
+  {
    "id": "brno-324429",
    "name": "MAIDAY 2026 – Konference o AI v praxi",
    "date_from": "2026-11-04",
@@ -4744,6 +4514,20 @@
    "category": "Ostatní",
    "source_categories": "Pro rodiny, Veletrhy / vzdělávací",
    "url": "https://www.gotobrno.cz/akce/burza-seminek/",
+   "source": "brno"
+  },
+  {
+   "id": "brno-326610",
+   "name": "Campus Run 24",
+   "date_from": "2026-11-06",
+   "date_to": "2026-11-07",
+   "time": null,
+   "place": "Kamenice 753, 625 00 Brno-Bohunice, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Sport",
+   "source_categories": "Sport",
+   "url": "https://www.gotobrno.cz/akce/campus-run-24/",
    "source": "brno"
   },
   {
@@ -5324,6 +5108,20 @@
    "category": "Divadlo",
    "source_categories": "Divadlo",
    "url": "https://www.gotobrno.cz/akce/velka-zebra-aneb-jak-ze-se-to-jmenujete-2/",
+   "source": "brno"
+  },
+  {
+   "id": "brno-326600",
+   "name": "Václav Bělohradský: Zaslepená společnost",
+   "date_from": "2026-11-09",
+   "date_to": "2026-11-09",
+   "time": null,
+   "place": "Kounicova 65a, Veveří, Brno, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Ostatní",
+   "source_categories": "Literatura",
+   "url": "https://www.gotobrno.cz/akce/vaclav-belohradsky-zaslepena-spolecnost/",
    "source": "brno"
   },
   {
@@ -6535,6 +6333,20 @@
    "source_categories": "Sport, Hokej, Maxa liga",
    "url": "https://www.hokej.cz/zapas/2930928",
    "source": "hokej"
+  },
+  {
+   "id": "brno-326620",
+   "name": "V Brně straší! — Kateřina Tučková, Michal Konečný, Stanislav Biler",
+   "date_from": "2026-11-15",
+   "date_to": "2026-11-15",
+   "time": null,
+   "place": "Výstaviště 405/1, 647 00 Brno-střed-Pisárky, Česko",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Ostatní",
+   "source_categories": "Literatura",
+   "url": "https://www.gotobrno.cz/akce/v-brne-strasi-katerina-tuckova-michal-konecny-stanislav-biler/",
+   "source": "brno"
   },
   {
    "id": "hokej-2930927",
