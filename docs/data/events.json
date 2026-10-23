@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T10:35:20+02:00",
+ "generated_at": "2026-10-23T10:31:24+02:00",
  "sources": {
   "brno": {
    "short_name": "Statutární město Brno",
@@ -8,8 +8,8 @@
    "license": "CC BY 4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/deed.cs",
    "status": "ok",
-   "fetched_at": "2026-10-22T10:35:18+02:00",
-   "count": 521
+   "fetched_at": "2026-10-23T10:31:22+02:00",
+   "count": 506
   },
   "hokej": {
    "short_name": "hokej.cz",
@@ -20,7 +20,7 @@
    "status": "stale",
    "fetched_at": "2026-10-18T12:26:25+02:00",
    "error": "HTTP Error 403: Forbidden",
-   "count": 227
+   "count": 226
   },
   "fotbal": {
    "short_name": "chanceliga.cz",
@@ -29,7 +29,7 @@
    "license": "veřejný rozpis, odkaz na zdroj",
    "license_url": "https://www.chanceliga.cz/",
    "status": "ok",
-   "fetched_at": "2026-10-22T10:35:20+02:00",
+   "fetched_at": "2026-10-23T10:31:24+02:00",
    "count": 56
   },
   "poradatele": {
@@ -39,8 +39,8 @@
    "license": "fakta o akci, odkaz na pořadatele",
    "license_url": "https://github.com/r98771-hue/uzij-si/tree/main/scripts/curated",
    "status": "ok",
-   "fetched_at": "2026-10-22T10:35:20+02:00",
-   "count": 53
+   "fetched_at": "2026-10-23T10:31:24+02:00",
+   "count": 51
   }
  },
  "events": [
@@ -801,20 +801,6 @@
    "source": "brno"
   },
   {
-   "id": "brno-325300",
-   "name": "Týden vědy na FaVU",
-   "date_from": "2026-10-19",
-   "date_to": "2026-10-22",
-   "time": null,
-   "place": "Úvoz 33, 602 00 Brno-střed, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Literatura, Veletrhy / vzdělávací",
-   "url": "https://www.gotobrno.cz/akce/tyden-vedy-na-favu/",
-   "source": "brno"
-  },
-  {
    "id": "brno-326319",
    "name": "Výstava Obrazů: OBRAZY a obrázky (Jaromír Kocourek)",
    "date_from": "2026-10-19",
@@ -857,178 +843,6 @@
    "source": "brno"
   },
   {
-   "id": "por-praha-ceska-filharmonie-semjon-byckov-smetana-a-rachmani-2026-10-21",
-   "name": "Česká filharmonie • Semjon Byčkov: Smetana a Rachmaninov",
-   "date_from": "2026-10-21",
-   "date_to": "2026-10-22",
-   "time": "19:30",
-   "place": "Rudolfinum",
-   "city": "Praha",
-   "region": "praha",
-   "category": "Koncerty",
-   "source_categories": "Oficiální program pořadatele",
-   "url": "https://www.ceskafilharmonie.cz/program/",
-   "organizer": "Česká filharmonie",
-   "organizer_url": "https://www.ceskafilharmonie.cz/",
-   "source": "poradatele"
-  },
-  {
-   "id": "brno-224079",
-   "name": "AutenTICké prohlídky: Zbrojovka",
-   "date_from": "2026-10-22",
-   "date_to": "2026-10-22",
-   "time": null,
-   "place": "",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Komentované prohlídky, Pro rodiny, Veletrhy / vzdělávací",
-   "url": "https://www.gotobrno.cz/akce/autenticke-prohlidky-zbrojovka/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-321724",
-   "name": "B-FEST 2026: Akademie věd hraje Brnu!",
-   "date_from": "2026-10-22",
-   "date_to": "2026-10-22",
-   "time": null,
-   "place": "Makovského nám. 3166/3, 616 00 Brno-Žabovřesky, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Festivaly, Hudba",
-   "url": "https://www.gotobrno.cz/akce/b-fest-2026-akademie-ved-hraje-brnu/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-315286",
-   "name": "Blbec k večeři",
-   "date_from": "2026-10-22",
-   "date_to": "2026-10-22",
-   "time": null,
-   "place": "",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo",
-   "url": "https://www.gotobrno.cz/akce/blbec-k-veceri-2/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-325625",
-   "name": "Brno – degustace + vyhlášení výsledků soutěže GASTRO – víno, které chutná Brnu",
-   "date_from": "2026-10-22",
-   "date_to": "2026-10-22",
-   "time": null,
-   "place": "Hlinky 42/106, 603 00 Brno-střed-Pisárky, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Gastronomické",
-   "url": "https://www.gotobrno.cz/akce/brno-degustace-vyhlaseni-vysledku-souteze-gastro-vino-ktere-chutna-brnu/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-320175",
-   "name": "Celine The Show",
-   "date_from": "2026-10-22",
-   "date_to": "2026-10-22",
-   "time": null,
-   "place": "2A, Sportovní 559, 602 00 Brno-Královo Pole-Ponava, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba",
-   "url": "https://www.gotobrno.cz/akce/celine-the-show-2/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-326205",
-   "name": "DEGUSHOW s Petrem Rychlým a vinařstvím Veverka",
-   "date_from": "2026-10-22",
-   "date_to": "2026-10-22",
-   "time": null,
-   "place": "Lidická 1861/12, 602 00 Brno-střed, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Gastronomické, Noční život",
-   "url": "https://www.gotobrno.cz/akce/degushow-s-petrem-rychlym-a-vinarstvim-veverka/",
-   "source": "brno"
-  },
-  {
-   "id": "hokej-2928343",
-   "name": "HC Olomouc – BK Mladá Boleslav (hokej, Tipsport extraliga)",
-   "date_from": "2026-10-22",
-   "date_to": "2026-10-22",
-   "time": "18:00",
-   "place": "",
-   "city": "Olomouc",
-   "region": "olomoucky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Tipsport extraliga",
-   "url": "https://www.hokej.cz/zapas/2928343",
-   "source": "hokej"
-  },
-  {
-   "id": "brno-319563",
-   "name": "Historie a odkaz rodiny Stiassni",
-   "date_from": "2026-10-22",
-   "date_to": "2026-10-22",
-   "time": null,
-   "place": "Hroznová 82/14, 603 00 Brno-střed, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Veletrhy / vzdělávací",
-   "url": "https://www.gotobrno.cz/akce/historie-a-odkaz-rodiny-stiassni/",
-   "source": "brno"
-  },
-  {
-   "id": "por-kralovehradecky-hudebni-forum-hk-golijov-contreras-ortiz-2026-10-22",
-   "name": "Hudební fórum HK: Golijov • Contreras • Ortiz",
-   "date_from": "2026-10-22",
-   "date_to": "2026-10-22",
-   "time": "20:00",
-   "place": "Filharmonie Hradec Králové – Sál Soni Červené",
-   "city": "Hradec Králové",
-   "region": "kralovehradecky",
-   "category": "Koncerty",
-   "source_categories": "Oficiální program pořadatele",
-   "url": "https://www.fhk.cz/123/Kalendar_koncertu/",
-   "organizer": "Filharmonie Hradec Králové",
-   "organizer_url": "https://www.fhk.cz/",
-   "source": "poradatele"
-  },
-  {
-   "id": "brno-321702",
-   "name": "KOPANICE – Martin Brdečko – bansuri",
-   "date_from": "2026-10-22",
-   "date_to": "2026-10-22",
-   "time": null,
-   "place": "Kounicova 272/15, 602 00 Brno-střed-Veveří, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Folklor, Hudba",
-   "url": "https://www.gotobrno.cz/akce/kopanice-martin-brdecko-bansuri/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-322695",
-   "name": "Konference mladých vědců 2026",
-   "date_from": "2026-10-22",
-   "date_to": "2026-10-22",
-   "time": null,
-   "place": "3 601, Žerotínovo nám. 449/3, 602 00 Brno-střed-Veveří, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Veletrhy / vzdělávací",
-   "url": "https://www.gotobrno.cz/akce/konference-mladych-vedcu-2026/",
-   "source": "brno"
-  },
-  {
    "id": "brno-323606",
    "name": "MOTOCYKLY / 6 strojů brněnské historie",
    "date_from": "2026-10-22",
@@ -1040,76 +854,6 @@
    "category": "Výstavy a galerie",
    "source_categories": "Výstava",
    "url": "https://www.gotobrno.cz/akce/motocykly-6-stroju-brnenske-historie/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-301672",
-   "name": "Mucha, Mucha, Mucha",
-   "date_from": "2026-10-22",
-   "date_to": "2026-10-22",
-   "time": null,
-   "place": "Zelný trh 313/4, Brno-město, Brno, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo",
-   "url": "https://www.gotobrno.cz/akce/mucha-mucha-mucha/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-323418",
-   "name": "NOIX + Plum Dumplings",
-   "date_from": "2026-10-22",
-   "date_to": "2026-10-22",
-   "time": null,
-   "place": "Kounicova, 602 00 Brno-Brno 2, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba",
-   "url": "https://www.gotobrno.cz/akce/noix-plum-dumplings/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-318893",
-   "name": "Ohm Square 30",
-   "date_from": "2026-10-22",
-   "date_to": "2026-10-22",
-   "time": null,
-   "place": "Sukova 4, Brno-město, Brno, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba",
-   "url": "https://www.gotobrno.cz/akce/ohm-square-30/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-323407",
-   "name": "Prorepublikový kabaret",
-   "date_from": "2026-10-22",
-   "date_to": "2026-10-22",
-   "time": null,
-   "place": "Kytnerova 563/1a, 621 00 Brno-Medlánky, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo",
-   "url": "https://www.gotobrno.cz/akce/prorepublikovy-kabaret/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-322144",
-   "name": "❮ANNA FIŠEROVÁ: O PSANÍ A NESTABILNÍM SVĚTĚ❯",
-   "date_from": "2026-10-22",
-   "date_to": "2026-10-22",
-   "time": null,
-   "place": "Údolní 17, Brno",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Literatura",
-   "url": "https://www.gotobrno.cz/akce/%e2%9d%aeanna-fiserova-o-psani-a-nestabilnim-svete%e2%9d%af/",
    "source": "brno"
   },
   {
