@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T10:38:18+01:00",
+ "generated_at": "2026-10-29T10:56:26+01:00",
  "sources": {
   "brno": {
    "short_name": "Statutární město Brno",
@@ -8,8 +8,8 @@
    "license": "CC BY 4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/deed.cs",
    "status": "ok",
-   "fetched_at": "2026-10-28T10:38:17+01:00",
-   "count": 519
+   "fetched_at": "2026-10-29T10:56:24+01:00",
+   "count": 512
   },
   "hokej": {
    "short_name": "hokej.cz",
@@ -20,7 +20,7 @@
    "status": "stale",
    "fetched_at": "2026-10-18T12:26:25+02:00",
    "error": "HTTP Error 403: Forbidden",
-   "count": 194
+   "count": 186
   },
   "fotbal": {
    "short_name": "chanceliga.cz",
@@ -29,7 +29,7 @@
    "license": "veřejný rozpis, odkaz na zdroj",
    "license_url": "https://www.chanceliga.cz/",
    "status": "ok",
-   "fetched_at": "2026-10-28T10:38:18+01:00",
+   "fetched_at": "2026-10-29T10:56:26+01:00",
    "count": 49
   },
   "poradatele": {
@@ -39,8 +39,8 @@
    "license": "fakta o akci, odkaz na pořadatele",
    "license_url": "https://github.com/r98771-hue/uzij-si/tree/main/scripts/curated",
    "status": "ok",
-   "fetched_at": "2026-10-28T10:38:18+01:00",
-   "count": 38
+   "fetched_at": "2026-10-29T10:56:26+01:00",
+   "count": 37
   }
  },
  "events": [
@@ -857,48 +857,6 @@
    "source": "brno"
   },
   {
-   "id": "hokej-2930894",
-   "name": "AZ Havířov – HC Frýdek-Místek (hokej, Maxa liga)",
-   "date_from": "2026-10-28",
-   "date_to": "2026-10-28",
-   "time": "17:00",
-   "place": "",
-   "city": "Havířov",
-   "region": "moravskoslezsky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Maxa liga",
-   "url": "https://www.hokej.cz/zapas/2930894",
-   "source": "hokej"
-  },
-  {
-   "id": "brno-224703",
-   "name": "AutenTICké prohlídky: Příběhy brněnských domů III",
-   "date_from": "2026-10-28",
-   "date_to": "2026-10-28",
-   "time": null,
-   "place": "",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Komentované prohlídky, Pro rodiny, Veletrhy / vzdělávací",
-   "url": "https://www.gotobrno.cz/akce/autenticke-prohlidky-pribehy-brnenskych-domu-iii-2/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-231588",
-   "name": "Autentické prohlídky: Za Janáčkem na Hukvaldy (zájezd)",
-   "date_from": "2026-10-28",
-   "date_to": "2026-10-28",
-   "time": null,
-   "place": "",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba, Pro rodiny, Veletrhy / vzdělávací",
-   "url": "https://www.gotobrno.cz/akce/za-janackem-na-hukvaldy/",
-   "source": "brno"
-  },
-  {
    "id": "brno-323600",
    "name": "Flowers & Lights",
    "date_from": "2026-10-28",
@@ -910,190 +868,6 @@
    "category": "Výstavy a galerie",
    "source_categories": "Pro rodiny, Výstava",
    "url": "https://www.gotobrno.cz/akce/flowers-lights/",
-   "source": "brno"
-  },
-  {
-   "id": "hokej-2930893",
-   "name": "HC Dukla Jihlava – Horácká Slavia Třebíč (hokej, Maxa liga)",
-   "date_from": "2026-10-28",
-   "date_to": "2026-10-28",
-   "time": "17:30",
-   "place": "",
-   "city": "Jihlava",
-   "region": "vysocina",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Maxa liga",
-   "url": "https://www.hokej.cz/zapas/2930893",
-   "source": "hokej"
-  },
-  {
-   "id": "hokej-2928357",
-   "name": "HC Kometa Brno – HC Oceláři Třinec (hokej, Tipsport extraliga)",
-   "date_from": "2026-10-28",
-   "date_to": "2026-10-28",
-   "time": "18:00",
-   "place": "",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Tipsport extraliga",
-   "url": "https://www.hokej.cz/zapas/2928357",
-   "source": "hokej"
-  },
-  {
-   "id": "hokej-2930892",
-   "name": "HC Slavia Praha – HC Dynamo Pardubice B (hokej, Maxa liga)",
-   "date_from": "2026-10-28",
-   "date_to": "2026-10-28",
-   "time": "15:00",
-   "place": "",
-   "city": "Praha",
-   "region": "praha",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Maxa liga",
-   "url": "https://www.hokej.cz/zapas/2930892",
-   "source": "hokej"
-  },
-  {
-   "id": "hokej-2930891",
-   "name": "HC Tábor – RI OKNA Berani Zlín (hokej, Maxa liga)",
-   "date_from": "2026-10-28",
-   "date_to": "2026-10-28",
-   "time": "17:00",
-   "place": "",
-   "city": "Tábor",
-   "region": "jihocesky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Maxa liga",
-   "url": "https://www.hokej.cz/zapas/2930891",
-   "source": "hokej"
-  },
-  {
-   "id": "hokej-2930897",
-   "name": "HC ZUBR Přerov – HC Baník Sokolov (hokej, Maxa liga)",
-   "date_from": "2026-10-28",
-   "date_to": "2026-10-28",
-   "time": "17:00",
-   "place": "",
-   "city": "Přerov",
-   "region": "olomoucky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Maxa liga",
-   "url": "https://www.hokej.cz/zapas/2930897",
-   "source": "hokej"
-  },
-  {
-   "id": "brno-319638",
-   "name": "Lágrimas (USA) + Dno + Zmar",
-   "date_from": "2026-10-28",
-   "date_to": "2026-10-28",
-   "time": null,
-   "place": "Sukova 4, Brno-město, Brno, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba",
-   "url": "https://www.gotobrno.cz/akce/lagrimas-usa-dno-zmar/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-26874",
-   "name": "Osmyčky",
-   "date_from": "2026-10-28",
-   "date_to": "2026-10-28",
-   "time": null,
-   "place": "Lidická 1863/16, Černá Pole, 602 00 Brno, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo",
-   "url": "https://www.gotobrno.cz/akce/osmycky/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-327083",
-   "name": "PROTEST STUDENTŮ PROTI 4:36",
-   "date_from": "2026-10-28",
-   "date_to": "2026-10-28",
-   "time": null,
-   "place": "nám. Svobody 98/4, 602 00 Brno-střed-Brno-město, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Festivaly",
-   "url": "https://www.gotobrno.cz/akce/protest-studentu-proti-436/",
-   "source": "brno"
-  },
-  {
-   "id": "hokej-2930895",
-   "name": "Piráti Chomutov – HC Stadion Litoměřice (hokej, Maxa liga)",
-   "date_from": "2026-10-28",
-   "date_to": "2026-10-28",
-   "time": "15:15",
-   "place": "",
-   "city": "Chomutov",
-   "region": "ustecky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Maxa liga",
-   "url": "https://www.hokej.cz/zapas/2930895",
-   "source": "hokej"
-  },
-  {
-   "id": "por-olomoucky-slavnostni-koncert-ke-dni-vzniku-samostatneho-cesk-2026-10-28",
-   "name": "Slavnostní koncert ke Dni vzniku samostatného československého státu",
-   "date_from": "2026-10-28",
-   "date_to": "2026-10-28",
-   "time": "19:00",
-   "place": "Reduta",
-   "city": "Olomouc",
-   "region": "olomoucky",
-   "category": "Koncerty",
-   "source_categories": "Oficiální program pořadatele",
-   "url": "https://www.mfo.cz/program/slavnostni-koncert-ke-dni-vzniku-samostatneho-ceskoslovenskeho-statu-9/",
-   "organizer": "Moravská filharmonie Olomouc",
-   "organizer_url": "https://www.mfo.cz/",
-   "source": "poradatele"
-  },
-  {
-   "id": "brno-325251",
-   "name": "Tanečný dom so Šej-Haj-Hop",
-   "date_from": "2026-10-28",
-   "date_to": "2026-10-28",
-   "time": null,
-   "place": "1, Štefánikova 836, 602 00 Brno-střed-Veveří, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Folklor, Hudba, Noční život, Tanec",
-   "url": "https://www.gotobrno.cz/akce/tanecny-dom-so-sej-haj-hop-7/",
-   "source": "brno"
-  },
-  {
-   "id": "hokej-2930896",
-   "name": "VHK ROBE Vsetín – SC Retia Kolín (hokej, Maxa liga)",
-   "date_from": "2026-10-28",
-   "date_to": "2026-10-28",
-   "time": "17:00",
-   "place": "",
-   "city": "Vsetín",
-   "region": "zlinsky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Maxa liga",
-   "url": "https://www.hokej.cz/zapas/2930896",
-   "source": "hokej"
-  },
-  {
-   "id": "brno-322821",
-   "name": "Řád Bílé lvice (DEN VZNIKU SAMOSTATNÉHO ČESKOSLOVENSKÉHO STÁTU)",
-   "date_from": "2026-10-28",
-   "date_to": "2026-10-28",
-   "time": null,
-   "place": "Mečová 368/5, 602 00 Brno-střed-Brno-město, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo",
-   "url": "https://www.gotobrno.cz/akce/rad-bile-lvice-den-vzniku-samostatneho-ceskoslovenskeho-statu/",
    "source": "brno"
   },
   {
