@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T12:49:22+01:00",
+ "generated_at": "2026-11-18T12:39:05+01:00",
  "sources": {
   "brno": {
    "short_name": "Statutární město Brno",
@@ -8,8 +8,8 @@
    "license": "CC BY 4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/deed.cs",
    "status": "ok",
-   "fetched_at": "2026-11-17T12:49:19+01:00",
-   "count": 476
+   "fetched_at": "2026-11-18T12:39:03+01:00",
+   "count": 465
   },
   "hokej": {
    "short_name": "hokej.cz",
@@ -18,8 +18,8 @@
    "license": "veřejný rozpis, odkaz na zdroj",
    "license_url": "https://www.hokej.cz/",
    "status": "ok",
-   "fetched_at": "2026-11-17T12:49:21+01:00",
-   "count": 265
+   "fetched_at": "2026-11-18T12:39:04+01:00",
+   "count": 266
   },
   "fotbal": {
    "short_name": "chanceliga.cz",
@@ -28,7 +28,7 @@
    "license": "veřejný rozpis, odkaz na zdroj",
    "license_url": "https://www.chanceliga.cz/",
    "status": "ok",
-   "fetched_at": "2026-11-17T12:49:22+01:00",
+   "fetched_at": "2026-11-18T12:39:05+01:00",
    "count": 33
   },
   "poradatele": {
@@ -38,7 +38,7 @@
    "license": "fakta o akci, odkaz na pořadatele",
    "license_url": "https://github.com/r98771-hue/uzij-si/tree/main/scripts/curated",
    "status": "ok",
-   "fetched_at": "2026-11-17T12:49:22+01:00",
+   "fetched_at": "2026-11-18T12:39:05+01:00",
    "count": 15
   }
  },
@@ -562,20 +562,6 @@
    "source": "brno"
   },
   {
-   "id": "brno-132949",
-   "name": "Janáček Brno 2026",
-   "date_from": "2026-10-13",
-   "date_to": "2026-11-17",
-   "time": null,
-   "place": "",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo, Festivaly, Hudba, TOP akce",
-   "url": "https://www.gotobrno.cz/akce/janacek-brno-2026/",
-   "source": "brno"
-  },
-  {
    "id": "brno-322515",
    "name": "RestaurantWeek Brno",
    "date_from": "2026-10-13",
@@ -601,20 +587,6 @@
    "category": "Ostatní",
    "source_categories": "Veletrhy / vzdělávací",
    "url": "https://www.gotobrno.cz/akce/za-vedou-a-technikou-do-tmb-v/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-324540",
-   "name": "Zažijte Janáčka s TIC BRNO",
-   "date_from": "2026-10-13",
-   "date_to": "2026-11-17",
-   "time": null,
-   "place": "",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Festivaly, Hudba",
-   "url": "https://www.gotobrno.cz/akce/zazijte-janacka-s-tic-brno/",
    "source": "brno"
   },
   {
@@ -772,20 +744,6 @@
    "source": "brno"
   },
   {
-   "id": "brno-328772",
-   "name": "Procházka po stopách brněnské revoluce",
-   "date_from": "2026-11-11",
-   "date_to": "2026-11-17",
-   "time": null,
-   "place": "Nádražní 418/1, 602 00 Brno-střed",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Komentované prohlídky, Veletrhy / vzdělávací",
-   "url": "https://www.gotobrno.cz/akce/prochazka-po-stopach-brnenske-revoluce/",
-   "source": "brno"
-  },
-  {
    "id": "brno-327972",
    "name": "Brno a svobodní zednáři",
    "date_from": "2026-11-13",
@@ -839,118 +797,6 @@
    "category": "Ostatní",
    "source_categories": "Pro rodiny, Vánoce, Veletrhy / vzdělávací",
    "url": "https://www.gotobrno.cz/akce/vanocni-jedlicky-v-kvetinaci-vratte-jedli-zpet-do-lesu/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-327871",
-   "name": "Brněnská smeč – 2026",
-   "date_from": "2026-11-17",
-   "date_to": "2026-11-17",
-   "time": null,
-   "place": "62c, Hněvkovského 730, 617 00 Brno-jih-Komárov, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Sport",
-   "source_categories": "Sport",
-   "url": "https://www.gotobrno.cz/akce/brnenska-smec-2026/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-323329",
-   "name": "Crocodile Orchestra • Koncert ke Dni studentstva • Ardašev, Ashhab",
-   "date_from": "2026-11-17",
-   "date_to": "2026-11-17",
-   "time": null,
-   "place": "Husova 534/20, 602 00 Brno-střed-Brno-město, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba",
-   "url": "https://www.gotobrno.cz/akce/crocodile-orchestra-koncert-ke-dni-studentstva-ardasev-ashhab/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-6985",
-   "name": "Improvozovna",
-   "date_from": "2026-11-17",
-   "date_to": "2026-11-17",
-   "time": null,
-   "place": "Zelný trh 313/4, Brno-město, Brno, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo",
-   "url": "https://www.gotobrno.cz/akce/improvozovna/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-324380",
-   "name": "Kirill Yakovlev trio feat. Jiří Kotača",
-   "date_from": "2026-11-17",
-   "date_to": "2026-11-17",
-   "time": null,
-   "place": "Opletalova, 602 00 Brno-střed, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba",
-   "url": "https://www.gotobrno.cz/akce/kirill-yakovlev-trio-feat-jiri-kotaca/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-322883",
-   "name": "Repríza: JEN MOMENTY V NAŠICH ŽIVOTECH, KTERÉ KŘIČÍ O POZORNOST",
-   "date_from": "2026-11-17",
-   "date_to": "2026-11-17",
-   "time": null,
-   "place": "Kounicova 686/22, Brno-střed-Veveří, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo",
-   "url": "https://www.gotobrno.cz/akce/repriza-jen-momenty-v-nasich-zivotech-ktere-krici-o-pozornost/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-328739",
-   "name": "Sametem boj za lepší svět neskončil (DEN BOJE ZA SVOBODU A DEMOKRACII)",
-   "date_from": "2026-11-17",
-   "date_to": "2026-11-17",
-   "time": null,
-   "place": "Mečová 368/5, 602 00 Brno-střed-Brno-město, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Výstavy a galerie",
-   "source_categories": "Komentované prohlídky, Výstava",
-   "url": "https://www.gotobrno.cz/akce/sametem-boj-za-lepsi-svet-neskoncil-den-boje-za-svobodu-a-demokracii/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-325058",
-   "name": "Sága aneb Vizovský zázrak",
-   "date_from": "2026-11-17",
-   "date_to": "2026-11-17",
-   "time": null,
-   "place": "Žerotínovo náměstí 6",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo",
-   "url": "https://www.gotobrno.cz/akce/saga-aneb-vizovsky-zazrak-17/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-329501",
-   "name": "Years of Denial (FR/CZ)",
-   "date_from": "2026-11-17",
-   "date_to": "2026-11-17",
-   "time": null,
-   "place": "Štefánikova 836/1, 602 00 Brno-střed",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba",
-   "url": "https://www.gotobrno.cz/akce/years-of-denial-fr-cz/",
    "source": "brno"
   },
   {
@@ -4574,7 +4420,7 @@
    "name": "Banes Motor Č. Budějovice – HC VÍTKOVICE RIDERA (hokej, Tipsport extraliga)",
    "date_from": "2026-11-29",
    "date_to": "2026-11-29",
-   "time": "17:00",
+   "time": "16:00",
    "place": "",
    "city": "České Budějovice",
    "region": "jihocesky",
@@ -5866,7 +5712,7 @@
    "name": "Banes Motor Č. Budějovice – HC Oceláři Třinec (hokej, Tipsport extraliga)",
    "date_from": "2026-12-06",
    "date_to": "2026-12-06",
-   "time": "17:00",
+   "time": "16:00",
    "place": "",
    "city": "České Budějovice",
    "region": "jihocesky",
@@ -9913,6 +9759,20 @@
    "category": "Sport",
    "source_categories": "Sport, Hokej, Maxa liga",
    "url": "https://www.hokej.cz/zapas/2931063",
+   "source": "hokej"
+  },
+  {
+   "id": "hokej-2928386",
+   "name": "HC Kometa Brno – BYD Energie Karlovy Vary (hokej, Tipsport extraliga)",
+   "date_from": "2027-01-18",
+   "date_to": "2027-01-18",
+   "time": "18:00",
+   "place": "",
+   "city": "Brno",
+   "region": "jihomoravsky",
+   "category": "Sport",
+   "source_categories": "Sport, Hokej, Tipsport extraliga",
+   "url": "https://www.hokej.cz/zapas/2928386",
    "source": "hokej"
   },
   {
