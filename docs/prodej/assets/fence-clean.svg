@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" width="1500" height="1000">
+  <defs>
+    <linearGradient id="skyF" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8DB3D2"/>
+      <stop offset="65%" stop-color="#D2E3EE"/>
+      <stop offset="100%" stop-color="#EFF2EC"/>
+    </linearGradient>
+    <linearGradient id="lawnF" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9CB181"/>
+      <stop offset="100%" stop-color="#6F8957"/>
+    </linearGradient>
+    <filter id="shF" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F1714" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <rect width="1500" height="485" fill="url(#skyF)"/>
+  <path d="M0,458 Q450,422 950,445 T1500,432 L1500,515 L0,515 Z" fill="#98AA92"/>
+
+  <!-- Trees on eastern neighbor p.č. 11/2 & open field south -->
+  <g fill="#577348">
+    <circle cx="1140" cy="452" r="54"/><circle cx="1225" cy="458" r="46"/>
+    <circle cx="1370" cy="448" r="62"/><circle cx="1455" cy="460" r="48"/>
+  </g>
+
+  <rect x="0" y="485" width="1500" height="515" fill="url(#lawnF)"/>
+
+  <!-- Existing fence edge near č.p. 56 / western border -->
+  <g opacity="0.92">
+    <rect x="0" y="470" width="24" height="530" fill="#4C504A"/>
+    <rect x="108" y="540" width="16" height="460" fill="#595E57"/>
+    <line x1="24" y1="525" x2="124" y2="565" stroke="#686D66" stroke-width="6"/>
+    <line x1="24" y1="665" x2="124" y2="690" stroke="#686D66" stroke-width="6"/>
+    <line x1="24" y1="805" x2="124" y2="815" stroke="#686D66" stroke-width="6"/>
+  </g>
+  <g transform="translate(24, 944)">
+    <rect x="0" y="0" width="372" height="34" rx="17" fill="#181A1B" fill-opacity="0.72" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="1"/>
+    <circle cx="18" cy="17" r="4" fill="#D8C29D"/>
+    <text x="32" y="21.5" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="500" fill="#F4F3EF">Ilustrační náhled – reálné foto bude doplněno</text>
+  </g>
+</svg>
