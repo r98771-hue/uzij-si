@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T06:30:20+01:00",
+ "generated_at": "2026-11-23T11:53:24+01:00",
  "sources": {
   "brno": {
    "short_name": "Statutární město Brno",
@@ -8,7 +8,7 @@
    "license": "CC BY 4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/deed.cs",
    "status": "ok",
-   "fetched_at": "2026-11-23T06:30:17+01:00",
+   "fetched_at": "2026-11-23T11:53:22+01:00",
    "count": 436
   },
   "hokej": {
@@ -18,8 +18,8 @@
    "license": "veřejný rozpis, odkaz na zdroj",
    "license_url": "https://www.hokej.cz/",
    "status": "ok",
-   "fetched_at": "2026-11-23T06:30:19+01:00",
-   "count": 258
+   "fetched_at": "2026-11-23T11:53:23+01:00",
+   "count": 259
   },
   "fotbal": {
    "short_name": "chanceliga.cz",
@@ -28,7 +28,7 @@
    "license": "veřejný rozpis, odkaz na zdroj",
    "license_url": "https://www.chanceliga.cz/",
    "status": "ok",
-   "fetched_at": "2026-11-23T06:30:20+01:00",
+   "fetched_at": "2026-11-23T11:53:24+01:00",
    "count": 25
   },
   "poradatele": {
@@ -38,7 +38,7 @@
    "license": "fakta o akci, odkaz na pořadatele",
    "license_url": "https://github.com/r98771-hue/uzij-si/tree/main/scripts/curated",
    "status": "ok",
-   "fetched_at": "2026-11-23T06:30:20+01:00",
+   "fetched_at": "2026-11-23T11:53:24+01:00",
    "count": 8
   }
  },
@@ -7953,6 +7953,20 @@
    "category": "Sport",
    "source_categories": "Sport, Hokej, Tipsport extraliga",
    "url": "https://www.hokej.cz/zapas/2928495",
+   "source": "hokej"
+  },
+  {
+   "id": "hokej-2930882",
+   "name": "HC Tábor – HC Stadion Litoměřice (hokej, Maxa liga)",
+   "date_from": "2027-01-10",
+   "date_to": "2027-01-10",
+   "time": "17:00",
+   "place": "",
+   "city": "Tábor",
+   "region": "jihocesky",
+   "category": "Sport",
+   "source_categories": "Sport, Hokej, Maxa liga",
+   "url": "https://www.hokej.cz/zapas/2930882",
    "source": "hokej"
   },
   {
