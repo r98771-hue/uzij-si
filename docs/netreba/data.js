@@ -211,7 +211,6 @@ window.SITE_DATA = {
     purchaseBanner: {
       title: "Potvrzená zastavitelnost — předběžná informace MěÚ Kralupy nad Vltavou (1. 6. 2026)",
       text: "Stavební úřad MěÚ Kralupy nad Vltavou vydal dne 1. 6. 2026 předběžnou informaci č.j. R/2026/112742/4 potvrzující, že p.č. 11/4 leží ve stávajícím zastavěném území v ploše „SV – plochy smíšené obytné – venkovské“ (ÚP Úžice po Změně č. 6, účinnost od 31. 12. 2021) a výstavba nového samostatného rodinného domu je možná. Regulativy: max. 1 NP + podkroví, min. koeficient zeleně 30 % (v zastavěném území lze přiměřeně snížit); nepřípustné jsou bytové domy, řadové domy, dvojdomy a ubytovny.",
-      ctaLabel: "Domluvit prohlídku",
     },
     parcels: [
       {
