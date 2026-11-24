@@ -39,7 +39,7 @@ window.SITE_DATA = {
     eyebrow: "Přímý prodej stavebního celku · bez provize RK",
     title: "Stavební celek v Netřebě\no celkové rozloze 1 743 m²\ns vlastním vjezdem z ulice",
     subtitle:
-      "Dvě navazující nově oddělené parcely p.č. 119/19 (97 m²) a p.č. 11/4 (1 646 m²) prodávané výhradně společně jako jeden funkční celek. Příjezd ze severu ze silnice p.č. 128/2, slunná zahrada otevřená na jih a jihozápad do volné krajiny.",
+      "Dvě na sebe navazující parcely p.č. 119/19 (97 m²) a p.č. 11/4 (1 646 m²) prodávané výhradně společně jako jeden funkční celek. Příjezd ze severu ze silnice p.č. 128/2, slunná zahrada otevřená na jih a jihozápad do volné krajiny.",
     backgroundImage: "assets/hero-drone-marked.svg",
     backgroundAlt: "Letecký snímek stavebního celku p.č. 119/19 a 11/4 v lokalitě Netřeba se zákresem hranic",
     primaryCta: {
