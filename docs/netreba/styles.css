@@ -525,6 +525,7 @@ p {
 
 .hero-location {
   display: inline-flex;
+  max-width: 620px;
   align-items: flex-start;
   line-height: 1.45;
   gap: 0.45rem;
