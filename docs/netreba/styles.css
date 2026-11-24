@@ -2536,3 +2536,11 @@ p {
   text-decoration: underline;
   white-space: nowrap;
 }
+
+.direct-line-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
