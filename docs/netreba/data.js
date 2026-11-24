@@ -55,7 +55,7 @@ window.SITE_DATA = {
       { label: "Celková výměra", value: "1 743 m²", note: "p.č. 119/19 (97 m²) + 11/4 (1 646 m²)" },
       { label: "Kupní cena celku", value: "7 490 000 Kč", note: "Výhradně společně · bez provize RK" },
       { label: "Lokalita a katastr", value: "Netřeba", note: "Obec Úžice, okr. Mělník · LV č. 495" },
-      { label: "Územní plán", value: "Plocha SV", note: "Potvrzeno SÚ (č.j. R/2026/112742/4)" },
+      { label: "Územní plán", value: "Plocha SV", note: "Potvrzeno SÚ (č.j. R/2026/112742/4)", href: "dokumenty/vyjadreni-SU-R-2026-112742-4.pdf", linkLabel: "Zobrazit dokument" },
     ],
   },
 
