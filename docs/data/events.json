@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T16:32:34+01:00",
+ "generated_at": "2026-11-24T23:54:39+01:00",
  "sources": {
   "brno": {
    "short_name": "Statutární město Brno",
@@ -8,7 +8,7 @@
    "license": "CC BY 4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/deed.cs",
    "status": "ok",
-   "fetched_at": "2026-11-24T16:32:30+01:00",
+   "fetched_at": "2026-11-24T23:54:35+01:00",
    "count": 464
   },
   "hokej": {
@@ -18,8 +18,8 @@
    "license": "veřejný rozpis, odkaz na zdroj",
    "license_url": "https://www.hokej.cz/",
    "status": "ok",
-   "fetched_at": "2026-11-24T16:32:33+01:00",
-   "count": 267
+   "fetched_at": "2026-11-24T23:54:38+01:00",
+   "count": 259
   },
   "fotbal": {
    "short_name": "chanceliga.cz",
@@ -28,7 +28,7 @@
    "license": "veřejný rozpis, odkaz na zdroj",
    "license_url": "https://www.chanceliga.cz/",
    "status": "ok",
-   "fetched_at": "2026-11-24T16:32:34+01:00",
+   "fetched_at": "2026-11-24T23:54:39+01:00",
    "count": 25
   },
   "poradatele": {
@@ -38,7 +38,7 @@
    "license": "fakta o akci, odkaz na pořadatele",
    "license_url": "https://github.com/r98771-hue/uzij-si/tree/main/scripts/curated",
    "status": "ok",
-   "fetched_at": "2026-11-24T16:32:34+01:00",
+   "fetched_at": "2026-11-24T23:54:39+01:00",
    "count": 7
   }
  },
@@ -870,48 +870,6 @@
    "source": "brno"
   },
   {
-   "id": "hokej-2928403",
-   "name": "BK Mladá Boleslav – Rytíři Kladno (hokej, Tipsport extraliga)",
-   "date_from": "2026-11-24",
-   "date_to": "2026-11-24",
-   "time": "17:30",
-   "place": "",
-   "city": "Mladá Boleslav",
-   "region": "stredocesky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Tipsport extraliga",
-   "url": "https://www.hokej.cz/zapas/2928403",
-   "source": "hokej"
-  },
-  {
-   "id": "hokej-2928408",
-   "name": "BYD Energie Karlovy Vary – Bílí Tygři Liberec (hokej, Tipsport extraliga)",
-   "date_from": "2026-11-24",
-   "date_to": "2026-11-24",
-   "time": "18:00",
-   "place": "",
-   "city": "Karlovy Vary",
-   "region": "karlovarsky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Tipsport extraliga",
-   "url": "https://www.hokej.cz/zapas/2928408",
-   "source": "hokej"
-  },
-  {
-   "id": "hokej-2928406",
-   "name": "Banes Motor Č. Budějovice – HC Škoda Plzeň (hokej, Tipsport extraliga)",
-   "date_from": "2026-11-24",
-   "date_to": "2026-11-24",
-   "time": "17:30",
-   "place": "",
-   "city": "České Budějovice",
-   "region": "jihocesky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Tipsport extraliga",
-   "url": "https://www.hokej.cz/zapas/2928406",
-   "source": "hokej"
-  },
-  {
    "id": "brno-329256",
    "name": "Benefiční koncert pro Gellnerku",
    "date_from": "2026-11-24",
@@ -940,62 +898,6 @@
    "source": "brno"
   },
   {
-   "id": "hokej-2928407",
-   "name": "HC Dynamo Pardubice – HC VÍTKOVICE RIDERA (hokej, Tipsport extraliga)",
-   "date_from": "2026-11-24",
-   "date_to": "2026-11-24",
-   "time": "18:00",
-   "place": "",
-   "city": "Pardubice",
-   "region": "pardubicky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Tipsport extraliga",
-   "url": "https://www.hokej.cz/zapas/2928407",
-   "source": "hokej"
-  },
-  {
-   "id": "hokej-2928402",
-   "name": "HC Kometa Brno – HC Sparta Praha (hokej, Tipsport extraliga)",
-   "date_from": "2026-11-24",
-   "date_to": "2026-11-24",
-   "time": "18:00",
-   "place": "",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Tipsport extraliga",
-   "url": "https://www.hokej.cz/zapas/2928402",
-   "source": "hokej"
-  },
-  {
-   "id": "hokej-2928405",
-   "name": "HC Olomouc – HC VERVA Litvínov (hokej, Tipsport extraliga)",
-   "date_from": "2026-11-24",
-   "date_to": "2026-11-24",
-   "time": "18:00",
-   "place": "",
-   "city": "Olomouc",
-   "region": "olomoucky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Tipsport extraliga",
-   "url": "https://www.hokej.cz/zapas/2928405",
-   "source": "hokej"
-  },
-  {
-   "id": "hokej-2930953",
-   "name": "HC Slavia Praha – HC Frýdek-Místek (hokej, Maxa liga)",
-   "date_from": "2026-11-24",
-   "date_to": "2026-11-24",
-   "time": "18:00",
-   "place": "",
-   "city": "Praha",
-   "region": "praha",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Maxa liga",
-   "url": "https://www.hokej.cz/zapas/2930953",
-   "source": "hokej"
-  },
-  {
    "id": "brno-318651",
    "name": "Linoryt",
    "date_from": "2026-11-24",
@@ -1022,20 +924,6 @@
    "source_categories": "Literatura, Sport",
    "url": "https://www.gotobrno.cz/akce/martinus-running-club-podzimni-knihomolsky-beh/",
    "source": "brno"
-  },
-  {
-   "id": "hokej-2928404",
-   "name": "Mountfield HK – HC Oceláři Třinec (hokej, Tipsport extraliga)",
-   "date_from": "2026-11-24",
-   "date_to": "2026-11-24",
-   "time": "18:00",
-   "place": "",
-   "city": "Hradec Králové",
-   "region": "kralovehradecky",
-   "category": "Sport",
-   "source_categories": "Sport, Hokej, Tipsport extraliga",
-   "url": "https://www.hokej.cz/zapas/2928404",
-   "source": "hokej"
   },
   {
    "id": "brno-325114",
