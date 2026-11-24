@@ -355,7 +355,7 @@ window.SITE_DATA = {
       {
         icon: "leaf",
         title: "Klidný okraj zástavby",
-        text: "Jižní hrana 70,08 m navazuje na volnou plochu p.č. 21/1 s bezprostřední blízkostí luk a polních cest.",
+        text: "Jižní hrana 70,08 m navazuje na volnou plochu p.č. 21/1 v bezprostřední blízkosti přírody.",
       },
       {
         icon: "sun",
