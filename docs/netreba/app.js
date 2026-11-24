@@ -30,6 +30,7 @@
     hoveredParcelId: null,
     pinnedParcelId: null,
     layer: "mapa", // "mapa" | "snimek" | "mapa-snimek" (pohled Katastr)
+    viewerVisible: false, // vrstvy katastru se načtou až když je prohlížeč (téměř) na obrazovce
     highlight: true,
   };
 
@@ -870,6 +871,12 @@
       return;
     }
     const L = view.layers;
+    const isLightbox = stageEl.id === "lightbox-compare-stage";
+    if (!state.viewerVisible && !(isLightbox && state.lightboxOpen)) {
+      stageEl.setAttribute("data-layer", state.layer);
+      stageEl.setAttribute("data-highlight", state.highlight ? "on" : "off");
+      return;
+    }
     const srcs = [
       [".layer-img-map", L.mapImage],
       [".layer-img-photo", L.photoImage],
@@ -1167,6 +1174,30 @@
   initHeaderAndNavigation();
   initMessageModal();
 
-  // Načtení výchozího pohledu (Z dronu)
+  // Líné načtení vrstev katastru: až když se prohlížeč přiblíží k obrazovce
+  (function initViewerLazyLoad() {
+    const section = $("pohledy");
+    const reveal = () => {
+      if (state.viewerVisible) return;
+      state.viewerVisible = true;
+      syncViewContent();
+    };
+    if (!section || !("IntersectionObserver" in window)) {
+      reveal();
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          reveal();
+          io.disconnect();
+        }
+      },
+      { rootMargin: "300px 0px" }
+    );
+    io.observe(section);
+  })();
+
+  // Načtení výchozího pohledu (první v pořadí: Katastr)
   selectView(0);
 })();

@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css?v=20261124l" />
+  <link rel="stylesheet" href="styles.css?v=20261124m" />
 </head>
 <body>
   <!-- Horní fixní navigace -->
@@ -163,11 +163,11 @@
 
             <!-- Vrstvy katastru (plynulé prolínání přes opacity) -->
             <div class="layer-stack" id="stage-layer-stack" aria-hidden="true">
-              <img class="layer-img layer-img-map" alt="" draggable="false" />
-              <img class="layer-img layer-img-photo" alt="" draggable="false" />
-              <img class="layer-img layer-img-lines" alt="" draggable="false" />
-              <img class="layer-img layer-hl layer-hl-map" alt="" draggable="false" />
-              <img class="layer-img layer-hl layer-hl-photo" alt="" draggable="false" />
+              <img loading="lazy" decoding="async" class="layer-img layer-img-map" alt="" draggable="false" />
+              <img loading="lazy" decoding="async" class="layer-img layer-img-photo" alt="" draggable="false" />
+              <img loading="lazy" decoding="async" class="layer-img layer-img-lines" alt="" draggable="false" />
+              <img loading="lazy" decoding="async" class="layer-img layer-hl layer-hl-map" alt="" draggable="false" />
+              <img loading="lazy" decoding="async" class="layer-img layer-hl layer-hl-photo" alt="" draggable="false" />
             </div>
 
             <!-- Interaktivní klikatelné/hover oblasti parcel (p.č. 119/19 a p.č. 11/4) -->
@@ -441,11 +441,11 @@
 
           <!-- Vrstvy katastru (plynulé prolínání přes opacity) -->
           <div class="layer-stack" id="lb-layer-stack" aria-hidden="true">
-            <img class="layer-img layer-img-map" alt="" draggable="false" />
-            <img class="layer-img layer-img-photo" alt="" draggable="false" />
-            <img class="layer-img layer-img-lines" alt="" draggable="false" />
-            <img class="layer-img layer-hl layer-hl-map" alt="" draggable="false" />
-            <img class="layer-img layer-hl layer-hl-photo" alt="" draggable="false" />
+            <img loading="lazy" decoding="async" class="layer-img layer-img-map" alt="" draggable="false" />
+            <img loading="lazy" decoding="async" class="layer-img layer-img-photo" alt="" draggable="false" />
+            <img loading="lazy" decoding="async" class="layer-img layer-img-lines" alt="" draggable="false" />
+            <img loading="lazy" decoding="async" class="layer-img layer-hl layer-hl-map" alt="" draggable="false" />
+            <img loading="lazy" decoding="async" class="layer-img layer-hl layer-hl-photo" alt="" draggable="false" />
           </div>
 
           <svg class="parcel-hotspots" id="lb-hotspots" aria-label="Interaktivní výběr parcel v celé obrazovce" hidden></svg>
@@ -492,8 +492,8 @@
   </div>
 
   <!-- Konfigurace dat (upravujte obsah pouze zde) -->
-  <script src="data.js?v=20261124l"></script>
+  <script src="data.js?v=20261124m"></script>
   <!-- Aplikační logika -->
-  <script src="app.js?v=20261124l"></script>
+  <script src="app.js?v=20261124m"></script>
 </body>
 </html>

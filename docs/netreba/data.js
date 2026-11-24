@@ -79,22 +79,6 @@ window.SITE_DATA = {
     },
     views: [
       {
-        id: "drone",
-        tabLabel: "Z dronu (shora)",
-        title: "Kolmý letecký pohled na celý stavební celek",
-        cameraPosition: "Ilustrační náhled dle souřadnic S-JTSK · vjezd ze severu (p.č. 128/2), otevření na jih",
-        description:
-          "Přehled reálného tvaru hlavní stavební parcely p.č. 11/4 (1 646 m², tvar písmene L) a navazující vlastní vjezdové parcely p.č. 119/19 (97 m²). Přímý vjezd vede ze severu z šikmé silnice p.č. 128/2, dlouhá jižní hrana (70,08 m) sousedí s volným polem p.č. 21/1.",
-        cleanImage: "assets/drone-clean.svg",
-        markedImage: "assets/drone-marked.svg",
-        planOverlayImage: "assets/drone-plan-overlay.svg",
-        supportsPlanOverlay: true,
-        defaultOverlayOpacity: 68,
-        beforeLabel: "Ilustrační pohled",
-        afterLabel: "Vyznačené parcely",
-        metaTags: ["Celkem 1 743 m²", "p.č. 119/19 + p.č. 11/4", "Vjezd ze severu (p.č. 128/2)"],
-      },
-      {
         id: "katastr",
         tabLabel: "Katastr (mapa / snímek)",
         title: "Katastrální mapa a letecký snímek — p.č. 11/4 a p.č. 119/19",
@@ -106,7 +90,7 @@ window.SITE_DATA = {
         supportsPlanOverlay: false,
         isMapView: true,
         layers: {
-          defaultLayer: "mapa",
+          defaultLayer: "snimek",
           highlightLabel: "Zvýraznit parcely",
           credit: "Zdroj: ČÚZK – katastrální mapa a ortofoto",
           hint: "Vrstvy přepnete tlačítky nad mapou. Najetím na parcelu zobrazíte její údaje, kliknutím ji otevřete v Nahlížení do katastru.",
@@ -126,6 +110,22 @@ window.SITE_DATA = {
           { label: "p.č. 119/19 v Nahlížení do katastru", href: "https://nahlizenidokn.cuzk.gov.cz/ZobrazObjekt.aspx?encrypted=NAHL~h9SsZCvsUtKdKdy-E7W2BktLVG3jsl6S0aT_XCzM8UXxKVnauIlqypvSR8edVyzhnRx9mqwdF2MbgfF1cQ1F_kr4yaef-YlUxgD84bnWUfZPwiHNMua5AshTBEhRG_NEvOk0Cv2AF-3qDHlA_tUYAhfp_aP9N8lKdlRR8GFLCCFydZIetpsDn2qZ9Ms-lRxedrO3m4HiqgziF2uoGnNVxTKHl4faunG8-yiaoX-wvw98kZYT_rOu0_GzI0IHXfwz" },
         ],
         metaTags: ["Data ČÚZK", "p.č. 11/4 + p.č. 119/19", "Celkem 1 743 m²"],
+      },
+      {
+        id: "drone",
+        tabLabel: "Z dronu (shora)",
+        title: "Kolmý letecký pohled na celý stavební celek",
+        cameraPosition: "Ilustrační náhled dle souřadnic S-JTSK · vjezd ze severu (p.č. 128/2), otevření na jih",
+        description:
+          "Přehled reálného tvaru hlavní stavební parcely p.č. 11/4 (1 646 m², tvar písmene L) a navazující vlastní vjezdové parcely p.č. 119/19 (97 m²). Přímý vjezd vede ze severu z šikmé silnice p.č. 128/2, dlouhá jižní hrana (70,08 m) sousedí s volným polem p.č. 21/1.",
+        cleanImage: "assets/drone-clean.svg",
+        markedImage: "assets/drone-marked.svg",
+        planOverlayImage: "assets/drone-plan-overlay.svg",
+        supportsPlanOverlay: true,
+        defaultOverlayOpacity: 68,
+        beforeLabel: "Ilustrační pohled",
+        afterLabel: "Vyznačené parcely",
+        metaTags: ["Celkem 1 743 m²", "p.č. 119/19 + p.č. 11/4", "Vjezd ze severu (p.č. 128/2)"],
       },
       {
         id: "plan",
