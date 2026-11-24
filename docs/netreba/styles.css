@@ -2529,3 +2529,10 @@ p {
 }
 
 #hero-title{white-space:pre-line}
+
+.spec-doc-link {
+  color: var(--accent, #2f6f4f);
+  font-weight: 600;
+  text-decoration: underline;
+  white-space: nowrap;
+}

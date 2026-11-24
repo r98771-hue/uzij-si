@@ -237,7 +237,7 @@
         item.href = stat.href;
         item.target = "_blank";
         item.rel = "noopener";
-        item.title = stat.linkLabel || "Zobrazit dokument";
+        item.title = stat.linkLabel || "předběžná informace";
       }
       item.innerHTML = `
         <div class="hero-stat-label"></div>
@@ -251,7 +251,7 @@
         const hint = document.createElement("div");
         hint.className = "hero-stat-link";
         hint.innerHTML = '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg><span></span>';
-        hint.querySelector("span").textContent = (stat.linkLabel || "Zobrazit dokument") + " ↗";
+        hint.querySelector("span").textContent = (stat.linkLabel || "předběžná informace") + " ↗";
         item.appendChild(hint);
       }
       statsEl.appendChild(item);
@@ -397,7 +397,7 @@
         </div>
         <div>
           <div class="spec-value">${escapeHtml(spec.value)}</div>
-          <div class="spec-detail">${escapeHtml(spec.detail)}</div>
+          <div class="spec-detail">${escapeHtml(spec.detail)}${spec.href ? ` <a class="spec-doc-link" href="${escapeHtml(spec.href)}">${escapeHtml(spec.linkLabel || "předběžná informace")}</a>` : ""}</div>
         </div>
         <span class="spec-status ${statusClass}">${escapeHtml(spec.statusText)}</span>
       `;
