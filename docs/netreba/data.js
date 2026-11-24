@@ -38,7 +38,7 @@ window.SITE_DATA = {
   hero: {
     eyebrow: "Přímý prodej stavebního celku · bez provize RK",
     title: "Stavební celek v Netřebě\no celkové rozloze 1 743 m²\ns vlastním vjezdem z ulice",
-    location: "Netřeba leží 20 km po silnici severně od Prahy, na dálnici D8 je to jen pár minut. Přímo z Netřeby jezdí autobus PID č. 373 do Prahy-Kobylis k metru C (asi 35 minut), k dispozici je i železniční zastávka Netřeba na trati Kralupy – Neratovice. V sousední Odolené Vodě, vzdálené 3 km, je veškerá občanská vybavenost – lékárna, pošta, škola i obchody.",
+    location: "Netřeba se nachází 20 km severně od Prahy, na dálnici D8 je to jen pár minut. Přímo z Netřeby jezdí autobus PID č. 373 do Prahy-Kobylis k metru C (asi 35 minut), k dispozici je i železniční zastávka Netřeba na trati Kralupy – Neratovice. V sousední Odolené Vodě, vzdálené 3 km, je veškerá občanská vybavenost – lékárna, pošta, škola i obchody.",
     subtitle:
       "Dvě na sebe navazující parcely p.č. 119/19 (97 m²) a p.č. 11/4 (1 646 m²) prodávané výhradně společně jako jeden funkční celek. Vjezd ze severu ze silnice p.č. 128/2, slunná zahrada otevřená na jih do volné krajiny.",
     backgroundImage: "assets/hero-drone-marked.svg",
