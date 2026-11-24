@@ -392,7 +392,7 @@ window.SITE_DATA = {
       { place: "Kralupy nad Vltavou (centrum)", time: "15 min", distance: "12 km" },
       { place: "Mělník", time: "24 min", distance: "17 km" },
       { place: "Praha – Kobylisy (metro C)", time: "22 min", distance: "22 km" },
-      { place: "Letiště Václava Havla Praha", time: "50 min", distance: "40 km" },
+      { place: "Obchodní centrum Letňany", time: "18 min", distance: "21,6 km" },
     ],
   },
 
