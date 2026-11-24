@@ -38,7 +38,7 @@ window.SITE_DATA = {
   hero: {
     eyebrow: "Přímý prodej stavebního celku · bez provize RK",
     title: "Stavební celek v Netřebě\no celkové rozloze 1 743 m²\ns vlastním vjezdem z ulice",
-    location: "Netřeba leží zhruba 20 km severně od Prahy, v sousedství Odolené Vody – v oblasti, kde se v posledních letech hodně staví.",
+    location: "Netřeba leží zhruba 20 km severně od Prahy, v oblasti, kde se v posledních letech hodně staví. Asi 3 km odtud je Odolena Voda, oblíbené menší město s veškerou občanskou vybaveností – lékárnou, poštou, školou i obchody.",
     subtitle:
       "Dvě na sebe navazující parcely p.č. 119/19 (97 m²) a p.č. 11/4 (1 646 m²) prodávané výhradně společně jako jeden funkční celek. Příjezd ze severu ze silnice p.č. 128/2, slunná zahrada otevřená na jih a jihozápad do volné krajiny.",
     backgroundImage: "assets/hero-drone-marked.svg",
