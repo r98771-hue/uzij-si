@@ -113,7 +113,7 @@ window.SITE_DATA = {
       },
       {
         id: "drone",
-        tabLabel: "Z dronu (shora)",
+        tabLabel: "Záběry z dronu",
         title: "Kolmý letecký pohled na celý stavební celek",
         cameraPosition: "Ilustrační náhled dle souřadnic S-JTSK · vjezd ze severu (p.č. 128/2), otevření na jih",
         description:
