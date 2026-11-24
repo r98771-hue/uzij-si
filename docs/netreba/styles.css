@@ -2241,6 +2241,38 @@ p {
   }
 }
 
+.parcel-hotspot-poly:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.parcel-tooltip.is-pinned {
+  pointer-events: auto;
+}
+
+.parcel-tooltip-link {
+  display: inline-block;
+  margin-top: 0.45rem;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-border);
+}
+
+.parcel-tooltip[data-accent="secondary"] .parcel-tooltip-link {
+  color: var(--accent-2);
+  border-bottom-color: var(--accent-2-border);
+}
+
+.parcel-card--link {
+  cursor: pointer;
+}
+
+.parcel-card--link:hover .cadastre-link {
+  border-bottom-color: currentColor;
+}
+
 /* Odkazy do Nahlížení do katastru (karty parcel a pohled Katastr) */
 .cadastre-link {
   display: inline-flex;

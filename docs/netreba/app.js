@@ -51,6 +51,19 @@
     },
   };
 
+  // Odkazy do Nahlížení do katastru (z data.js, karty parcel)
+  function getCadastreUrl(parcelId) {
+    const parcel = (DATA.parcelsSection.parcels || []).find((p) => p.id === `parcela-${parcelId}`);
+    return parcel && parcel.cadastreUrl ? parcel.cadastreUrl : null;
+  }
+
+  function openCadastre(parcelId) {
+    const url = getCadastreUrl(parcelId);
+    if (!url) return false;
+    window.open(url, "_blank", "noopener");
+    return true;
+  }
+
   const VIEW_HOTSPOTS = {
     drone: {
       viewBox: "0 0 1500 1000",
@@ -343,6 +356,16 @@
           ${cadastreLink}
         </div>
       `;
+      if (parcel.cadastreUrl) {
+        card.classList.add("parcel-card--link");
+        card.title = "Otevřít v Nahlížení do katastru";
+        card.addEventListener("click", (e) => {
+          if (e.target.closest("a, button")) return;
+          const sel = window.getSelection && window.getSelection();
+          if (sel && String(sel).trim()) return;
+          window.open(parcel.cadastreUrl, "_blank", "noopener");
+        });
+      }
       grid.appendChild(card);
     });
 
@@ -552,8 +575,13 @@
     const info = parcelId ? PARCEL_INFO[parcelId] : null;
     if (!info) {
       tooltipEl.hidden = true;
+      tooltipEl.removeAttribute("data-parcel-id");
       return;
     }
+    tooltipEl.classList.toggle("is-pinned", state.pinnedParcelId === parcelId);
+    // Obsah přestavět jen při změně parcely (jinak by se při ztrátě fokusu ztratilo klepnutí na odkaz)
+    if (tooltipEl.getAttribute("data-parcel-id") === parcelId && !tooltipEl.hidden) return;
+    tooltipEl.setAttribute("data-parcel-id", parcelId);
     tooltipEl.setAttribute("data-accent", info.accent);
     tooltipEl.innerHTML = `
       <div class="parcel-tooltip-top">
@@ -561,6 +589,11 @@
         <span class="parcel-tooltip-area">${escapeHtml(info.area)}</span>
       </div>
       <div class="parcel-tooltip-dim">${escapeHtml(info.dimension)}</div>
+      ${
+        getCadastreUrl(parcelId)
+          ? `<a class="parcel-tooltip-link" href="${escapeHtml(getCadastreUrl(parcelId))}" target="_blank" rel="noopener">Otevřít v katastru ↗</a>`
+          : ""
+      }
     `;
     tooltipEl.hidden = false;
   }
@@ -599,7 +632,10 @@
       poly.setAttribute("data-parcel-id", item.parcelId);
       poly.setAttribute("tabindex", "0");
       poly.setAttribute("role", "button");
-      poly.setAttribute("aria-label", `${info.label}, výměra ${info.area}`);
+      poly.setAttribute(
+        "aria-label",
+        `${info.label}, výměra ${info.area}${getCadastreUrl(item.parcelId) ? " — otevřít v Nahlížení do katastru" : ""}`
+      );
 
       poly.addEventListener("pointerenter", (e) => {
         if (e.pointerType === "touch") return;
@@ -627,22 +663,34 @@
         }
       });
 
+      poly.addEventListener("pointerdown", (e) => {
+        poly.dataset.lastPointer = e.pointerType || "mouse";
+      });
+
       poly.addEventListener("click", (e) => {
         e.stopPropagation();
+        const isTouch = poly.dataset.lastPointer === "touch";
         const wasPinned = state.pinnedParcelId === item.parcelId;
-        state.pinnedParcelId = wasPinned ? null : item.parcelId;
-        if (!view.singleImage && !view.layers) {
-          toggleCleanMarked();
-        } else {
+        // Myš / pero: kliknutí na parcelu rovnou otevře Nahlížení do katastru.
+        // Dotyk: první klepnutí ukáže kartu s tlačítkem, druhé klepnutí otevře katastr.
+        if ((!isTouch || wasPinned) && openCadastre(item.parcelId)) {
+          state.pinnedParcelId = item.parcelId;
           syncParcelHighlight();
+          return;
         }
+        state.pinnedParcelId = wasPinned ? null : item.parcelId;
+        syncParcelHighlight();
       });
 
       poly.addEventListener("keydown", (e) => {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
           e.stopPropagation();
-          state.pinnedParcelId = state.pinnedParcelId === item.parcelId ? null : item.parcelId;
+          if (openCadastre(item.parcelId)) {
+            state.pinnedParcelId = item.parcelId;
+          } else {
+            state.pinnedParcelId = state.pinnedParcelId === item.parcelId ? null : item.parcelId;
+          }
           syncParcelHighlight();
         }
       });
@@ -754,7 +802,7 @@
       activeMode === "layers"
         ? view.layers.hint
         : activeMode === "single"
-        ? "Najeďte myší na parcelu pro zobrazení údajů nebo otevřete celou obrazovku"
+        ? "Najetím na parcelu zobrazíte její údaje, kliknutím ji otevřete v Nahlížení do katastru"
         : DATA.viewer.sliderHint
     );
 
@@ -917,7 +965,7 @@
 
   function bindStageClickToggle(stageEl) {
     stageEl.addEventListener("click", (event) => {
-      if (event.target.closest("button")) return;
+      if (event.target.closest("button, a, .parcel-tooltip")) return;
       const view = getActiveView();
       if (view.singleImage || view.layers) {
         state.pinnedParcelId = null;
