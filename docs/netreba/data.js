@@ -427,6 +427,30 @@ window.SITE_DATA = {
         buttonLabel: "Stáhnout geometrický plán",
         primary: false,
       },
+      {
+        id: "predbezna-informace",
+        badge: "MěÚ Kralupy n. Vlt. · č.j. R/2026/112742/4",
+        title: "Předběžná informace stavebního úřadu",
+        description:
+          "Předběžná informace ze dne 1. 6. 2026 potvrzující, že p.č. 11/4 leží v zastavěném území v ploše SV a výstavba nového samostatného rodinného domu je možná. Zveřejněna je věcná část (strany 2–4 z 5).",
+        fileUrl: "dokumenty/vyjadreni-SU-R-2026-112742-4.pdf",
+        downloadName: "Predbezna-informace-SU-R-2026-112742-4-Netreba.pdf",
+        meta: "Formát PDF · p.č. 11/4, k.ú. Netřeba",
+        buttonLabel: "Stáhnout předběžnou informaci",
+        primary: false,
+      },
+      {
+        id: "vodovod",
+        badge: "Středočeské vodárny · č.j. PVO2611136/EXS",
+        title: "Informace o existenci sítí (vodovod)",
+        description:
+          "Situace zájmového území ze dne 24. 11. 2026 se zákresem provozovaného vodovodu v přilehlé komunikaci u vjezdové parcely p.č. 119/19.",
+        fileUrl: "dokumenty/vodovod/SVAS-PVO2611136-EXS-situace.pdf",
+        downloadName: "Informace-o-existenci-siti-SVAS-PVO2611136-Netreba.pdf",
+        meta: "Formát PDF · p.č. 119/19, k.ú. Netřeba",
+        buttonLabel: "Stáhnout mapku vodovodu",
+        primary: false,
+      },
     ],
   },
 
