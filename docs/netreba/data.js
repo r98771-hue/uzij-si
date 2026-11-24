@@ -296,10 +296,10 @@ window.SITE_DATA = {
       {
         category: "Inženýrské sítě",
         label: "Elektřina (NN)",
-        value: "Elektrické vedení v přilehlé komunikaci",
-        detail: "Možnost napojení na distribuční síť nízkého napětí z veřejné komunikace p.č. 128/2.",
+        value: "Nadzemní elektrické vedení NN",
+        detail: "Inženýrské sítě – elektřina NN: nadzemní elektrické vedení, nenachází se v přilehlé komunikaci.",
         status: "ready",
-        statusText: "V komunikaci",
+        statusText: "Nadzemní vedení",
       },
       {
         category: "Inženýrské sítě",
