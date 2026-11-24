@@ -56,7 +56,7 @@ window.SITE_DATA = {
       { label: "Celková výměra", value: "1 743 m²", note: "p.č. 119/19 (97 m²) + 11/4 (1 646 m²)" },
       { label: "Kupní cena celku", value: "7 490 000 Kč", note: "Výhradně společně · bez provize RK" },
       { label: "Lokalita a katastr", value: "Netřeba", note: "Obec Úžice, okr. Mělník · LV č. 495" },
-      { label: "Územní plán", value: "Plocha SV", note: "Potvrzeno SÚ (č.j. R/2026/112742/4)", href: "dokumenty/", linkLabel: "předběžná informace" },
+      { label: "Územní plán", value: "Plocha SV", note: "Potvrzeno SÚ (č.j. R/2026/112742/4)", href: "dokumenty/", linkLabel: "Předběžná informace" },
     ],
   },
 
@@ -271,7 +271,7 @@ window.SITE_DATA = {
         detail:
           "Předběžná informace MěÚ Kralupy nad Vltavou ze dne 1. 6. 2026 (č.j. R/2026/112742/4) potvrzuje možnost výstavby nového samostatného RD. Max. 1 NP + podkroví, min. koeficient zeleně 30 % (v zastavěném území lze přiměřeně snížit); nepřípustné jsou bytové domy, řadové domy, dvojdomy a ubytovny.",
         href: "dokumenty/",
-        linkLabel: "předběžná informace",
+        linkLabel: "Předběžná informace",
         status: "ready",
         statusText: "Potvrzeno SÚ",
       },
