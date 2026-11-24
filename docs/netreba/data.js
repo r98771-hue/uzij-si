@@ -321,7 +321,7 @@ window.SITE_DATA = {
         category: "Inženýrské sítě",
         label: "Plyn",
         value: "V obci není zaveden",
-        detail: "Ideální pro moderní nízkoenergetický dům s tepelným čerpadlem a fotovoltaikou.",
+        detail: "",
         status: "info",
         statusText: "Není v obci",
       },
