@@ -387,9 +387,9 @@ window.SITE_DATA = {
     },
     driveTimesTitle: "Dojezdové časy autem",
     driveTimes: [
+      { place: "Odolena Voda (obchody, ZŠ, MŠ)", time: "3 min", distance: "3 km" },
       { place: "Nájezd na dálnici D8 (exit Úžice)", time: "5 min", distance: "3,5 km" },
       { place: "Kralupy nad Vltavou (centrum, vlak)", time: "8 min", distance: "6,2 km" },
-      { place: "Odolena Voda (obchody, ZŠ, MŠ)", time: "3 min", distance: "3 km" },
       { place: "Mělník", time: "18 min", distance: "16 km" },
       { place: "Praha – Letňany / Kobylisy (metro C)", time: "20 min", distance: "22 km" },
       { place: "Letiště Václava Havla Praha", time: "28 min", distance: "31 km" },
