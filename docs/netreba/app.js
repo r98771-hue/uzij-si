@@ -40,7 +40,7 @@
       id: "119-19",
       label: "p.č. 119/19 · Vjezdová parcela",
       area: "97 m²",
-      dimension: "Šířka 7,40 m · délka 9,89 m · napojení 12,37 m",
+      dimension: "Šířka vjezdu 7,40 m · délka 9,89 m · napojení 12,37 m",
       accent: "secondary",
     },
     "11-4": {
