@@ -367,7 +367,7 @@ window.SITE_DATA = {
       {
         icon: "school",
         title: "Občanská vybavenost poblíž",
-        text: "Zázemí v obci Úžice a Odolena Voda, kompletní školy, lékaři, obchody a vlakové spojení v Kralupech (8 min).",
+        text: "Zázemí v obci Úžice a Odolena Voda, kompletní školy, lékaři, obchody a vlakové spojení v Kralupech (15 min).",
       },
       {
         icon: "road",
