@@ -439,7 +439,7 @@ window.SITE_DATA = {
       role: "Výlučný majitel pozemků · přímý prodej bez provize RK",
       phoneDisplay: "+420 604 150 231",
       phoneHref: "tel:+420604150231",
-      email: "r98871@gmail.com",
+      email: "tomas.sejkora@volny.cz",
       emailSubject: "Dotaz k prodeji stavebního celku v Netřebě (1 743 m²)",
       smsHref: "sms:+420604150231",
       availability: "Osobní prohlídky a zaslání podkladů po předchozí domluvě",
