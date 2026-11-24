@@ -210,6 +210,10 @@
 
     setText("hero-eyebrow", hero.eyebrow);
     setText("hero-title", hero.title);
+    if (hero.location) {
+      setText("hero-location-text", hero.location);
+      $("hero-location").hidden = false;
+    }
     setText("hero-subtitle", hero.subtitle);
 
     const primaryCta = $("hero-primary-cta");
