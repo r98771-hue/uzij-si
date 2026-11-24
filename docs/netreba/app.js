@@ -301,6 +301,10 @@
             </div>`
         : "";
 
+      const cadastreLink = parcel.cadastreUrl
+        ? `<a class="cadastre-link" href="${escapeHtml(parcel.cadastreUrl)}" target="_blank" rel="noopener">${escapeHtml(parcel.cadastreLabel || "Nahlížení do katastru")} ↗</a>`
+        : "";
+
       card.innerHTML = `
         <div class="parcel-card-bar"></div>
         <div class="parcel-card-body">
@@ -336,6 +340,7 @@
           <p class="parcel-orientation-note">${escapeHtml(parcel.orientationNote)}</p>
 
           <ul class="parcel-highlights">${highlightsList}</ul>
+          ${cadastreLink}
         </div>
       `;
       grid.appendChild(card);
@@ -779,6 +784,19 @@
     setText("lightbox-camera", view.cameraPosition);
     setText("lightbox-title", view.title);
     setText("lightbox-desc", view.description);
+
+    const linksEl = $("viewer-links");
+    linksEl.innerHTML = "";
+    (view.links || []).forEach((link) => {
+      const a = document.createElement("a");
+      a.className = "cadastre-link";
+      a.href = link.href;
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.textContent = `${link.label} ↗`;
+      linksEl.appendChild(a);
+    });
+    linksEl.hidden = !(view.links && view.links.length);
 
     const pillsEl = $("viewer-meta-tags");
     pillsEl.innerHTML = "";

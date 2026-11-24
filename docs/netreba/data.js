@@ -120,6 +120,10 @@ window.SITE_DATA = {
             { id: "mapa-snimek", label: "Mapa + snímek", thumb: "assets/katastr-nahled-mapa-snimek.jpg" },
           ],
         },
+        links: [
+          { label: "p.č. 11/4 v Nahlížení do katastru", href: "https://nahlizenidokn.cuzk.gov.cz/ZobrazObjekt.aspx?encrypted=NAHL~Xjy7aRXlp0KZST_m-OP96vxExlBkYVzDkPc_UM5jjOLch5yVKakGmDFAs64dFR102nRP4Ihp6NFpznb0sVNIG1GuonDz_04Ft5i4hvjMLSn5cdcXt0d_qDekA4kZU68KeIpF1l76RxUFft7qH5BSAjGulP-EJcgE0exI41ME9PMZ4Q4t39tBU0h3ARQSMV8G1xSHsTd_9t7JEzxgHbLnCJD4R1HwvAfeffi4Emq7rX-RudWShT01uWj6XQD0fPEF" },
+          { label: "p.č. 119/19 v Nahlížení do katastru", href: "https://nahlizenidokn.cuzk.gov.cz/ZobrazObjekt.aspx?encrypted=NAHL~h9SsZCvsUtKdKdy-E7W2BktLVG3jsl6S0aT_XCzM8UXxKVnauIlqypvSR8edVyzhnRx9mqwdF2MbgfF1cQ1F_kr4yaef-YlUxgD84bnWUfZPwiHNMua5AshTBEhRG_NEvOk0Cv2AF-3qDHlA_tUYAhfp_aP9N8lKdlRR8GFLCCFydZIetpsDn2qZ9Ms-lRxedrO3m4HiqgziF2uoGnNVxTKHl4faunG8-yiaoX-wvw98kZYT_rOu0_GzI0IHXfwz" },
+        ],
         metaTags: ["Data ČÚZK", "p.č. 11/4 + p.č. 119/19", "Celkem 1 743 m²"],
       },
       {
@@ -211,6 +215,9 @@ window.SITE_DATA = {
     parcels: [
       {
         id: "parcela-119-19",
+        cadastreUrl:
+          "https://nahlizenidokn.cuzk.gov.cz/ZobrazObjekt.aspx?encrypted=NAHL~h9SsZCvsUtKdKdy-E7W2BktLVG3jsl6S0aT_XCzM8UXxKVnauIlqypvSR8edVyzhnRx9mqwdF2MbgfF1cQ1F_kr4yaef-YlUxgD84bnWUfZPwiHNMua5AshTBEhRG_NEvOk0Cv2AF-3qDHlA_tUYAhfp_aP9N8lKdlRR8GFLCCFydZIetpsDn2qZ9Ms-lRxedrO3m4HiqgziF2uoGnNVxTKHl4faunG8-yiaoX-wvw98kZYT_rOu0_GzI0IHXfwz",
+        cadastreLabel: "Nahlížení do katastru",
         name: "Vlastní příjezdová parcela",
         badge: "Přímý vjezd",
         accent: "secondary",
@@ -231,6 +238,9 @@ window.SITE_DATA = {
       },
       {
         id: "parcela-11-4",
+        cadastreUrl:
+          "https://nahlizenidokn.cuzk.gov.cz/ZobrazObjekt.aspx?encrypted=NAHL~Xjy7aRXlp0KZST_m-OP96vxExlBkYVzDkPc_UM5jjOLch5yVKakGmDFAs64dFR102nRP4Ihp6NFpznb0sVNIG1GuonDz_04Ft5i4hvjMLSn5cdcXt0d_qDekA4kZU68KeIpF1l76RxUFft7qH5BSAjGulP-EJcgE0exI41ME9PMZ4Q4t39tBU0h3ARQSMV8G1xSHsTd_9t7JEzxgHbLnCJD4R1HwvAfeffi4Emq7rX-RudWShT01uWj6XQD0fPEF",
+        cadastreLabel: "Nahlížení do katastru",
         name: "Hlavní stavební parcela",
         badge: "Hlavní pozemek",
         accent: "primary",
