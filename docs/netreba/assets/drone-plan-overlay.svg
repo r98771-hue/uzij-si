@@ -17,30 +17,32 @@
   </g>
 
   <!-- Exact GP parcels 11/4 & 119/19 -->
-  <polygon points="1046.4,338.8 1165.8,376 1175.2,382.6 1189.8,390.4 1144.6,432.3 1109.1,505 1230.5,562.7 1183.2,655.2 1044.7,913.2 323.1,629.1 374.7,497.8 901.1,709.5" fill="#FFFFFF" fill-opacity="0.34" stroke="#C83E2B" stroke-width="3.2"/>
-  <polygon points="1077.7,258.8 1158.2,267.5 1165.8,376 1046.4,338.8" fill="#FFFFFF" fill-opacity="0.34" stroke="#C83E2B" stroke-width="3.2"/>
+  <polygon points="1046.4,338.8 1165.8,376 1175.2,382.6 1189.8,390.4 1144.6,432.3 1109.1,505 1230.5,562.7 1183.2,655.2 1044.7,913.2 323.1,629.1 374.7,497.8 901.1,709.5" fill="#2D4A3E" fill-opacity="0.14" stroke="#181A1B" stroke-opacity="0.55" stroke-width="7" stroke-linejoin="round"/>
+  <polygon points="1046.4,338.8 1165.8,376 1175.2,382.6 1189.8,390.4 1144.6,432.3 1109.1,505 1230.5,562.7 1183.2,655.2 1044.7,913.2 323.1,629.1 374.7,497.8 901.1,709.5" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round"/>
+  <polygon points="1077.7,258.8 1158.2,267.5 1165.8,376 1046.4,338.8" fill="#2D4A3E" fill-opacity="0.14" stroke="#181A1B" stroke-opacity="0.55" stroke-width="7" stroke-linejoin="round"/>
+  <polygon points="1077.7,258.8 1158.2,267.5 1165.8,376 1046.4,338.8" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round"/>
 
   <!-- Survey points (cleanly spaced labels) -->
-  <g font-family="Consolas, Menlo, monospace" font-size="13" font-weight="700" fill="#C83E2B">
-    <circle cx="1077.7" cy="258.8" r="5" fill="#FFFFFF" stroke="#C83E2B" stroke-width="2.2"/>
+  <g font-family="Consolas, Menlo, monospace" font-size="13" font-weight="700" fill="#181A1B">
+    <circle cx="1077.7" cy="258.8" r="5" fill="#FFFFFF" stroke="#181A1B" stroke-width="2"/>
     <text x="1029.7" y="254.8">77-40</text>
 
-    <circle cx="1158.2" cy="267.5" r="5" fill="#C83E2B"/>
+    <circle cx="1158.2" cy="267.5" r="5" fill="#FFFFFF" stroke="#181A1B" stroke-width="2"/>
     <text x="1164.2" y="257.5">33</text>
 
-    <circle cx="1165.8" cy="376" r="5" fill="#FFFFFF" stroke="#C83E2B" stroke-width="2.2"/>
+    <circle cx="1165.8" cy="376" r="5" fill="#FFFFFF" stroke="#181A1B" stroke-width="2"/>
     <text x="1175.8" y="381">31</text>
 
-    <circle cx="1046.4" cy="338.8" r="5" fill="#FFFFFF" stroke="#C83E2B" stroke-width="2.2"/>
+    <circle cx="1046.4" cy="338.8" r="5" fill="#FFFFFF" stroke="#181A1B" stroke-width="2"/>
     <text x="996.4" y="344.8">77-41</text>
 
-    <circle cx="1230.5" cy="562.7" r="5" fill="#C83E2B"/>
+    <circle cx="1230.5" cy="562.7" r="5" fill="#FFFFFF" stroke="#181A1B" stroke-width="2"/>
     <text x="1240.5" y="566.7">13</text>
 
-    <circle cx="1183.2" cy="655.2" r="5" fill="#C83E2B"/>
+    <circle cx="1183.2" cy="655.2" r="5" fill="#FFFFFF" stroke="#181A1B" stroke-width="2"/>
     <text x="1193.2" y="653.2">12</text>
 
-    <circle cx="1044.7" cy="913.2" r="5" fill="#C83E2B"/>
+    <circle cx="1044.7" cy="913.2" r="5" fill="#FFFFFF" stroke="#181A1B" stroke-width="2"/>
     <text x="1026.7" y="935.2">15</text>
 
     <circle cx="323.1" cy="629.1" r="5" fill="#FFFFFF" stroke="#181A1B" stroke-width="2"/>
@@ -49,10 +51,10 @@
 
   <!-- CAD parcel IDs & dimensions (zero overlap) -->
   <g font-family="Consolas, Menlo, monospace" text-anchor="middle" fill="#181A1B">
-    <text x="965" y="615" font-size="30" font-weight="700" fill="#C83E2B">11/4</text>
+    <text x="965" y="615" font-size="30" font-weight="700" fill="#181A1B">11/4</text>
     <text x="965" y="644" font-size="16" font-weight="700">1 646 m² (zahrada)</text>
 
-    <text x="1112" y="314" font-size="20" font-weight="700" fill="#C83E2B">119/19</text>
+    <text x="1112" y="314" font-size="20" font-weight="700" fill="#181A1B">119/19</text>
     <text x="1112" y="334" font-size="13" font-weight="700">97 m²</text>
 
     <text x="1225" y="308" font-size="15" fill="#374151">119/7</text>
@@ -60,10 +62,10 @@
     <text x="640" y="882" font-size="21" fill="#374151">21/1</text>
     <text x="1015" y="182" font-size="17" fill="#374151">128/2</text>
 
-    <text x="1120" y="246" font-size="13" font-weight="700" fill="#C83E2B">7.40</text>
-    <text x="1164" y="306" font-size="13" font-weight="700" fill="#C83E2B" transform="rotate(86 1164 306)">9.89</text>
-    <text x="1096" y="376" font-size="13" font-weight="700" fill="#C83E2B" transform="rotate(19 1096 376)">(12.37)</text>
-    <text x="1122" y="768" font-size="14" font-weight="700" fill="#C83E2B" transform="rotate(-62 1122 768)">26.62</text>
+    <text x="1120" y="246" font-size="13" font-weight="700" fill="#181A1B">7.40</text>
+    <text x="1164" y="306" font-size="13" font-weight="700" fill="#181A1B" transform="rotate(86 1164 306)">9.89</text>
+    <text x="1096" y="376" font-size="13" font-weight="700" fill="#181A1B" transform="rotate(19 1096 376)">(12.37)</text>
+    <text x="1122" y="768" font-size="14" font-weight="700" fill="#181A1B" transform="rotate(-62 1122 768)">26.62</text>
     <text x="690" y="795" font-size="14" font-weight="700" fill="#181A1B" transform="rotate(21 690 795)">(70.08)</text>
   </g>
 
@@ -73,6 +75,6 @@
     <line x1="0" y1="33" x2="386" y2="33" stroke="#181A1B" stroke-width="1"/>
     <text x="14" y="22" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="12.5" font-weight="700" fill="#181A1B">GP č. 169-26004/2026 · K.Ú. NETŘEBA [704008]</text>
     <text x="14" y="55" font-family="Consolas, monospace" font-size="11.5" fill="#374151">Ing. Lubomír Pavlíček | PGP-279/2026-206</text>
-    <text x="14" y="77" font-family="Consolas, monospace" font-size="11.5" fill="#C83E2B">Celek 1 743 m²: p.č. 11/4 (1 646) + 119/19 (97)</text>
+    <text x="14" y="77" font-family="Consolas, monospace" font-size="11.5" fill="#181A1B">Celek 1 743 m²: p.č. 11/4 (1 646) + 119/19 (97)</text>
   </g>
 </svg>

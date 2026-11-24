@@ -365,11 +365,11 @@ window.SITE_DATA = {
       title: "Poloha v mapě — Netřeba (k.ú. Netřeba [704008], obec Úžice)",
       // Lze snadno nahradit vlastním iframe kódem z Mapy.cz (Sdílet -> Vložit mapu) nebo Google Maps
       embedUrl:
-        "https://www.openstreetmap.org/export/embed.html?bbox=14.3450%2C50.2380%2C14.3980%2C50.2680&layer=mapnik&marker=50.2528%2C14.3711",
-      externalMapUrl: "https://mapy.cz/zakladni?x=14.3711&y=50.2528&z=15&q=Net%C5%99eba",
+        "https://www.openstreetmap.org/export/embed.html?bbox=14.4164%2C50.2580%2C14.4324%2C50.2650&layer=mapnik&marker=50.26150%2C14.42438",
+      externalMapUrl: "https://mapy.cz/letecka?source=coor&id=14.42438%2C50.26150&x=14.42438&y=50.26150&z=18",
       externalMapLabel: "Otevřít přesnou polohu na Mapy.cz",
-      coordinates: "50.2528° N, 14.3711° E",
-      caption: "Orientační vymezení lokality Netřeba · přesné hranice parcel p.č. 119/19 a 11/4 rád ukáži osobně na místě.",
+      coordinates: "50.26150° N, 14.42438° E",
+      caption: "Orientační vymezení lokality Netřeba · parcely p.č. 119/19 a 11/4",
     },
     driveTimesTitle: "Dojezdové časy autem",
     driveTimes: [
