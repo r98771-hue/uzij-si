@@ -372,7 +372,7 @@ window.SITE_DATA = {
       {
         icon: "road",
         title: "Rychlé spojení po D8",
-        text: "Na nájezd dálnice D8 (exit 9 Úžice) dojedete za 6 minut, na severní okraj Prahy za pouhých 20 minut.",
+        text: "Na nájezd dálnice D8 (exit 9 Úžice) dojedete za 6 minut, na severní okraj Prahy za 22 minut.",
       },
     ],
     map: {
@@ -391,7 +391,7 @@ window.SITE_DATA = {
       { place: "Nájezd na dálnici D8 (exit Úžice)", time: "6 min", distance: "5,2 km" },
       { place: "Kralupy nad Vltavou (centrum)", time: "15 min", distance: "12 km" },
       { place: "Mělník", time: "24 min", distance: "17 km" },
-      { place: "Praha – Letňany / Kobylisy (metro C)", time: "20 min", distance: "22 km" },
+      { place: "Praha – Kobylisy (metro C)", time: "22 min", distance: "22 km" },
       { place: "Letiště Václava Havla Praha", time: "28 min", distance: "31 km" },
     ],
   },
