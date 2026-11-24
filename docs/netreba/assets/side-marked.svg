@@ -54,8 +54,8 @@
     <!-- Dimensions & sun arc -->
     <path d="M120,265 Q285,110 495,215" fill="none" stroke="#FFF4CE" stroke-width="2.5" stroke-dasharray="8 6"/>
     <g font-family="Inter, sans-serif" font-size="13.5" font-weight="600" fill="#FFFFFF" text-anchor="middle">
-      <rect x="195" y="148" width="236" height="30" rx="15" fill="#181A1B" fill-opacity="0.8"/>
-      <text x="313" y="168">Otevření na jih / jihozápad</text>
+      <rect x="238" y="148" width="150" height="30" rx="15" fill="#181A1B" fill-opacity="0.8"/>
+      <text x="313" y="168">Otevření na jih</text>
 
       <rect x="492" y="736" width="225" height="30" rx="15" fill="#181A1B" fill-opacity="0.88"/>
       <text x="604" y="756">Jižní hrana k p.č. 21/1: 70,08 m</text>

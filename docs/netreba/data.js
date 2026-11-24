@@ -15,7 +15,7 @@ window.SITE_DATA = {
   meta: {
     pageTitle: "Stavební pozemek Netřeba | Celek 1 743 m² (p.č. 119/19 a 11/4)",
     pageDescription:
-      "Přímý prodej stavebního celku o celkové výměře 1 743 m² v k.ú. Netřeba, obec Úžice, okres Mělník (LV č. 495). Hlavní parcela p.č. 11/4 (1 646 m²) s vlastní příjezdovou parcelou p.č. 119/19 (97 m²). Cena 7 490 000 Kč.",
+      "Přímý prodej stavebního celku o celkové výměře 1 743 m² v k.ú. Netřeba, obec Úžice, okres Mělník (LV č. 495). Hlavní parcela p.č. 11/4 (1 646 m²) s vlastní vjezdovou parcelou p.č. 119/19 (97 m²). Cena 7 490 000 Kč.",
     brandTitle: "Parcely Netřeba",
     brandSubtitle: "k.ú. Netřeba [704008] · LV č. 495",
   },
@@ -38,9 +38,9 @@ window.SITE_DATA = {
   hero: {
     eyebrow: "Přímý prodej stavebního celku · bez provize RK",
     title: "Stavební celek v Netřebě\no celkové rozloze 1 743 m²\ns vlastním vjezdem z ulice",
-    location: "Netřeba leží 20 km po silnici severně od Prahy. V sousední Odolené Vodě, vzdálené 3 km, je veškerá občanská vybavenost – lékárna, pošta, škola i obchody.",
+    location: "Netřeba leží 20 km po silnici severně od Prahy, na dálnici D8 je to jen pár minut. Přímo z Netřeby jezdí autobus PID č. 373 do Prahy-Kobylis k metru C (asi 35 minut), k dispozici je i železniční zastávka Netřeba na trati Kralupy – Neratovice. V sousední Odolené Vodě, vzdálené 3 km, je veškerá občanská vybavenost – lékárna, pošta, škola i obchody.",
     subtitle:
-      "Dvě na sebe navazující parcely p.č. 119/19 (97 m²) a p.č. 11/4 (1 646 m²) prodávané výhradně společně jako jeden funkční celek. Příjezd ze severu ze silnice p.č. 128/2, slunná zahrada otevřená na jih a jihozápad do volné krajiny.",
+      "Dvě na sebe navazující parcely p.č. 119/19 (97 m²) a p.č. 11/4 (1 646 m²) prodávané výhradně společně jako jeden funkční celek. Vjezd ze severu ze silnice p.č. 128/2, slunná zahrada otevřená na jih do volné krajiny.",
     backgroundImage: "assets/hero-drone-marked.svg",
     backgroundAlt: "Letecký snímek stavebního celku p.č. 119/19 a 11/4 v lokalitě Netřeba se zákresem hranic",
     primaryCta: {
@@ -82,9 +82,9 @@ window.SITE_DATA = {
         id: "drone",
         tabLabel: "Z dronu (shora)",
         title: "Kolmý letecký pohled na celý stavební celek",
-        cameraPosition: "Ilustrační náhled dle souřadnic S-JTSK · příjezd ze severu (p.č. 128/2), otevření na jih / JZ",
+        cameraPosition: "Ilustrační náhled dle souřadnic S-JTSK · vjezd ze severu (p.č. 128/2), otevření na jih",
         description:
-          "Přehled reálného tvaru hlavní stavební parcely p.č. 11/4 (1 646 m², tvar písmene L) a navazující vlastní příjezdové parcely p.č. 119/19 (97 m²). Přímý vjezd vede ze severu z šikmé silnice p.č. 128/2, dlouhá jižní hrana (70,08 m) sousedí s volným polem p.č. 21/1.",
+          "Přehled reálného tvaru hlavní stavební parcely p.č. 11/4 (1 646 m², tvar písmene L) a navazující vlastní vjezdové parcely p.č. 119/19 (97 m²). Přímý vjezd vede ze severu z šikmé silnice p.č. 128/2, dlouhá jižní hrana (70,08 m) sousedí s volným polem p.č. 21/1.",
         cleanImage: "assets/drone-clean.svg",
         markedImage: "assets/drone-marked.svg",
         planOverlayImage: "assets/drone-plan-overlay.svg",
@@ -145,10 +145,10 @@ window.SITE_DATA = {
       {
         id: "katastr-119-19",
         tabLabel: "Detail vjezdu (119/19)",
-        title: "Detail katastrální mapy — vlastní příjezdová parcela p.č. 119/19 (97 m²)",
+        title: "Detail katastrální mapy — vlastní vjezdová parcela p.č. 119/19 (97 m²)",
         cameraPosition: "Detailní výřez z katastrální mapy ČÚZK · napojení na silnici p.č. 128/2",
         description:
-          "Detailní katastrální pohled na vlastní příjezdovou parcelu p.č. 119/19 (97 m², ostatní komunikace), která zajišťuje nezávislý přímý vjezd ze severní veřejné komunikace p.č. 128/2 (šířka u silnice 7,40 m, délka 9,89 m, šířka napojení na p.č. 11/4 je 12,37 m).",
+          "Detailní katastrální pohled na vlastní vjezdovou parcelu p.č. 119/19 (97 m², ostatní komunikace), která zajišťuje nezávislý přímý vjezd ze severní veřejné komunikace p.č. 128/2 (šířka u silnice 7,40 m, délka 9,89 m, šířka napojení na p.č. 11/4 je 12,37 m).",
         cleanImage: "assets/katastr-119-19.png",
         markedImage: "assets/katastr-119-19.png",
         supportsPlanOverlay: false,
@@ -160,10 +160,10 @@ window.SITE_DATA = {
       {
         id: "street",
         tabLabel: "Vjezd z ulice",
-        title: "Příjezd ze severu z komunikace p.č. 128/2",
+        title: "Vjezd ze severu z komunikace p.č. 128/2",
         cameraPosition: "Ilustrační náhled ze severní komunikace p.č. 128/2 · pohled do p.č. 119/19",
         description:
-          "Pohled ze severní veřejné silnice p.č. 128/2 směrem na jih do vlastní příjezdové parcely p.č. 119/19 (šířka 7,40 m, délka 9,89 m), která se v napojení na hlavní pozemek p.č. 11/4 otevírá do šířky 12,37 m.",
+          "Pohled ze severní veřejné silnice p.č. 128/2 směrem na jih do vlastní vjezdové parcely p.č. 119/19 (šířka 7,40 m, délka 9,89 m), která se v napojení na hlavní pozemek p.č. 11/4 otevírá do šířky 12,37 m.",
         cleanImage: "assets/street-clean.svg",
         markedImage: "assets/street-marked.svg",
         supportsPlanOverlay: false,
@@ -177,13 +177,13 @@ window.SITE_DATA = {
         title: "Stranový pohled na tvar L (p.č. 11/4) a jižní otevření",
         cameraPosition: "Ilustrační náhled z jihozápadu · orientace k volné ploše p.č. 21/1",
         description:
-          "Stranový pohled zdůrazňuje reálný tvar písmene L hlavní parcely p.č. 11/4 a velkorysou jižní hranu délky 70,08 m navazující na volné pole p.č. 21/1. Otevřená jižní a jihozápadní expozice zajišťuje celodenní slunce.",
+          "Stranový pohled zdůrazňuje reálný tvar písmene L hlavní parcely p.č. 11/4 a velkorysou jižní hranu délky 70,08 m navazující na volné pole p.č. 21/1. Otevřená jižní expozice zajišťuje celodenní slunce.",
         cleanImage: "assets/side-clean.svg",
         markedImage: "assets/side-marked.svg",
         supportsPlanOverlay: false,
         beforeLabel: "Čistý náhled",
         afterLabel: "Zákres hranic a orientace",
-        metaTags: ["Jižní hrana 70,08 m", "Východní hranice 26,62 m", "Orientace J / JZ"],
+        metaTags: ["Jižní hrana 70,08 m", "Východní hranice 26,62 m", "Orientace na jih"],
       },
       {
         id: "fence",
@@ -207,7 +207,7 @@ window.SITE_DATA = {
     eyebrow: "Přehled prodávaného celku a úřední parametry",
     title: "Dvě navazující parcely jako jeden funkční celek 1 743 m²",
     subtitle:
-      "Parcely p.č. 119/19 a p.č. 11/4 zapsané na LV č. 495 v k.ú. Netřeba [704008], obec Úžice [535257], se prodávají výhradně společně — hlavní stavební pozemek s vlastním přímým příjezdem z obecní silnice.",
+      "Parcely p.č. 119/19 a p.č. 11/4 zapsané na LV č. 495 v k.ú. Netřeba [704008], obec Úžice [535257], se prodávají výhradně společně — hlavní stavební pozemek s vlastním přímým vjezdem z obecní silnice.",
     purchaseBanner: {
       title: "Potvrzená zastavitelnost — předběžná informace MěÚ Kralupy nad Vltavou (1. 6. 2026)",
       text: "Stavební úřad MěÚ Kralupy nad Vltavou vydal dne 1. 6. 2026 předběžnou informaci č.j. R/2026/112742/4 potvrzující, že p.č. 11/4 leží ve stávajícím zastavěném území v ploše „SV – plochy smíšené obytné – venkovské“ (ÚP Úžice po Změně č. 6, účinnost od 31. 12. 2021) a výstavba nového samostatného rodinného domu je možná. Regulativy: max. 1 NP + podkroví, min. koeficient zeleně 30 % (v zastavěném území lze přiměřeně snížit); nepřípustné jsou bytové domy, řadové domy, dvojdomy a ubytovny.",
@@ -219,7 +219,7 @@ window.SITE_DATA = {
         cadastreUrl:
           "https://nahlizenidokn.cuzk.gov.cz/ZobrazObjekt.aspx?encrypted=NAHL~h9SsZCvsUtKdKdy-E7W2BktLVG3jsl6S0aT_XCzM8UXxKVnauIlqypvSR8edVyzhnRx9mqwdF2MbgfF1cQ1F_kr4yaef-YlUxgD84bnWUfZPwiHNMua5AshTBEhRG_NEvOk0Cv2AF-3qDHlA_tUYAhfp_aP9N8lKdlRR8GFLCCFydZIetpsDn2qZ9Ms-lRxedrO3m4HiqgziF2uoGnNVxTKHl4faunG8-yiaoX-wvw98kZYT_rOu0_GzI0IHXfwz",
         cadastreLabel: "Nahlížení do katastru",
-        name: "Vlastní příjezdová parcela",
+        name: "Vlastní vjezdová parcela",
         badge: "Přímý vjezd",
         accent: "secondary",
         cadastralNumber: "p.č. 119/19 · LV č. 495",
@@ -249,9 +249,9 @@ window.SITE_DATA = {
         area: "1 646 m²",
         dimensions: "jižní hrana cca 70,08 m · východní 26,62 m",
         landType: "Zahrada (ZPF, BPEJ 10600)",
-        orientation: "Jih / Jihozápad (J–JZ)",
+        orientation: "Jih",
         orientationNote:
-          "Hlavní pozemek a budoucí zahrada jsou otevřené směrem na jih a jihozápad k volné ploše p.č. 21/1. Příjezd a vstup na pozemek je ze severu přes vlastní parcelu p.č. 119/19.",
+          "Hlavní pozemek a budoucí zahrada jsou otevřené směrem na jih k volné ploše p.č. 21/1. Vjezd a vstup na pozemek je ze severu přes vlastní parcelu p.č. 119/19.",
         purchaseOption: "Výhradně jako celek s p.č. 119/19 (1 743 m²)",
         price: "7 490 000 Kč (včetně p.č. 119/19)",
         highlights: [
@@ -285,10 +285,10 @@ window.SITE_DATA = {
       },
       {
         category: "Doprava",
-        label: "Příjezdová komunikace",
+        label: "Vjezdová komunikace",
         value: "Vlastní vjezd přes p.č. 119/19 ze severní silnice p.č. 128/2",
         detail:
-          "Příjezdová parcela p.č. 119/19 (97 m², ostatní komunikace) napojuje hlavní pozemek přímo na veřejnou komunikaci p.č. 128/2 (šířka u silnice 7,40 m, délka 9,89 m, šířka napojení na p.č. 11/4 je 12,37 m).",
+          "Vjezdová parcela p.č. 119/19 (97 m², ostatní komunikace) napojuje hlavní pozemek přímo na veřejnou komunikaci p.č. 128/2 (šířka u silnice 7,40 m, délka 9,89 m, šířka napojení na p.č. 11/4 je 12,37 m).",
         status: "ready",
         statusText: "Vlastní vjezd",
       },
@@ -358,8 +358,8 @@ window.SITE_DATA = {
       },
       {
         icon: "sun",
-        title: "Ideální orientace J / JZ",
-        text: "Příjezd ze severu ze silnice p.č. 128/2 nechává celou jižní a jihozápadní část pozemku pro slunnou zahradu.",
+        title: "Ideální orientace na jih",
+        text: "Vjezd ze severu ze silnice p.č. 128/2 nechává celou jižní část pozemku pro slunnou zahradu.",
       },
       {
         icon: "school",
