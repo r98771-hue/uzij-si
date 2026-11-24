@@ -297,7 +297,7 @@ window.SITE_DATA = {
         category: "Inženýrské sítě",
         label: "Elektřina (NN)",
         value: "Nadzemní elektrické vedení NN",
-        detail: "Inženýrské sítě – elektřina NN: nadzemní elektrické vedení, nenachází se v přilehlé komunikaci.",
+        detail: "Inženýrské sítě – elektřina NN: nadzemní elektrické vedení, nachází se na kraji pozemku.",
         status: "ready",
         statusText: "Nadzemní vedení",
       },
