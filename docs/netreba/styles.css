@@ -2178,3 +2178,5 @@ p {
     animation-duration: 0.01ms !important;
   }
 }
+
+#hero-title{white-space:pre-line}

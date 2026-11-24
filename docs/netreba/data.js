@@ -37,7 +37,7 @@ window.SITE_DATA = {
   // 1. Úvodní Hero sekce
   hero: {
     eyebrow: "Přímý prodej stavebního celku · bez provize RK",
-    title: "Stavební celek 1 743 m² v Netřebě s vlastním příjezdem",
+    title: "Stavební celek v Netřebě\no celkové rozloze 1 743 m²\ns vlastním vjezdem z ulice",
     subtitle:
       "Dvě navazující nově oddělené parcely p.č. 119/19 (97 m²) a p.č. 11/4 (1 646 m²) prodávané výhradně společně jako jeden funkční celek. Příjezd ze severu ze silnice p.č. 128/2, slunná zahrada otevřená na jih a jihozápad do volné krajiny.",
     backgroundImage: "assets/hero-drone-marked.svg",
