@@ -172,7 +172,7 @@ window.SITE_DATA = {
         title: "Pohled od oplocení přes p.č. 11/4 k nové východní hranici",
         cameraPosition: "Ilustrační náhled od západního oplocení · průběh nové hranice 26,62 m",
         description:
-          "Reálné měřítko hlavní parcely p.č. 11/4 (1 646 m²) z úrovně očí. Zákres přehledně vyznačuje průběh nově oddělené východní hranice dlouhé 26,62 m směrem k sousední parcele p.č. 11/2.",
+          "Reálné měřítko hlavní parcely p.č. 11/4 (1 646 m²) z úrovně očí. Zákres přehledně vyznačuje průběh východní hranice dlouhé 26,62 m směrem k sousední parcele p.č. 11/2.",
         cleanImage: "assets/fence-clean.svg",
         markedImage: "assets/fence-marked.svg",
         supportsPlanOverlay: false,
@@ -254,7 +254,7 @@ window.SITE_DATA = {
         label: "Vymezení a zápis hranic",
         value: "GP č. 169-26004/2026 (Ing. Lubomír Pavlíček)",
         detail:
-          "Souhlas KÚ Mělník č. PGP-279/2026-206. Hranice nově oddělených parcel p.č. 119/19 (97 m²) a p.č. 11/4 (1 646 m²) byly v roce 2026 zaměřeny a zapsány v katastru nemovitostí.",
+          "Souhlas KÚ Mělník č. PGP-279/2026-206. Hranice parcel p.č. 119/19 (97 m²) a p.č. 11/4 (1 646 m²) byly v roce 2026 zaměřeny a zapsány v katastru nemovitostí.",
         status: "ready",
         statusText: "Zapsáno v KN",
       },
