@@ -372,7 +372,7 @@ window.SITE_DATA = {
       {
         icon: "road",
         title: "Rychlé spojení po D8",
-        text: "Na nájezd dálnice D8 (exit 9 Úžice) dojedete za 5 minut, na severní okraj Prahy za pouhých 20 minut.",
+        text: "Na nájezd dálnice D8 (exit 9 Úžice) dojedete za 6 minut, na severní okraj Prahy za pouhých 20 minut.",
       },
     ],
     map: {
@@ -388,7 +388,7 @@ window.SITE_DATA = {
     driveTimesTitle: "Dojezdové časy autem",
     driveTimes: [
       { place: "Odolena Voda (obchody, ZŠ, MŠ)", time: "3 min", distance: "3 km" },
-      { place: "Nájezd na dálnici D8 (exit Úžice)", time: "5 min", distance: "3,5 km" },
+      { place: "Nájezd na dálnici D8 (exit Úžice)", time: "6 min", distance: "5,2 km" },
       { place: "Kralupy nad Vltavou (centrum, vlak)", time: "8 min", distance: "6,2 km" },
       { place: "Mělník", time: "18 min", distance: "16 km" },
       { place: "Praha – Letňany / Kobylisy (metro C)", time: "20 min", distance: "22 km" },
