@@ -4,7 +4,7 @@
  * ============================================================================
  * Načítá veškerý obsah ze souboru data.js a zajišťuje interaktivní prvky:
  * - Přepínání plného snímku kliknutím (Čistý pohled / Vyznačené parcely) bez svislé dělící čáry
- * - Interaktivní hover a kliknutí na konkrétní parcely (p.č. 119/19 a p.č. 11/4) se štítkem
+ * - Interaktivní hover a kliknutí na konkrétní parcely (p.č. 119/19 a p.č. 11/4) se štítkem
  * - 3 režimy pro letecký pohled z dronu + posuvník průhlednosti geometrického plánu
  * - Celoobrazovkový lightbox se zachovanou interaktivitou
  * - Mobilní navigace a rychlá zpráva bez nutnosti backendu
@@ -34,16 +34,16 @@
   const PARCEL_INFO = {
     "119-19": {
       id: "119-19",
-      label: "p.č. 119/19 · Příjezdová parcela",
-      area: "97 m²",
-      dimension: "Šířka 7,40 m · délka 9,89 m · napojení 12,37 m",
+      label: "p.č. 119/19 · Příjezdová parcela",
+      area: "97 m²",
+      dimension: "Šířka 7,40 m · délka 9,89 m · napojení 12,37 m",
       accent: "secondary",
     },
     "11-4": {
       id: "11-4",
-      label: "p.č. 11/4 · Hlavní parcela",
-      area: "1 646 m²",
-      dimension: "Jižní hrana 70,08 m · nová východní 26,62 m",
+      label: "p.č. 11/4 · Hlavní parcela",
+      area: "1 646 m²",
+      dimension: "Jižní hrana 70,08 m · nová východní 26,62 m",
       accent: "primary",
     },
   };
@@ -56,7 +56,7 @@
         {
           parcelId: "11-4",
           points:
-            "1046.4,338.8 1165.8,376 1175.2,382.6 1189.8,390.4 1144.6,432.3 1109.1,505 1230.5,562.7 1183.2,655.2 1044.7,913.2 323.1,629.1 374.7,497.8 901.1,709.5",
+            "1046.4,338.8 1165.8,376 1175.2,382.6 1189.8,390.4 1144.6,432.3 1109.1,505 1230.5,562.7 1183.2,655.2 1044.7,913.2 323.1,629.1 374.7,497.8 901.1,709.5",
         },
         {
           parcelId: "119-19",
@@ -104,11 +104,11 @@
 
   function createSvgIcon(name) {
     const icons = {
-      leaf: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 20A7 7 0 019.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" stroke-linecap="round"/></svg>`,
+      leaf: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 20A7 7 0 019.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" stroke-linecap="round"/></svg>`,
       sun: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41" stroke-linecap="round"/></svg>`,
       school: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10l9-5 9 5-9 5-9-5z" stroke-linejoin="round"/><path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5" stroke-linecap="round"/></svg>`,
       road: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19L8 5m12 14L16 5M12 6v2m0 4v2m0 4v2" stroke-linecap="round"/></svg>`,
-      download: `<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke-linecap="round"/></svg>`,
+      download: `<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke-linecap="round"/></svg>`,
     };
     return icons[name] || icons.leaf;
   }
