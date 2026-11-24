@@ -6,6 +6,7 @@
  * - Přepínání plného snímku kliknutím (Čistý pohled / Vyznačené parcely) bez svislé dělící čáry
  * - Interaktivní hover a kliknutí na konkrétní parcely (p.č. 119/19 a p.č. 11/4) se štítkem
  * - 3 režimy pro letecký pohled z dronu + posuvník průhlednosti geometrického plánu
+ * - Přepínání vrstev katastru ČÚZK (Mapa KN / Letecký snímek / Mapa + snímek) s plynulým prolnutím
  * - Celoobrazovkový lightbox se zachovanou interaktivitou
  * - Mobilní navigace a rychlá zpráva bez nutnosti backendu
  * ============================================================================
@@ -28,6 +29,8 @@
     lightboxOpen: false,
     hoveredParcelId: null,
     pinnedParcelId: null,
+    layer: "mapa", // "mapa" | "snimek" | "mapa-snimek" (pohled Katastr)
+    highlight: true,
   };
 
   // Interaktivní definice parcel (přesné polygony pro letecký pohled i reálné katastrální mapy)
@@ -43,7 +46,7 @@
       id: "11-4",
       label: "p.č. 11/4 · Hlavní parcela",
       area: "1 646 m²",
-      dimension: "Jižní hrana 70,08 m · nová východní 26,62 m",
+      dimension: "Jižní hrana 70,08 m · východní hrana 26,62 m",
       accent: "primary",
     },
   };
@@ -56,7 +59,7 @@
         {
           parcelId: "11-4",
           points:
-            "1046.4,338.8 1165.8,376 1175.2,382.6 1189.8,390.4 1144.6,432.3 1109.1,505 1230.5,562.7 1183.2,655.2 1044.7,913.2 323.1,629.1 374.7,497.8 901.1,709.5",
+            "1046.4,338.8 1165.8,376 1175.2,382.6 1189.8,390.4 1144.6,432.3 1109.1,505 1230.5,562.7 1183.2,655.2 1044.7,913.2 323.1,629.1 374.7,497.8 901.1,709.5",
         },
         {
           parcelId: "119-19",
@@ -75,6 +78,23 @@
         {
           parcelId: "119-19",
           points: "3166,704 3360,728 3378,996 3095,900",
+        },
+      ],
+    },
+    // Pohled Katastr: polygony přepočtené z geometrie ČÚZK (INSPIRE CP WFS, EPSG:5514)
+    // do výřezu 2400 × 1600 px (bbox -740050.7, -1023906.63, -739890.7, -1023799.97)
+    katastr: {
+      viewBox: "0 0 2400 1600",
+      preserveAspectRatio: "xMidYMid meet",
+      polygons: [
+        {
+          parcelId: "11-4",
+          points:
+            "1700.8,590 1742.5,522.2 1566.9,462.5 1369.5,858.8 1329.9,938.4 1316.8,964.5 1001.4,819.3 837.9,744 673,668.1 580.6,858.3 1564.6,1245.8 1753.5,893.9 1818,767.7 1652.4,689.1",
+        },
+        {
+          parcelId: "119-19",
+          points: "1742.5,522.2 1729.8,513.2 1719.5,365.2 1609.6,353.4 1566.9,462.5",
         },
       ],
     },
@@ -104,11 +124,11 @@
 
   function createSvgIcon(name) {
     const icons = {
-      leaf: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 20A7 7 0 019.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" stroke-linecap="round"/></svg>`,
+      leaf: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 20A7 7 0 019.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" stroke-linecap="round"/></svg>`,
       sun: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41" stroke-linecap="round"/></svg>`,
       school: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10l9-5 9 5-9 5-9-5z" stroke-linejoin="round"/><path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5" stroke-linecap="round"/></svg>`,
       road: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19L8 5m12 14L16 5M12 6v2m0 4v2m0 4v2" stroke-linecap="round"/></svg>`,
-      download: `<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke-linecap="round"/></svg>`,
+      download: `<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke-linecap="round"/></svg>`,
     };
     return icons[name] || icons.leaf;
   }
@@ -504,6 +524,8 @@
       if (!["clean", "marked", "overlay"].includes(state.viewMode)) {
         state.viewMode = "marked";
       }
+    } else if (view.layers) {
+      state.viewMode = "layers";
     } else if (view.singleImage) {
       state.viewMode = "single";
     } else {
@@ -604,7 +626,7 @@
         e.stopPropagation();
         const wasPinned = state.pinnedParcelId === item.parcelId;
         state.pinnedParcelId = wasPinned ? null : item.parcelId;
-        if (!view.singleImage) {
+        if (!view.singleImage && !view.layers) {
           toggleCleanMarked();
         } else {
           syncParcelHighlight();
@@ -628,12 +650,15 @@
     const view = getActiveView();
     const isDrone = Boolean(view.supportsPlanOverlay && view.planOverlayImage);
     const isSingle = Boolean(view.singleImage);
+    const isLayers = Boolean(view.layers);
     const isMapContain = Boolean(view.isMapView || view.id === "plan");
-    const activeMode = isSingle ? "single" : state.viewMode;
+    const activeMode = isLayers ? "layers" : isSingle ? "single" : state.viewMode;
 
-    // Zobrazení / skrytí horní přepínací lišty (u všech pohledů kromě jednosnímkových map)
-    $("drone-toolbar").hidden = isSingle;
-    $("lightbox-drone-bar").hidden = isSingle;
+    // Zobrazení / skrytí horní přepínací lišty (u všech pohledů kromě jednosnímkových map a katastru)
+    $("drone-toolbar").hidden = isSingle || isLayers;
+    $("lightbox-drone-bar").hidden = isSingle || isLayers;
+    $("layer-toolbar").hidden = !isLayers;
+    $("lb-layer-toolbar").hidden = !isLayers;
 
     // 3. tlačítko „Překryv geometrického plánu“ pouze u dronu
     $("mode-btn-overlay").hidden = !isDrone;
@@ -674,6 +699,9 @@
       badgeText = cleanBtnLabel;
     } else if (activeMode === "single") {
       badgeText = beforeText;
+    } else if (activeMode === "layers") {
+      const item = view.layers.items.find((it) => it.id === state.layer) || view.layers.items[0];
+      badgeText = item.label;
     } else if (activeMode === "overlay") {
       badgeText = `${DATA.viewer.droneModes.overlayLabel} · ${state.overlayOpacity} %`;
     }
@@ -699,8 +727,15 @@
       }
 
       p.statusBadge.textContent = badgeText;
+      syncLayerStack(p.stage, view);
       renderHotspots(p.hotspots, view, activeMode);
     });
+
+    [$("stage-credit"), $("lb-credit")].forEach((el) => {
+      el.hidden = !isLayers;
+      if (isLayers) el.textContent = view.layers.credit;
+    });
+    syncLayerButtons(view);
 
     if (!getHotspotConfig(view, activeMode)) {
       state.hoveredParcelId = null;
@@ -711,7 +746,9 @@
     // Nápověda pod prohlížečem
     setText(
       "viewer-slider-hint",
-      activeMode === "single"
+      activeMode === "layers"
+        ? view.layers.hint
+        : activeMode === "single"
         ? "Najeďte myší na parcelu pro zobrazení údajů nebo otevřete celou obrazovku"
         : DATA.viewer.sliderHint
     );
@@ -753,9 +790,84 @@
     });
   }
 
+  // Vrstvy katastru: obrázky se načtou až při prvním otevření pohledu, přepínání řeší CSS (opacity)
+  function syncLayerStack(stageEl, view) {
+    const stack = stageEl.querySelector(".layer-stack");
+    if (!stack) return;
+    if (!view.layers) {
+      stageEl.removeAttribute("data-layer");
+      stageEl.removeAttribute("data-highlight");
+      return;
+    }
+    const L = view.layers;
+    const srcs = [
+      [".layer-img-map", L.mapImage],
+      [".layer-img-photo", L.photoImage],
+      [".layer-img-lines", L.linesImage],
+      [".layer-hl-map", L.highlightMapImage],
+      [".layer-hl-photo", L.highlightPhotoImage],
+    ];
+    srcs.forEach(([sel, src]) => {
+      const img = stack.querySelector(sel);
+      if (img && img.getAttribute("src") !== src) img.setAttribute("src", src);
+    });
+    const item = L.items.find((it) => it.id === state.layer) || L.items[0];
+    stack.querySelector(".layer-img-map").alt = `${view.title} — ${item.label}`;
+    stageEl.setAttribute("data-layer", item.id);
+    stageEl.setAttribute("data-highlight", state.highlight ? "on" : "off");
+  }
+
+  function renderLayerButtons() {
+    const view = DATA.viewer.views.find((v) => v.layers);
+    if (!view) return;
+    const L = view.layers;
+    state.layer = L.defaultLayer || L.items[0].id;
+    [$("layer-switch"), $("lb-layer-switch")].forEach((wrap) => {
+      wrap.innerHTML = "";
+      L.items.forEach((item) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "layer-btn";
+        btn.setAttribute("data-layer-id", item.id);
+        btn.setAttribute("aria-pressed", "false");
+        btn.innerHTML = `<img class="layer-btn-thumb" alt="" loading="lazy" /><span class="layer-btn-label"></span>`;
+        btn.querySelector("img").src = item.thumb;
+        btn.querySelector(".layer-btn-label").textContent = item.label;
+        btn.addEventListener("click", () => setLayer(item.id));
+        wrap.appendChild(btn);
+      });
+    });
+    setText("highlight-toggle-label", L.highlightLabel);
+    setText("lb-highlight-toggle-label", L.highlightLabel);
+    [$("highlight-toggle"), $("lb-highlight-toggle")].forEach((input) => {
+      input.addEventListener("change", () => setHighlight(input.checked));
+    });
+  }
+
+  function syncLayerButtons(view) {
+    if (!view.layers) return;
+    document.querySelectorAll(".layer-btn").forEach((btn) => {
+      const active = btn.getAttribute("data-layer-id") === state.layer;
+      btn.classList.toggle("is-active", active);
+      btn.setAttribute("aria-pressed", active ? "true" : "false");
+    });
+    $("highlight-toggle").checked = state.highlight;
+    $("lb-highlight-toggle").checked = state.highlight;
+  }
+
+  function setLayer(id) {
+    state.layer = id;
+    syncViewContent();
+  }
+
+  function setHighlight(on) {
+    state.highlight = Boolean(on);
+    syncViewContent();
+  }
+
   function setViewMode(mode) {
     const view = getActiveView();
-    if (view.singleImage) return;
+    if (view.singleImage || view.layers) return;
     if (mode === "overlay" && !view.supportsPlanOverlay) return;
     state.viewMode = mode;
     syncViewContent();
@@ -763,7 +875,7 @@
 
   function toggleCleanMarked() {
     const view = getActiveView();
-    if (view.singleImage) return;
+    if (view.singleImage || view.layers) return;
     state.viewMode = state.viewMode === "clean" ? "marked" : "clean";
     syncViewContent();
   }
@@ -789,7 +901,7 @@
     stageEl.addEventListener("click", (event) => {
       if (event.target.closest("button")) return;
       const view = getActiveView();
-      if (view.singleImage) {
+      if (view.singleImage || view.layers) {
         state.pinnedParcelId = null;
         syncParcelHighlight();
         return;
@@ -976,6 +1088,7 @@
   renderMetaAndHeader();
   renderHero();
   renderViewerChrome();
+  renderLayerButtons();
   renderParcelsAndSpecs();
   renderLocation();
   renderDocumentsAndContact();

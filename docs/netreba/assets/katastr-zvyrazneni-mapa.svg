@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1600" width="2400" height="1600">
+<defs><filter id="sh" x="-10%" y="-20%" width="120%" height="150%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#000" flood-opacity="0.28"/></filter></defs>
+<polygon points="1700.8,590.0 1742.5,522.2 1566.9,462.5 1369.5,858.8 1329.9,938.4 1316.8,964.5 1001.4,819.3 837.9,744.0 673.0,668.1 580.6,858.3 1564.6,1245.8 1753.5,893.9 1818.0,767.7 1652.4,689.1" fill="#2D4A3E" fill-opacity="0.22" stroke="#2D4A3E" stroke-width="8" stroke-linejoin="round"/>
+<polygon points="1742.5,522.2 1729.8,513.2 1719.5,365.2 1609.6,353.4 1566.9,462.5" fill="#9A7D56" fill-opacity="0.40" stroke="#7A5F3A" stroke-width="8" stroke-linejoin="round"/>
+<line x1="1560" y1="277" x2="1673.7" y2="443.3" stroke="#181A1B" stroke-width="5" stroke-linecap="round"/>
+<circle cx="1673.7" cy="443.3" r="10" fill="#181A1B"/>
+<g font-family="Plus Jakarta Sans, Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<g transform="rotate(21.5 1398 1067)" filter="url(#sh)">
+  <rect x="1163.0" y="1005.0" width="470" height="124" rx="22" fill="#FFFFFF" fill-opacity="0.96"/>
+  <rect x="1163.0" y="1005.0" width="14" height="124" rx="7" fill="#2D4A3E"/>
+  <text x="1203.0" y="1053" font-size="28" font-weight="700" letter-spacing="2.4" fill="#2D4A3E">HLAVNÍ PARCELA</text>
+  <text x="1203.0" y="1104" font-size="46" font-weight="700" fill="#181A1B">p.č. 11/4 · 1 646 m²</text>
+</g>
+<g transform="rotate(0 1360 215)" filter="url(#sh)">
+  <rect x="1125.0" y="153.0" width="470" height="124" rx="22" fill="#FFFFFF" fill-opacity="0.96"/>
+  <rect x="1125.0" y="153.0" width="14" height="124" rx="7" fill="#9A7D56"/>
+  <text x="1165.0" y="201" font-size="28" font-weight="700" letter-spacing="2.4" fill="#9A7D56">VLASTNÍ VJEZD</text>
+  <text x="1165.0" y="252" font-size="46" font-weight="700" fill="#181A1B">p.č. 119/19 · 97 m²</text>
+</g>
+</g>
+</svg>

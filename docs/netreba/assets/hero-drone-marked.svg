@@ -104,7 +104,6 @@
   </g>
   <polygon points="1046.4,338.8 1165.8,376 1175.2,382.6 1189.8,390.4 1144.6,432.3 1109.1,505 1230.5,562.7 1183.2,655.2 1044.7,913.2 323.1,629.1 374.7,497.8 901.1,709.5" fill="#2D4A3E" fill-opacity="0.24" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round"/>
   <polygon points="1077.7,258.8 1158.2,267.5 1165.8,376 1046.4,338.8" fill="#A68A64" fill-opacity="0.34" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
-  <line x1="1183.2" y1="655.2" x2="1044.7" y2="913.2" stroke="#E85A44" stroke-width="3.8"/>
   <defs>
     <linearGradient id="heroScrim" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#111614" stop-opacity="0.50"/>

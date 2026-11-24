@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=20261124b" />
 </head>
 <body>
   <!-- Horní fixní navigace -->
@@ -99,7 +99,7 @@
       </div>
     </section>
 
-    <!-- 2. INTERAKTIVNÍ PROHLÍŽEČ POHLEDŮ (PŘED / PO + PŘEKRYV PLÁNU) -->
+    <!-- 2. INTERAKTIVNÍ PROHLÍŽEČ POHLEDŮ (ZÁKRESY, GEOMETRICKÝ PLÁN A VRSTVY KATASTRU) -->
     <section class="section viewer-section" id="pohledy" aria-labelledby="viewer-title">
       <div class="container">
         <div class="section-header">
@@ -132,6 +132,16 @@
           </div>
         </div>
 
+        <!-- Přepínač vrstev katastru (Mapa KN / Letecký snímek / Mapa + snímek) -->
+        <div class="layer-toolbar" id="layer-toolbar" hidden>
+          <div class="layer-switch" id="layer-switch" role="group" aria-label="Vrstvy katastrální mapy"></div>
+          <label class="highlight-toggle">
+            <input type="checkbox" id="highlight-toggle" checked />
+            <span class="highlight-toggle-track" aria-hidden="true"><span class="highlight-toggle-thumb"></span></span>
+            <span id="highlight-toggle-label">Zvýraznit parcely</span>
+          </label>
+        </div>
+
         <!-- Hlavní plátno prohlížeče (vždy 100 % šířky v celku, bez svislé dělící čáry) -->
         <div class="viewer-card">
           <div class="compare-stage" id="main-compare-stage" data-mode="marked">
@@ -144,11 +154,21 @@
             <!-- Volitelný překryv geometrického plánu (pouze pro dron v režimu overlay) -->
             <img id="stage-overlay-img" class="stage-img stage-img-overlay" src="" alt="" draggable="false" hidden />
 
+            <!-- Vrstvy katastru (plynulé prolínání přes opacity) -->
+            <div class="layer-stack" id="stage-layer-stack" aria-hidden="true">
+              <img class="layer-img layer-img-map" alt="" draggable="false" />
+              <img class="layer-img layer-img-photo" alt="" draggable="false" />
+              <img class="layer-img layer-img-lines" alt="" draggable="false" />
+              <img class="layer-img layer-hl layer-hl-map" alt="" draggable="false" />
+              <img class="layer-img layer-hl layer-hl-photo" alt="" draggable="false" />
+            </div>
+
             <!-- Interaktivní klikatelné/hover oblasti parcel (p.č. 119/19 a p.č. 11/4) -->
             <svg class="parcel-hotspots" id="stage-hotspots" aria-label="Interaktivní výběr parcel" hidden></svg>
 
             <!-- Štítek aktivního režimu v levém horním rohu -->
             <span class="stage-badge stage-badge-left" id="stage-status-badge">Vyznačené parcely</span>
+            <span class="stage-credit" id="stage-credit" hidden></span>
 
             <!-- Informační karta při najetí / kliknutí na konkrétní parcelu -->
             <div class="parcel-tooltip" id="stage-parcel-tooltip" role="status" aria-live="polite" hidden></div>
@@ -396,14 +416,33 @@
         </div>
       </div>
 
+      <div class="lightbox-drone-bar layer-toolbar-dark" id="lb-layer-toolbar" hidden>
+        <div class="layer-switch layer-switch-dark" id="lb-layer-switch" role="group" aria-label="Vrstvy katastrální mapy"></div>
+        <label class="highlight-toggle highlight-toggle-dark">
+          <input type="checkbox" id="lb-highlight-toggle" checked />
+          <span class="highlight-toggle-track" aria-hidden="true"><span class="highlight-toggle-thumb"></span></span>
+          <span id="lb-highlight-toggle-label">Zvýraznit parcely</span>
+        </label>
+      </div>
+
       <div class="lightbox-stage-wrap">
         <div class="compare-stage compare-stage-lightbox" id="lightbox-compare-stage" data-mode="marked">
           <img id="lb-clean-img" class="stage-img stage-img-base" src="" alt="" draggable="false" />
           <img id="lb-marked-img" class="stage-img stage-img-after" src="" alt="" draggable="false" />
           <img id="lb-overlay-img" class="stage-img stage-img-overlay" src="" alt="" draggable="false" hidden />
 
+          <!-- Vrstvy katastru (plynulé prolínání přes opacity) -->
+          <div class="layer-stack" id="lb-layer-stack" aria-hidden="true">
+            <img class="layer-img layer-img-map" alt="" draggable="false" />
+            <img class="layer-img layer-img-photo" alt="" draggable="false" />
+            <img class="layer-img layer-img-lines" alt="" draggable="false" />
+            <img class="layer-img layer-hl layer-hl-map" alt="" draggable="false" />
+            <img class="layer-img layer-hl layer-hl-photo" alt="" draggable="false" />
+          </div>
+
           <svg class="parcel-hotspots" id="lb-hotspots" aria-label="Interaktivní výběr parcel v celé obrazovce" hidden></svg>
           <span class="stage-badge stage-badge-left" id="lb-status-badge"></span>
+          <span class="stage-credit" id="lb-credit" hidden></span>
           <div class="parcel-tooltip" id="lb-parcel-tooltip" role="status" aria-live="polite" hidden></div>
         </div>
       </div>
@@ -445,8 +484,8 @@
   </div>
 
   <!-- Konfigurace dat (upravujte obsah pouze zde) -->
-  <script src="data.js"></script>
+  <script src="data.js?v=20261124b"></script>
   <!-- Aplikační logika -->
-  <script src="app.js"></script>
+  <script src="app.js?v=20261124b"></script>
 </body>
 </html>

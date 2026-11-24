@@ -59,12 +59,12 @@ window.SITE_DATA = {
     ],
   },
 
-  // 2. Interaktivní prohlížeč pohledů (Před / Po + překryv geometrického plánu)
+  // 2. Interaktivní prohlížeč pohledů (zákresy, geometrický plán a vrstvy katastru ČÚZK)
   viewer: {
     eyebrow: "Interaktivní prohlídka pozemků",
     title: "Prozkoumejte stavební celek z každého úhlu",
     subtitle:
-      "Tažením posuvníku porovnejte reálnou fotografii s přesným zákresem hranic a kót dle zapsaného geometrického plánu. U leteckého pohledu si můžete navíc prolnout geometrický plán přímo přes fotografii.",
+      "Prohlédněte si pozemky z dronu, v geometrickém plánu i z ulice. V katastru můžete stejně jako v Nahlížení do katastru přepínat mapu, letecký snímek nebo obojí najednou. Po najetí nebo kliknutí na parcelu uvidíte její výměru a rozměry.",
     sliderHint: "Najeďte myší na parcelu nebo klikněte na snímek pro přepnutí zákresu",
     defaultBeforeLabel: "Čistý pohled",
     defaultAfterLabel: "Vyznačené parcely",
@@ -94,12 +94,41 @@ window.SITE_DATA = {
         metaTags: ["Celkem 1 743 m²", "p.č. 119/19 + p.č. 11/4", "Vjezd ze severu (p.č. 128/2)"],
       },
       {
+        id: "katastr",
+        tabLabel: "Katastr (mapa / snímek)",
+        title: "Katastrální mapa a letecký snímek — p.č. 11/4 a p.č. 119/19",
+        cameraPosition: "Data ČÚZK · k.ú. Netřeba [704008] · hranice parcel z katastru nemovitostí",
+        description:
+          "Skutečné hranice obou parcel přímo z katastru. Přepínejte mezi katastrální mapou, leteckým snímkem a jejich kombinací stejně jako v Nahlížení do katastru. Hlavní parcela p.č. 11/4 (1 646 m², tvar písmene L) navazuje na vlastní vjezd p.č. 119/19 (97 m²) ze silnice p.č. 128/2 na severu.",
+        cleanImage: "assets/katastr-mapa.png",
+        markedImage: "assets/katastr-mapa.png",
+        supportsPlanOverlay: false,
+        isMapView: true,
+        layers: {
+          defaultLayer: "mapa",
+          highlightLabel: "Zvýraznit parcely",
+          credit: "Zdroj: ČÚZK – katastrální mapa a ortofoto",
+          hint: "Vrstvy přepnete tlačítky nad mapou. Najetím nebo kliknutím na parcelu zobrazíte její údaje.",
+          mapImage: "assets/katastr-mapa.png",
+          photoImage: "assets/katastr-snimek.jpg",
+          linesImage: "assets/katastr-mapa-linie.png",
+          highlightMapImage: "assets/katastr-zvyrazneni-mapa.svg",
+          highlightPhotoImage: "assets/katastr-zvyrazneni-snimek.svg",
+          items: [
+            { id: "mapa", label: "Mapa KN", thumb: "assets/katastr-nahled-mapa.jpg" },
+            { id: "snimek", label: "Letecký snímek", thumb: "assets/katastr-nahled-snimek.jpg" },
+            { id: "mapa-snimek", label: "Mapa + snímek", thumb: "assets/katastr-nahled-mapa-snimek.jpg" },
+          ],
+        },
+        metaTags: ["Data ČÚZK", "p.č. 11/4 + p.č. 119/19", "Celkem 1 743 m²"],
+      },
+      {
         id: "plan",
         tabLabel: "Geometrický plán",
         title: "Geometrický plán GP č. 169-26004/2026 vs. katastrální mapa",
         cameraPosition: "Originální podklad ČÚZK · Ing. Lubomír Pavlíček · souhlas KÚ Mělník PGP-279/2026-206",
         description:
-          "Porovnejte posuvníkem reálnou katastrální mapu se zvýrazněnou parcelou p.č. 11/4 a oficiální 2. stranu úředně ověřeného geometrického plánu č. 169-26004/2026 včetně seznamu souřadnic S-JTSK a kót všech nových hranic.",
+          "Přepínejte mezi katastrální mapou se zvýrazněnou parcelou p.č. 11/4 a 2. stranou úředně ověřeného geometrického plánu č. 169-26004/2026 se seznamem souřadnic S-JTSK a kótami hranic.",
         cleanImage: "assets/katastr-11-4.png",
         markedImage: "assets/gp-realny.png",
         supportsPlanOverlay: false,
@@ -122,21 +151,6 @@ window.SITE_DATA = {
         singleImage: true,
         beforeLabel: "Katastrální mapa ČÚZK · vjezd p.č. 119/19",
         metaTags: ["p.č. 119/19 · 97 m²", "Šířka 7,40 m · délka 9,89 m", "Napojení na 11/4: 12,37 m"],
-      },
-      {
-        id: "katastr-11-4",
-        tabLabel: "Katastrální mapa (11/4)",
-        title: "Skutečná katastrální mapa — hlavní parcela p.č. 11/4 (1 646 m²)",
-        cameraPosition: "Originální výřez z katastrální mapy ČÚZK · k.ú. Netřeba [704008]",
-        description:
-          "Přesný katastrální zákres hlavní stavební parcely p.č. 11/4 ve tvaru písmene L. V západní části pod domy č.p. 20 a 56 vybíhá k západu k č.p. 90, na východě navazuje novou hranicí (26,62 m) na p.č. 11/2 a na severu na vlastní příjezdovou parcelu p.č. 119/19.",
-        cleanImage: "assets/katastr-11-4.png",
-        markedImage: "assets/katastr-11-4.png",
-        supportsPlanOverlay: false,
-        isMapView: true,
-        singleImage: true,
-        beforeLabel: "Katastrální mapa ČÚZK · p.č. 11/4",
-        metaTags: ["p.č. 11/4 · 1 646 m²", "Jižní hrana 70,08 m", "Okolní domy č.p. 20, 56, 90"],
       },
       {
         id: "street",
@@ -169,16 +183,16 @@ window.SITE_DATA = {
       {
         id: "fence",
         tabLabel: "Od plotu",
-        title: "Pohled od oplocení přes p.č. 11/4 k nové východní hranici",
-        cameraPosition: "Ilustrační náhled od západního oplocení · průběh nové hranice 26,62 m",
+        title: "Pohled od oplocení přes p.č. 11/4 k východní hranici",
+        cameraPosition: "Ilustrační náhled od západního oplocení · průběh východní hranice 26,62 m",
         description:
           "Reálné měřítko hlavní parcely p.č. 11/4 (1 646 m²) z úrovně očí. Zákres přehledně vyznačuje průběh východní hranice dlouhé 26,62 m směrem k sousední parcele p.č. 11/2.",
         cleanImage: "assets/fence-clean.svg",
         markedImage: "assets/fence-marked.svg",
         supportsPlanOverlay: false,
         beforeLabel: "Čistý náhled",
-        afterLabel: "Zákres nové hranice",
-        metaTags: ["Nová východní hranice 26,62 m", "Výměra p.č. 11/4: 1 646 m²", "Soukromí a zeleň"],
+        afterLabel: "Zákres hranice",
+        metaTags: ["Východní hranice 26,62 m", "Výměra p.č. 11/4: 1 646 m²", "Soukromí a zeleň"],
       },
     ],
   },
