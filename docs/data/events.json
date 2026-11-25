@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T23:54:39+01:00",
+ "generated_at": "2026-11-25T13:51:24+01:00",
  "sources": {
   "brno": {
    "short_name": "Statutární město Brno",
@@ -8,8 +8,8 @@
    "license": "CC BY 4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/deed.cs",
    "status": "ok",
-   "fetched_at": "2026-11-24T23:54:35+01:00",
-   "count": 464
+   "fetched_at": "2026-11-25T13:51:20+01:00",
+   "count": 454
   },
   "hokej": {
    "short_name": "hokej.cz",
@@ -18,7 +18,7 @@
    "license": "veřejný rozpis, odkaz na zdroj",
    "license_url": "https://www.hokej.cz/",
    "status": "ok",
-   "fetched_at": "2026-11-24T23:54:38+01:00",
+   "fetched_at": "2026-11-25T13:51:22+01:00",
    "count": 259
   },
   "fotbal": {
@@ -28,7 +28,7 @@
    "license": "veřejný rozpis, odkaz na zdroj",
    "license_url": "https://www.chanceliga.cz/",
    "status": "ok",
-   "fetched_at": "2026-11-24T23:54:39+01:00",
+   "fetched_at": "2026-11-25T13:51:24+01:00",
    "count": 25
   },
   "poradatele": {
@@ -38,7 +38,7 @@
    "license": "fakta o akci, odkaz na pořadatele",
    "license_url": "https://github.com/r98771-hue/uzij-si/tree/main/scripts/curated",
    "status": "ok",
-   "fetched_at": "2026-11-24T23:54:39+01:00",
+   "fetched_at": "2026-11-25T13:51:24+01:00",
    "count": 7
   }
  },
@@ -853,146 +853,6 @@
    "category": "Výstavy a galerie",
    "source_categories": "Výstava",
    "url": "https://www.gotobrno.cz/akce/galerie-v-vanoce-umeni-emoce/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-329499",
-   "name": "B-Movies Night",
-   "date_from": "2026-11-24",
-   "date_to": "2026-11-24",
-   "time": null,
-   "place": "Štefánikova 836/1, 602 00 Brno-střed",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Noční život",
-   "url": "https://www.gotobrno.cz/akce/b-movies-night-2/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-329256",
-   "name": "Benefiční koncert pro Gellnerku",
-   "date_from": "2026-11-24",
-   "date_to": "2026-11-24",
-   "time": null,
-   "place": "Foerstrova 3088/2, Brno-Žabovřesky",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba, Vánoce",
-   "url": "https://www.gotobrno.cz/akce/beneficni-koncert-pro-gellnerku/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-326889",
-   "name": "Fajnšmekři v Sedmičce – Aleš Leznar, Ondřej Herzán",
-   "date_from": "2026-11-24",
-   "date_to": "2026-11-24",
-   "time": null,
-   "place": "Beethovenova 25/4, 657 42 Brno-střed, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba",
-   "url": "https://www.gotobrno.cz/akce/fajnsmekri-v-sedmicce-ales-leznar-ondrej-herzan/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-318651",
-   "name": "Linoryt",
-   "date_from": "2026-11-24",
-   "date_to": "2026-11-24",
-   "time": null,
-   "place": "Úvoz 427/59B, 602 00 Brno-střed-Veveří, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Pro rodiny, Veletrhy / vzdělávací",
-   "url": "https://www.gotobrno.cz/akce/linoryt/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-329869",
-   "name": "Martinus Running Club: Podzimní knihomolský běh",
-   "date_from": "2026-11-24",
-   "date_to": "2026-11-24",
-   "time": null,
-   "place": "Mečová 2, 602 00 Brno",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Sport",
-   "source_categories": "Literatura, Sport",
-   "url": "https://www.gotobrno.cz/akce/martinus-running-club-podzimni-knihomolsky-beh/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-325114",
-   "name": "Ondřej Ruml – Zapomenutý příběh",
-   "date_from": "2026-11-24",
-   "date_to": "2026-11-24",
-   "time": null,
-   "place": "Žerotínovo náměstí 6",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba",
-   "url": "https://www.gotobrno.cz/akce/ondrej-ruml-zapomenuty-pribeh-2/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-329278",
-   "name": "Tereza Matějčková: Co by se stalo, kdyby se život (ne)opakoval? Kundera a nácvik v opakování",
-   "date_from": "2026-11-24",
-   "date_to": "2026-11-24",
-   "time": null,
-   "place": "",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Veletrhy / vzdělávací",
-   "url": "https://www.gotobrno.cz/akce/tereza-matejckova-co-by-se-stalo-kdyby-se-zivot-neopakoval-kundera-a-nacvik-v-opakovani/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-152008",
-   "name": "Ti druzí",
-   "date_from": "2026-11-24",
-   "date_to": "2026-11-24",
-   "time": null,
-   "place": "Lidická 1863/16, Černá Pole, 602 00 Brno, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Divadlo",
-   "source_categories": "Divadlo",
-   "url": "https://www.gotobrno.cz/akce/ti-druzi/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-329576",
-   "name": "oBCOování s dUCHEM Samuela Becketta",
-   "date_from": "2026-11-24",
-   "date_to": "2026-11-24",
-   "time": null,
-   "place": "Ve Vaňkovce, Trnitá, Brno-Brno-střed, Česko",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Koncerty",
-   "source_categories": "Hudba",
-   "url": "https://www.gotobrno.cz/akce/obcoovani-s-duchem-samuela-becketta/",
-   "source": "brno"
-  },
-  {
-   "id": "brno-327220",
-   "name": "❮UVEDENÍ SBÍRKY HANY ZEMČÍKOVÉ: ZHASÍNÁNÍ TMY❯",
-   "date_from": "2026-11-24",
-   "date_to": "2026-11-24",
-   "time": null,
-   "place": "Údolní 17, Brno",
-   "city": "Brno",
-   "region": "jihomoravsky",
-   "category": "Ostatní",
-   "source_categories": "Literatura",
-   "url": "https://www.gotobrno.cz/akce/%e2%9d%aeuvedeni-sbirky-hany-zemcikove-zhasinani-tmy%e2%9d%af/",
    "source": "brno"
   },
   {
