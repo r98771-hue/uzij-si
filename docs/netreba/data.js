@@ -148,14 +148,14 @@ window.SITE_DATA = {
         title: "Detail katastrální mapy — vlastní vjezdová parcela p.č. 119/19 (97 m²)",
         cameraPosition: "Detailní výřez z katastrální mapy ČÚZK · napojení na silnici p.č. 128/2",
         description:
-          "Detailní katastrální pohled na vlastní vjezdovou parcelu p.č. 119/19 (97 m², ostatní komunikace), která zajišťuje nezávislý přímý vjezd ze severní veřejné komunikace p.č. 128/2 (šířka u silnice 7,40 m, délka 9,89 m, šířka napojení na p.č. 11/4 je 12,37 m).",
+          "Detailní katastrální pohled na vlastní vjezdovou parcelu p.č. 119/19 (97 m², ostatní komunikace), která zajišťuje nezávislý přímý vjezd ze severní veřejné komunikace p.č. 128/2 (šířka přístupu na silnici dle katastrální mapy 7,40 m, délka 9,89 m, šířka napojení na p.č. 11/4 je 12,37 m; vjezd si kupující může upravit podle svých potřeb).",
         cleanImage: "assets/katastr-119-19.png",
         markedImage: "assets/katastr-119-19.png",
         supportsPlanOverlay: false,
         isMapView: true,
         singleImage: true,
         beforeLabel: "Katastrální mapa ČÚZK · vjezd p.č. 119/19",
-        metaTags: ["p.č. 119/19 · 97 m²", "Šířka 7,40 m · délka 9,89 m", "Napojení na 11/4: 12,37 m"],
+        metaTags: ["p.č. 119/19 · 97 m²", "Přístup na silnici 7,40 m · délka 9,89 m", "Napojení na 11/4: 12,37 m"],
       },
       {
         id: "street",
@@ -163,13 +163,13 @@ window.SITE_DATA = {
         title: "Vjezd ze severu z komunikace p.č. 128/2",
         cameraPosition: "Ilustrační náhled ze severní komunikace p.č. 128/2 · pohled do p.č. 119/19",
         description:
-          "Pohled ze severní veřejné silnice p.č. 128/2 směrem na jih do vlastní vjezdové parcely p.č. 119/19 (šířka 7,40 m, délka 9,89 m), která se v napojení na hlavní pozemek p.č. 11/4 otevírá do šířky 12,37 m.",
+          "Pohled ze severní veřejné silnice p.č. 128/2 směrem na jih do vlastní vjezdové parcely p.č. 119/19 (šířka přístupu na silnici dle katastrální mapy 7,40 m, délka 9,89 m), která se v napojení na hlavní pozemek p.č. 11/4 otevírá do šířky 12,37 m.",
         cleanImage: "assets/street-clean.svg",
         markedImage: "assets/street-marked.svg",
         supportsPlanOverlay: false,
         beforeLabel: "Čistý náhled",
-        afterLabel: "Hranice a šířky vjezdu",
-        metaTags: ["Silnice p.č. 128/2", "Šířka u silnice 7,40 m", "Napojení 12,37 m"],
+        afterLabel: "Hranice a rozměry přístupu",
+        metaTags: ["Silnice p.č. 128/2", "Přístup na silnici 7,40 m", "Napojení 12,37 m"],
       },
       {
         id: "side",
@@ -223,7 +223,7 @@ window.SITE_DATA = {
         accent: "secondary",
         cadastralNumber: "p.č. 119/19 · LV č. 495",
         area: "97 m²",
-        dimensions: "šířka 7,40 m · délka 9,89 m · napojení 12,37 m",
+        dimensions: "přístup na silnici 7,40 m · délka 9,89 m · napojení 12,37 m",
         landType: "Ostatní plocha (ostatní komunikace)",
         orientation: "Sever (napojení na p.č. 128/2)",
         orientationNote:
@@ -231,7 +231,7 @@ window.SITE_DATA = {
         purchaseOption: "Nedílná součást celku 1 743 m²",
         price: "V ceně celku",
         highlights: [
-          "Přímé napojení na veřejnou komunikaci p.č. 128/2 (šířka 7,40 m)",
+          "Přímé napojení na veřejnou komunikaci p.č. 128/2 (přístup na silnici 7,40 m dle katastrální mapy)",
           "Komfortní délka 9,89 m a rozšíření napojení na p.č. 11/4 o šířce 12,37 m",
           "Výlučné vlastnictví na stejném LV č. 495 bez omezení",
         ],
@@ -289,7 +289,7 @@ window.SITE_DATA = {
         label: "Vjezdová komunikace",
         value: "Vlastní vjezd přes p.č. 119/19 ze severní silnice p.č. 128/2",
         detail:
-          "Vjezdová parcela p.č. 119/19 (97 m², ostatní komunikace) napojuje hlavní pozemek přímo na veřejnou komunikaci p.č. 128/2 (šířka u silnice 7,40 m, délka 9,89 m, šířka napojení na p.č. 11/4 je 12,37 m).",
+          "Vjezdová parcela p.č. 119/19 (97 m², ostatní komunikace) napojuje hlavní pozemek přímo na veřejnou komunikaci p.č. 128/2 (šířka přístupu na silnici dle katastrální mapy 7,40 m, délka 9,89 m, šířka napojení na p.č. 11/4 je 12,37 m; vjezd si kupující může upravit podle svých potřeb).",
         status: "ready",
         statusText: "Vlastní vjezd",
       },
